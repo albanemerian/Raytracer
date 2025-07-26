@@ -1,0 +1,66 @@
+\doxysection{Parser Class Reference}
+\hypertarget{classParser}{}\label{classParser}\index{Parser@{Parser}}
+
+
+Collaboration diagram for Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classParser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classParser_a08b991520305d80e16724648b862abec}\label{classParser_a08b991520305d80e16724648b862abec} 
+{\bfseries Parser} (const std\+::string \&filename)
+\item 
+\Hypertarget{classParser_ad345cfe9eb42c78f8a4c105a47eaf928}\label{classParser_ad345cfe9eb42c78f8a4c105a47eaf928} 
+void {\bfseries load\+Config} (const std\+::string \&filename)
+\item 
+\Hypertarget{classParser_ad941a297e9f6abb39271090806a6be33}\label{classParser_ad941a297e9f6abb39271090806a6be33} 
+void {\bfseries parse} ()
+\item 
+\Hypertarget{classParser_a0c5b9b3ced5db5953b2f63284346bfec}\label{classParser_a0c5b9b3ced5db5953b2f63284346bfec} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \& {\bfseries get\+Objects} () const
+\item 
+\Hypertarget{classParser_a36dbafa55ba4b6f29ea6e38f11623c5a}\label{classParser_a36dbafa55ba4b6f29ea6e38f11623c5a} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ {\bfseries get\+Root\+Node} ()
+\item 
+\Hypertarget{classParser_a9948fcb94ff335ff087f89b9ec853d76}\label{classParser_a9948fcb94ff335ff087f89b9ec853d76} 
+void {\bfseries print\+Map} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classParser_a1bf9f78488e8b416bde23e38bac8498a}\label{classParser_a1bf9f78488e8b416bde23e38bac8498a} 
+void {\bfseries import\+Scene} ()
+\item 
+\Hypertarget{classParser_a01826eb6e810c2f146a4ad2dfec557ae}\label{classParser_a01826eb6e810c2f146a4ad2dfec557ae} 
+bool {\bfseries is\+Valid\+File\+Path} (const std\+::string \&path) const
+\item 
+\Hypertarget{classParser_abcbbe9224c0ca9593436f3381980c8ad}\label{classParser_abcbbe9224c0ca9593436f3381980c8ad} 
+bool {\bfseries load\+Imported\+Scene} (const std\+::string \&scene\+Path, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ imported\+Root\+Node) const
+\item 
+\Hypertarget{classParser_a401325aa9592c3b5c8ce9337a99b3b54}\label{classParser_a401325aa9592c3b5c8ce9337a99b3b54} 
+void {\bfseries import\+Objects\+From\+Scene} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ imported\+Root\+Node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classParser_ab21d7b9e8a1a7cd3b50b8eb05a46d471}\label{classParser_ab21d7b9e8a1a7cd3b50b8eb05a46d471} 
+\mbox{\hyperlink{classConfigNode}{Config\+Node}} {\bfseries root\+Node}
+\item 
+\Hypertarget{classParser_ad4d1e6f0d93707c158454c913d2b4810}\label{classParser_ad4d1e6f0d93707c158454c913d2b4810} 
+\mbox{\hyperlink{classConfigParser}{Config\+Parser}} {\bfseries config\+Parser}
+\item 
+\Hypertarget{classParser_a287061333d2ccb74082d946e4224a255}\label{classParser_a287061333d2ccb74082d946e4224a255} 
+\mbox{\hyperlink{classObjectConstructor}{Object\+Constructor}} {\bfseries \+\_\+object\+Constructor}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/parser/Parser.\+hpp\item 
+src/parser/Parser.\+cpp\end{DoxyCompactItemize}

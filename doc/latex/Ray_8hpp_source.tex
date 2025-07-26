@@ -1,0 +1,51 @@
+\doxysection{Ray.\+hpp}
+\hypertarget{Ray_8hpp_source}{}\label{Ray_8hpp_source}\index{common/Ray.hpp@{common/Ray.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Ray}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Color.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Point3D.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ RAY\_HPP\_}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ RAY\_HPP\_}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRay}{Ray}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRay}{Ray}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRay}{Ray}}(\mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ origin,\ Math::Vector3D\ direction);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRay}{Ray}}(\mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ origin,\ Math::Vector3D\ direction,\ \mbox{\hyperlink{classColor}{Color}}\ color,\ \textcolor{keywordtype}{double}\ intensity);}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRay}{\string~Ray}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Setter\ */}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setOrigin(\mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ origin);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setDirection(Math::Vector3D\ direction);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setColor(\mbox{\hyperlink{classColor}{Color}}\ color);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setIntensity(\textcolor{keywordtype}{double}\ intensity);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ getOrigin()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ Math::Vector3D\ getDirection()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ getColor()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ getIntensity()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ \_origin;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ Math::Vector3D\ \_direction;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ \_color;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_intensity;}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !RAY\_HPP\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{comment}{//\ const\ Math::Point3D\ \&getOrigin()\ const\ \{\ return\ \_origin;\ \}}}
+\DoxyCodeLine{00045\ \textcolor{comment}{//\ const\ Math::Vector3D\ \&getDirection()\ const\ \{\ return\ \_direction;\ \}}}
+
+\end{DoxyCode}

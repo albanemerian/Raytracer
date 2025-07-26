@@ -1,0 +1,13 @@
+<map id="IPrimitives" name="IPrimitives">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,5,321,253"/>
+<area shape="rect" id="Node000002" href="$classAPrimitives.html" title=" " alt="" coords="217,301,325,661"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,268,273,301,268,301,268,268"/>
+<area shape="rect" id="Node000003" href="$classCone.html" title=" " alt="" coords="5,709,125,957"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,588,140,711,127,732,123,729,135,708,207,586"/>
+<area shape="rect" id="Node000004" href="$classCylinder.html" title=" " alt="" coords="149,709,269,957"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="239,676,233,710,228,709,234,675"/>
+<area shape="rect" id="Node000005" href="$classPlane.html" title=" " alt="" coords="293,756,373,911"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="308,675,322,756,317,757,303,676"/>
+<area shape="rect" id="Node000006" href="$classSphere.html" title=" " alt="" coords="397,756,477,911"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="334,598,388,708,409,755,404,757,383,710,329,600"/>
+</map>

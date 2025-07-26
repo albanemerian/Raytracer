@@ -1,0 +1,47 @@
+\doxysection{Config\+Parser.\+hpp}
+\hypertarget{ConfigParser_8hpp_source}{}\label{ConfigParser_8hpp_source}\index{src/parser/ConfigParser.hpp@{src/parser/ConfigParser.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ConfigParser}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ CONFIGPARSER\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ CONFIGPARSER\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <libconfig.h++>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}ConfigNode.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }libconfig;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classConfigParser}{ConfigParser}}\ \{}
+\DoxyCodeLine{00020\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classConfigParser}{ConfigParser}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classConfigParser}{\string~ConfigParser}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ loadConfig(\textcolor{keyword}{const}\ std::string\ \&filename,\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\ \&rootNode);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ buildConfigTree(\textcolor{keyword}{const}\ Setting\ \&setting,\ std::shared\_ptr<ConfigNode>\ node);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ handleGroupType(\textcolor{keyword}{const}\ Setting\ \&child,\ \textcolor{keyword}{const}\ std::string\ \&childName,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<ConfigNode>\ node);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ handleArrayType(\textcolor{keyword}{const}\ Setting\ \&child,\ \textcolor{keyword}{const}\ std::string\ \&childName,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<ConfigNode>\ node);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ handleListType(\textcolor{keyword}{const}\ Setting\ \&child,\ \textcolor{keyword}{const}\ std::string\ \&childName,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<ConfigNode>\ node);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ handleValueType(\textcolor{keyword}{const}\ Setting\ \&child,\ \textcolor{keyword}{const}\ std::string\ \&childName,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<ConfigNode>\ node);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ Config\ file;}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !CONFIGPARSER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

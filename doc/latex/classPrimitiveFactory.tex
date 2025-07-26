@@ -1,0 +1,94 @@
+\doxysection{Primitive\+Factory Class Reference}
+\hypertarget{classPrimitiveFactory}{}\label{classPrimitiveFactory}\index{PrimitiveFactory@{PrimitiveFactory}}
+
+
+Inheritance diagram for Primitive\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classPrimitiveFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Primitive\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classPrimitiveFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPrimitiveFactory_ad05d6441f5fc29a5399d805b063e3aa3}\label{classPrimitiveFactory_ad05d6441f5fc29a5399d805b063e3aa3} 
+{\bfseries Primitive\+Factory} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMaterialLoader}{Material\+Loader}} $>$ material\+Loader)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ \mbox{\hyperlink{classPrimitiveFactory_a508bfa4067d4e379d89d0a9c60b7c0cf}{create}} (const std\+::string \&type, std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ config, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List) override
+\item 
+void \mbox{\hyperlink{classPrimitiveFactory_afc6d23c2a997f4f5279af7eff81b1818}{register\+Creator}} (const std\+::string \&type, std\+::function$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$(std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&)$>$ creator) override
+\item 
+bool \mbox{\hyperlink{classPrimitiveFactory_a5548b7426764feb52c3e6a2b10df5128}{load\+Plugin}} (const std\+::string \&path) override
+\item 
+\Hypertarget{classPrimitiveFactory_a6ae0b3925e78a17ef5d6fc3150f1493b}\label{classPrimitiveFactory_a6ae0b3925e78a17ef5d6fc3150f1493b} 
+void {\bfseries load\+All\+Plugins} (const std\+::string \&directory="{}plugins/"{})
+\item 
+\Hypertarget{classPrimitiveFactory_a9a227522f6b447c8b46a1b6dfaa405f1}\label{classPrimitiveFactory_a9a227522f6b447c8b46a1b6dfaa405f1} 
+Object\+Type {\bfseries get\+Type\+From\+Plugin} (const std\+::string \&path, \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ void \texorpdfstring{$\ast$}{*} $>$ loader)
+\item 
+\Hypertarget{classPrimitiveFactory_a3e337a557dcf220c29cf6ac6f1262d4b}\label{classPrimitiveFactory_a3e337a557dcf220c29cf6ac6f1262d4b} 
+std\+::string {\bfseries get\+Name\+From\+Plugin} (const std\+::string \&path, \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ void \texorpdfstring{$\ast$}{*} $>$ loader)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPrimitiveFactory_ac2f50590bef6f2186727f8042086603f}\label{classPrimitiveFactory_ac2f50590bef6f2186727f8042086603f} 
+std\+::map$<$ std\+::string, std\+::function$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$(std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&)$>$ {\bfseries \+\_\+creators} )
+\item 
+\Hypertarget{classPrimitiveFactory_a490a32d4629b44dcddb986401c296d78}\label{classPrimitiveFactory_a490a32d4629b44dcddb986401c296d78} 
+std\+::vector$<$ \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ void \texorpdfstring{$\ast$}{*} $>$ $>$ {\bfseries \+\_\+dl\+Loaders}
+\item 
+\Hypertarget{classPrimitiveFactory_aaf0555e2b70e5aefe95210dc5ce20ecf}\label{classPrimitiveFactory_aaf0555e2b70e5aefe95210dc5ce20ecf} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMaterialLoader}{Material\+Loader}} $>$ {\bfseries \+\_\+material\+Loader}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPrimitiveFactory_a508bfa4067d4e379d89d0a9c60b7c0cf}\label{classPrimitiveFactory_a508bfa4067d4e379d89d0a9c60b7c0cf} 
+\index{PrimitiveFactory@{PrimitiveFactory}!create@{create}}
+\index{create@{create}!PrimitiveFactory@{PrimitiveFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ Primitive\+Factory\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$}]{config,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&}]{graph\+Scene\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIFactory}{IFactory$<$ IPrimitives $>$}}.
+
+\Hypertarget{classPrimitiveFactory_a5548b7426764feb52c3e6a2b10df5128}\label{classPrimitiveFactory_a5548b7426764feb52c3e6a2b10df5128} 
+\index{PrimitiveFactory@{PrimitiveFactory}!loadPlugin@{loadPlugin}}
+\index{loadPlugin@{loadPlugin}!PrimitiveFactory@{PrimitiveFactory}}
+\doxysubsubsection{\texorpdfstring{loadPlugin()}{loadPlugin()}}
+{\footnotesize\ttfamily bool Primitive\+Factory\+::load\+Plugin (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIFactory}{IFactory$<$ IPrimitives $>$}}.
+
+\Hypertarget{classPrimitiveFactory_afc6d23c2a997f4f5279af7eff81b1818}\label{classPrimitiveFactory_afc6d23c2a997f4f5279af7eff81b1818} 
+\index{PrimitiveFactory@{PrimitiveFactory}!registerCreator@{registerCreator}}
+\index{registerCreator@{registerCreator}!PrimitiveFactory@{PrimitiveFactory}}
+\doxysubsubsection{\texorpdfstring{registerCreator()}{registerCreator()}}
+{\footnotesize\ttfamily void Primitive\+Factory\+::register\+Creator (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{std\+::function$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$(std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&)$>$}]{creator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIFactory}{IFactory$<$ IPrimitives $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/factory/Primitive\+Factory.\+hpp\item 
+src/factory/Primitive\+Factory.\+cpp\end{DoxyCompactItemize}

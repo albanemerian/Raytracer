@@ -1,0 +1,57 @@
+\doxysection{Factory\+Manager Class Reference}
+\hypertarget{classFactoryManager}{}\label{classFactoryManager}\index{FactoryManager@{FactoryManager}}
+
+
+Collaboration diagram for Factory\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classFactoryManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFactoryManager_a409ba23369c66195ed9d93c0aa4f8943}\label{classFactoryManager_a409ba23369c66195ed9d93c0aa4f8943} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPrimitiveFactory}{Primitive\+Factory}} $>$ {\bfseries get\+Primitive\+Factory} ()
+\item 
+\Hypertarget{classFactoryManager_aab5b907c5feb4ce35340af3c348c56c1}\label{classFactoryManager_aab5b907c5feb4ce35340af3c348c56c1} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCameraFactory}{Camera\+Factory}} $>$ {\bfseries get\+Camera\+Factory} ()
+\item 
+\Hypertarget{classFactoryManager_a75789ccd0400d695d8c2407b9f34186c}\label{classFactoryManager_a75789ccd0400d695d8c2407b9f34186c} 
+void {\bfseries initialize\+Factories} ()
+\item 
+\Hypertarget{classFactoryManager_adf080541841b20c9644db57ac265b15f}\label{classFactoryManager_adf080541841b20c9644db57ac265b15f} 
+void {\bfseries create\+Objects\+From\+Config} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&objects\+Config)
+\item 
+\Hypertarget{classFactoryManager_a3485787f19a67c7eebeecab8afe0c215}\label{classFactoryManager_a3485787f19a67c7eebeecab8afe0c215} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ $>$ {\bfseries get\+Primitives} () const
+\item 
+\Hypertarget{classFactoryManager_ab037ac28224c9c8654a2c19f52daed27}\label{classFactoryManager_ab037ac28224c9c8654a2c19f52daed27} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ {\bfseries get\+Camera} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFactoryManager_a784a6f9523010370650859bff58f8d38}\label{classFactoryManager_a784a6f9523010370650859bff58f8d38} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPrimitiveFactory}{Primitive\+Factory}} $>$ {\bfseries \+\_\+primitive\+Factory}
+\item 
+\Hypertarget{classFactoryManager_a0ca05daa2b1a271674f03fde60433710}\label{classFactoryManager_a0ca05daa2b1a271674f03fde60433710} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCameraFactory}{Camera\+Factory}} $>$ {\bfseries \+\_\+camera\+Factory}
+\item 
+\Hypertarget{classFactoryManager_aa305b3ffaeb05f085d8a3006b975cbc1}\label{classFactoryManager_aa305b3ffaeb05f085d8a3006b975cbc1} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMaterialLoader}{Material\+Loader}} $>$ {\bfseries \+\_\+material\+Loader}
+\item 
+\Hypertarget{classFactoryManager_a80a3868c8643d3bdf0ac3917d013e331}\label{classFactoryManager_a80a3868c8643d3bdf0ac3917d013e331} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ $>$ {\bfseries \+\_\+primitives}
+\item 
+\Hypertarget{classFactoryManager_a935f1f92b4e5da13a92a4aa9c1f79211}\label{classFactoryManager_a935f1f92b4e5da13a92a4aa9c1f79211} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ {\bfseries \+\_\+camera}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/factory/Factory\+Manager.\+hpp\item 
+src/factory/Factory\+Manager.\+cpp\end{DoxyCompactItemize}

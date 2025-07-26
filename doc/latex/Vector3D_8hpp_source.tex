@@ -1,0 +1,88 @@
+\doxysection{Vector3\+D.\+hpp}
+\hypertarget{Vector3D_8hpp_source}{}\label{Vector3D_8hpp_source}\index{common/Vector3D.hpp@{common/Vector3D.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Vector3D}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Point3D.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ VECTOR3D\_HPP\_}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ VECTOR3D\_HPP\_}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }Math\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }Point3D;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }Vector3D\ \{}
+\DoxyCodeLine{00022\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ Vector3D();}
+\DoxyCodeLine{00024\ \ \ \ \ Vector3D(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00025\ \ \ \ \ Vector3D(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ \&point);}
+\DoxyCodeLine{00026\ \ \ \ \ \string~Vector3D()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ getX()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ getY()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ getZ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*\ Setter\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setX(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ setY(\textcolor{keywordtype}{double}\ y);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ setZ(\textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{/*\ Methods\ */}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ length()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{double}\ dot(\textcolor{keyword}{const}\ Vector3D\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ Add\ cross\ product}}
+\DoxyCodeLine{00043\ \ \ \ \ Vector3D\ cross(\textcolor{keyword}{const}\ Vector3D\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ Vector3D\ normalize()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{/*\ Operators\ */}}
+\DoxyCodeLine{00048\ \ \ \ \ Vector3D\ operator-\/()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ Vector3D\ operator+(\textcolor{keyword}{const}\ Vector3D\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ Vector3D\ operator-\/(\textcolor{keyword}{const}\ Vector3D\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ Vector3D\ operator+=(\textcolor{keyword}{const}\ Vector3D\ \&other);}
+\DoxyCodeLine{00053\ \ \ \ \ Vector3D\ operator-\/=(\textcolor{keyword}{const}\ Vector3D\ \&other);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ Vector3D\ operator*(\textcolor{keyword}{const}\ Vector3D\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ \ \ \ \ Vector3D\ operator*=(\textcolor{keyword}{const}\ Vector3D\ \&other);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ Vector3D\ operator/(\textcolor{keyword}{const}\ Vector3D\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ Vector3D\ operator/=(\textcolor{keyword}{const}\ Vector3D\ \&other);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{/*\ Operator\ and\ Scalar\ */}}
+\DoxyCodeLine{00062\ \ \ \ \ Vector3D\ operator*(\textcolor{keywordtype}{double}\ scalar)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ \ \ \ \ Vector3D\ \&operator*=(\textcolor{keywordtype}{double}\ scalar);}
+\DoxyCodeLine{00064\ \ \ \ \ Vector3D\ operator/(\textcolor{keywordtype}{double}\ scalar)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ \ \ \ \ Vector3D\ \&operator/=(\textcolor{keywordtype}{double}\ scalar);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{double}\ x;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{double}\ y;}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{double}\ z;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{inline}\ Vector3D\ operator*(\textcolor{keywordtype}{double}\ scalar,\ \textcolor{keyword}{const}\ Vector3D\ \&vec)\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ Vector3D(vec.getX()\ *\ scalar,\ vec.getY()\ *\ scalar,}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vec.getZ()\ *\ scalar);}
+\DoxyCodeLine{00078\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \}\ \ \textcolor{comment}{//\ namespace\ Math}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !VECTOR3D\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

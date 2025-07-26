@@ -1,0 +1,52 @@
+\doxysection{Property\+Types.\+hpp}
+\hypertarget{PropertyTypes_8hpp_source}{}\label{PropertyTypes_8hpp_source}\index{src/parser/PropertyTypes.hpp@{src/parser/PropertyTypes.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ PropertyTypes}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PROPERTYTYPES\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PROPERTYTYPES\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../../common/ValueType.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{enum}\ ValueDataType\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ TYPE\_INT,}
+\DoxyCodeLine{00019\ \ \ \ \ TYPE\_FLOAT,}
+\DoxyCodeLine{00020\ \ \ \ \ TYPE\_STRING,}
+\DoxyCodeLine{00021\ \ \ \ \ TYPE\_BOOL,}
+\DoxyCodeLine{00022\ \ \ \ \ TYPE\_DOUBLE}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPropertyInfo}{PropertyInfo}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ ValueType\_t\ type;}
+\DoxyCodeLine{00027\ \ \ \ \ ValueFormat\ format;}
+\DoxyCodeLine{00028\ \ \ \ \ std::vector<std::string>\ components;}
+\DoxyCodeLine{00029\ \ \ \ \ ValueDataType\ dataType;}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structShapeDefinition}{ShapeDefinition}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00034\ \ \ \ \ std::vector<std::string>\ mandatory;}
+\DoxyCodeLine{00035\ \ \ \ \ std::vector<std::string>\ optional;}
+\DoxyCodeLine{00036\ \ \ \ \ ObjectType\ objectType;}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPropertyConfig}{PropertyConfig}}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ ValueType\_t\ type;}
+\DoxyCodeLine{00041\ \ \ \ \ ValueFormat\ format;}
+\DoxyCodeLine{00042\ \ \ \ \ std::vector<std::string>\ components;}
+\DoxyCodeLine{00043\ \ \ \ \ ValueDataType\ dataType;}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !PROPERTYTYPES\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

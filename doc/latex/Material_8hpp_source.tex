@@ -1,0 +1,78 @@
+\doxysection{Material.\+hpp}
+\hypertarget{Material_8hpp_source}{}\label{Material_8hpp_source}\index{common/Material.hpp@{common/Material.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Material}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ MATERIAL\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ MATERIAL\_HPP\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Color.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{enum}\ MaterialType\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ FLAT\_COLOR,}
+\DoxyCodeLine{00015\ \ \ \ \ TRANSPARENCY\_MAT,}
+\DoxyCodeLine{00016\ \ \ \ \ CHESSBOARD}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMaterial}{Material}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Basic\ colors/components\ (Vec3:\ r,g,b\ in\ [0,1])}}
+\DoxyCodeLine{00021\ \ \ \ \ Math::Vector3D\ ambient;\ \textcolor{comment}{//\ Ambient\ reflection\ coefficient}}
+\DoxyCodeLine{00022\ \ \ \ \ Math::Vector3D\ diffuse;\ \textcolor{comment}{//\ Diffuse\ (Lambertian)\ reflection\ coefficient}}
+\DoxyCodeLine{00023\ \ \ \ \ Math::Vector3D\ specular;\ \textcolor{comment}{//\ Specular\ reflection\ coefficient}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ shininess;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Phong\ exponent\ (higher\ =\ smaller,\ sharper\ highlights)}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ OptionalColor1\ =\ \mbox{\hyperlink{classColor}{Color}}(0.0f,\ 0.0f,\ 0.0f);\ \textcolor{comment}{//\ Color\ for\ the\ first\ chessboard\ square}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ OptionalColor2\ =\ \mbox{\hyperlink{classColor}{Color}}(0.0f,\ 0.0f,\ 0.0f);\ \textcolor{comment}{//\ Color\ for\ the\ second\ chessboard\ square}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ scale\ =\ 5.0f;\ \textcolor{comment}{//\ Scale\ for\ the\ chessboard\ pattern}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Reflection\ \&\ Refraction}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ reflectivity;\ \ \ \ \ \ \textcolor{comment}{//\ [0,1]\ Fraction\ of\ reflection\ ray\ contribution}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{float}\ transparency;\ \ \ \ \ \ \textcolor{comment}{//\ [0,1]\ Fraction\ of\ refracted\ ray\ contribution}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{float}\ refractiveIndex;\ \ \ \ \ \ \textcolor{comment}{//\ Snell's\ law\ index\ (1.0\ =\ vacuum/air)}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{float}\ opacity;\ \ \ \ \ \ \textcolor{comment}{//\ [0,1]\ Fraction\ of\ light\ that\ is\ absorbed\ by\ the\ material}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Optional\ textures\ (nullptr\ if\ unused)}}
+\DoxyCodeLine{00037\ \ \ \ \ std::shared\_ptr<std::string>\ colorTexture;\ \ \ \ \ \textcolor{comment}{//\ Overrides\ diffuse\ when\ present}}
+\DoxyCodeLine{00038\ \ \ \ \ std::shared\_ptr<std::string>\ normalMap;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Perturbs\ surface\ normals\ for\ bump\ mapping}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ MaterialType\ materialType\ =\ FLAT\_COLOR;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ Constructors}}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{structMaterial}{Material}}()}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ :\ ambient(0.0f,\ 0.0f,\ 0.0f)}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ ,\ diffuse(0.0f,\ 0.0f,\ 0.0f)}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ ,\ specular(0.0f,\ 0.0f,\ 0.0f)}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ ,\ shininess(32.0f)}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ ,\ reflectivity(0.0f)}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ ,\ transparency(0.0f)}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ ,\ refractiveIndex(1.0f)}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ ,\ opacity(1.0f)}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ ,\ colorTexture(\textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ ,\ normalMap(\textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00054\ \ \ \ \ \{\}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{structMaterial}{Material}}(\textcolor{keyword}{const}\ Math::Vector3D\&\ a,\ \textcolor{keyword}{const}\ Math::Vector3D\&\ d,\ \textcolor{keyword}{const}\ Math::Vector3D\&\ s,\ \textcolor{keywordtype}{float}\ shin,}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ refl\ =\ 0.0f,\ \textcolor{keywordtype}{float}\ trans\ =\ 0.0f,\ \textcolor{keywordtype}{float}\ ior\ =\ 1.0f)}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ :\ ambient(a)}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ ,\ diffuse(d)}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ ,\ specular(s)}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ ,\ shininess(shin)}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ ,\ reflectivity(refl)}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ ,\ transparency(trans)}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ ,\ refractiveIndex(ior)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ ,\ opacity(1.0f)}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ ,\ colorTexture(\textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ ,\ normalMap(\textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00068\ \ \ \ \ \{\}}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !MATERIAL\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

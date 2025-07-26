@@ -1,0 +1,142 @@
+\doxysection{Cylinder Class Reference}
+\hypertarget{classCylinder}{}\label{classCylinder}\index{Cylinder@{Cylinder}}
+
+
+Inheritance diagram for Cylinder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCylinder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cylinder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCylinder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCylinder_ab16d08c8530177c22d714badfb31e8d6}\label{classCylinder_ab16d08c8530177c22d714badfb31e8d6} 
+{\bfseries Cylinder} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+\Hypertarget{classCylinder_a30d578b642d60a3b1afc9804ff92e062}\label{classCylinder_a30d578b642d60a3b1afc9804ff92e062} 
+void {\bfseries set\+Base\+Radius} (float radius)
+\item 
+\Hypertarget{classCylinder_a8a896422d19671453ee6ffeb0889796d}\label{classCylinder_a8a896422d19671453ee6ffeb0889796d} 
+void {\bfseries set\+Height} (float height)
+\item 
+\Hypertarget{classCylinder_a0ec4e933b00b854740564a6867d2a320}\label{classCylinder_a0ec4e933b00b854740564a6867d2a320} 
+float {\bfseries get\+Base\+Radius} () const
+\item 
+\Hypertarget{classCylinder_a78120352d3ea2460ad070ee94f9dafd8}\label{classCylinder_a78120352d3ea2460ad070ee94f9dafd8} 
+float {\bfseries get\+Height} () const
+\item 
+Type \mbox{\hyperlink{classCylinder_af7566dd579e1e3b957ae25445b202eae}{get\+Type}} () const override
+\item 
+\mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \mbox{\hyperlink{classCylinder_a5f0817101cadeca760a4d814a6fffca5}{distance}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classAPrimitives}{APrimitives}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries APrimitives} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \mbox{\hyperlink{classAPrimitives_ae741ac29ad3ad15d89f26900e864976c}{get\+Position}} () const override
+\item 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \mbox{\hyperlink{classAPrimitives_adb8ff939728efd81af8a7295e4a3b120}{get\+Rotation}} () const override
+\item 
+float \mbox{\hyperlink{classAPrimitives_a4af8315d35c0e211d29ce615621d8890}{get\+Scale}} () const override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ \mbox{\hyperlink{classAPrimitives_a91020f85ad901ed79e2cd34cb704b1fd}{get\+Material}} () const override
+\item 
+void \mbox{\hyperlink{classAPrimitives_af10d4f52829815009f87838fab8c94fd}{set\+Position}} (const \mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \&new\+Position) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a22dd6a5e8922fd3b5441db8073e499ee}{set\+Rotation}} (const \mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \&new\+Rotation) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a98a8db0edce6de02468e6654c89bce76}{set\+Scale}} (const float new\+Scale) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_aa28bac324a14b070923b003a19b73a0c}{set\+Material}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ new\+Material) override
+\item 
+void {\bfseries get\+Pos} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Rot} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Col} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Scales} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Graph} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+void {\bfseries apply\+Material} (\mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \&pixel\+Info)
+\item 
+void {\bfseries get\+Graph\+Scale} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+void {\bfseries get\+Pos\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+void {\bfseries get\+Rot\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCylinder_a2b1c7793f639ccd5ce0c59ceecb685e4}\label{classCylinder_a2b1c7793f639ccd5ce0c59ceecb685e4} 
+float {\bfseries \+\_\+base\+Radius}
+\item 
+\Hypertarget{classCylinder_a2fa9f04e571e9473225a92c22aebe7ff}\label{classCylinder_a2fa9f04e571e9473225a92c22aebe7ff} 
+float {\bfseries \+\_\+height}
+\item 
+\Hypertarget{classCylinder_af016bee49393b96fcc2682b0adefb525}\label{classCylinder_af016bee49393b96fcc2682b0adefb525} 
+double {\bfseries \+\_\+distance}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classAPrimitives}{APrimitives}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} {\bfseries position}
+\item 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} {\bfseries \+\_\+rotation}
+\item 
+float {\bfseries scale}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ {\bfseries material}
+\item 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries \+\_\+color}
+\item 
+Math\+::\+Vector3D {\bfseries \+\_\+scales}
+\item 
+std\+::string {\bfseries \+\_\+graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCylinder_a5f0817101cadeca760a4d814a6fffca5}\label{classCylinder_a5f0817101cadeca760a4d814a6fffca5} 
+\index{Cylinder@{Cylinder}!distance@{distance}}
+\index{distance@{distance}!Cylinder@{Cylinder}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} Cylinder\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAPrimitives}{APrimitives}}.
+
+\Hypertarget{classCylinder_af7566dd579e1e3b957ae25445b202eae}\label{classCylinder_af7566dd579e1e3b957ae25445b202eae} 
+\index{Cylinder@{Cylinder}!getType@{getType}}
+\index{getType@{getType}!Cylinder@{Cylinder}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily Type Cylinder\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAPrimitives}{APrimitives}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/primitives/Cylinder.\+hpp\item 
+src/primitives/Cylinder.\+cpp\end{DoxyCompactItemize}

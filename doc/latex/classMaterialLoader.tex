@@ -1,0 +1,69 @@
+\doxysection{Material\+Loader Class Reference}
+\hypertarget{classMaterialLoader}{}\label{classMaterialLoader}\index{MaterialLoader@{MaterialLoader}}
+
+
+Collaboration diagram for Material\+Loader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMaterialLoader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMaterialLoader_a1e2f5a050df1752b27dc3173f1fcb518}\label{classMaterialLoader_a1e2f5a050df1752b27dc3173f1fcb518} 
+void {\bfseries load} (const std\+::string \&filename="{}./config\+Files/material\+Config.\+cfg"{})
+\item 
+\Hypertarget{classMaterialLoader_a36625954debdd466848d2654f503dea7}\label{classMaterialLoader_a36625954debdd466848d2654f503dea7} 
+void {\bfseries convert\+Map\+To\+Material} ()
+\item 
+\Hypertarget{classMaterialLoader_aaed30209a52e34f17605652f443c3c41}\label{classMaterialLoader_aaed30209a52e34f17605652f443c3c41} 
+void {\bfseries parse} ()
+\item 
+\Hypertarget{classMaterialLoader_a5ca0e3ec9586b6a9e76e737a9756fb4e}\label{classMaterialLoader_a5ca0e3ec9586b6a9e76e737a9756fb4e} 
+const std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ $>$ \& {\bfseries get\+Materials} () const
+\item 
+\Hypertarget{classMaterialLoader_a3ba06eefb9f64f633bfc132c77832b4e}\label{classMaterialLoader_a3ba06eefb9f64f633bfc132c77832b4e} 
+void {\bfseries set\+Materials\+Type} (std\+::string name)
+\item 
+\Hypertarget{classMaterialLoader_aa9b97bfb418e7e0aea9837b83fc68231}\label{classMaterialLoader_aa9b97bfb418e7e0aea9837b83fc68231} 
+float {\bfseries find\+Float} (Value\+Type\+\_\+s name, const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&map)
+\item 
+\Hypertarget{classMaterialLoader_a77a34d0ac599ba194f8aa2def179fd13}\label{classMaterialLoader_a77a34d0ac599ba194f8aa2def179fd13} 
+Math\+::\+Vector3D {\bfseries find\+Vector3D} (Value\+Type\+\_\+s name, const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&map)
+\item 
+\Hypertarget{classMaterialLoader_a4b3a1c2099f0f18777bf9632b0dde873}\label{classMaterialLoader_a4b3a1c2099f0f18777bf9632b0dde873} 
+std\+::string {\bfseries find\+String} (Value\+Type\+\_\+s name, const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&map)
+\item 
+\Hypertarget{classMaterialLoader_a76f4c30be1949ca49be541bb9cb1f7bc}\label{classMaterialLoader_a76f4c30be1949ca49be541bb9cb1f7bc} 
+void {\bfseries select\+Material\+Type} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ material, const std\+::string \&name)
+\item 
+\Hypertarget{classMaterialLoader_a977e6863bc9eaf052c2380a5a82ba4a1}\label{classMaterialLoader_a977e6863bc9eaf052c2380a5a82ba4a1} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries find\+Color} (Value\+Type\+\_\+s name, const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&map)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMaterialLoader_a25ef2ea20df8be7730229c4713f1288c}\label{classMaterialLoader_a25ef2ea20df8be7730229c4713f1288c} 
+\mbox{\hyperlink{classConfigNode}{Config\+Node}} {\bfseries root\+Node}
+\item 
+\Hypertarget{classMaterialLoader_a3a8f259011205deb162f579269511fa0}\label{classMaterialLoader_a3a8f259011205deb162f579269511fa0} 
+\mbox{\hyperlink{classConfigParser}{Config\+Parser}} {\bfseries config\+Parser}
+\item 
+\Hypertarget{classMaterialLoader_a50564ce331a7332011ea7f2a032f29b3}\label{classMaterialLoader_a50564ce331a7332011ea7f2a032f29b3} 
+\mbox{\hyperlink{classObjectConstructor}{Object\+Constructor}} {\bfseries \+\_\+object\+Constructor}
+\item 
+\Hypertarget{classMaterialLoader_a3bbc3311c5956b0ffd442e2abf3ed612}\label{classMaterialLoader_a3bbc3311c5956b0ffd442e2abf3ed612} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ {\bfseries \+\_\+materials\+Config}
+\item 
+\Hypertarget{classMaterialLoader_a4b39101f73e52686401c10e9836928e4}\label{classMaterialLoader_a4b39101f73e52686401c10e9836928e4} 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ $>$ {\bfseries \+\_\+materials}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/material\+Loader/Material\+Loader.\+hpp\item 
+src/material\+Loader/Material\+Loader.\+cpp\end{DoxyCompactItemize}

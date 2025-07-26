@@ -1,0 +1,49 @@
+\doxysection{IPrimitives.\+hpp}
+\hypertarget{IPrimitives_8hpp_source}{}\label{IPrimitives_8hpp_source}\index{common/IPrimitives.hpp@{common/IPrimitives.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ IPrimitives}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Material.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Point3D.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Ray.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Rot3D.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}PixelInfo.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#ifndef\ IPRIMITIVES\_HPP\_}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ IPRIMITIVES\_HPP\_}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{enum\ class}\ Type\ \{\ SPHERE,\ PLANE,\ CYLINDER,\ CONE,\ CUBE\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIPrimitives}{IPrimitives}}\ \{}
+\DoxyCodeLine{00022\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classIPrimitives}{\string~IPrimitives}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structPixelInfo}{PixelInfo}}\ distance(\textcolor{keyword}{const}\ \mbox{\hyperlink{classRay}{Ray}}\ \&ray)\ =\ 0;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ Type\ getType()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ getPosition()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Math::Rot3D}}\ getRotation()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ getScale()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ std::shared\_ptr<Material>\ getMaterial()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*\ Setter\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ \&position)\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setRotation(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Math::Rot3D}}\ \&rotation)\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setScale(\textcolor{keywordtype}{float}\ scale)\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setMaterial(std::shared\_ptr<Material>\ material)\ =\ 0;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00040\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !IPRIMITIVES\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,76 @@
+\doxysection{Color.\+hpp}
+\hypertarget{Color_8hpp_source}{}\label{Color_8hpp_source}\index{common/Color.hpp@{common/Color.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Color}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ COLOR\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ COLOR\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Exception/ColorException.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classColor}{Color}}\ \ \{}
+\DoxyCodeLine{00016\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}()\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ this-\/>\_red\ =\ 0;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ this-\/>\_green\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ this-\/>\_blue\ =\ 0;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ this-\/>\_transparency\ =\ 255;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classColor}{\string~Color}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}(uint8\_t\ red,\ uint8\_t\ green,\ uint8\_t\ blue)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ this-\/>\_red\ =\ red;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ this-\/>\_green\ =\ green;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ this-\/>\_blue\ =\ blue;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ this-\/>\_transparency\ =\ 255;}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}(uint8\_t\ red,\ uint8\_t\ green,\ uint8\_t\ blue,\ uint8\_t\ transparency)\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ this-\/>\_red\ =\ red;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this-\/>\_green\ =\ green;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ this-\/>\_blue\ =\ blue;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ this-\/>\_transparency\ =\ transparency;}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\&\ operator=(\textcolor{keyword}{const}\ Math::Vector3D\ \&vec)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (vec.getX()\ <\ 0.0\ ||\ vec.getX()\ >\ 255.0\ ||}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ vec.getY()\ <\ 0.0\ ||\ vec.getY()\ >\ 255.0\ ||}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ vec.getZ()\ <\ 0.0\ ||\ vec.getZ()\ >\ 255.0)\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{classColorException}{ColorException}}(\textcolor{stringliteral}{"{}Color\ values\ must\ be\ between\ 0\ and\ 255"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ this-\/>\_red\ =\ \textcolor{keyword}{static\_cast<}uint8\_t\textcolor{keyword}{>}(vec.getX());}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ this-\/>\_green\ =\ \textcolor{keyword}{static\_cast<}uint8\_t\textcolor{keyword}{>}(vec.getY());}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ this-\/>\_blue\ =\ \textcolor{keyword}{static\_cast<}uint8\_t\textcolor{keyword}{>}(vec.getZ());}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ setTransparency(\textcolor{keywordtype}{float}\ transparencyValue)\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ this-\/>\_transparency\ =\ \textcolor{keyword}{static\_cast<}uint8\_t\textcolor{keyword}{>}(255\ *\ (1.0f\ -\/\ transparencyValue));}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00055\ \ \ \ \ uint8\_t\ getRed()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_red;\ \}}
+\DoxyCodeLine{00056\ \ \ \ \ uint8\_t\ getGreen()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_green;\ \}}
+\DoxyCodeLine{00057\ \ \ \ \ uint8\_t\ getBlue()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_blue;\ \}}
+\DoxyCodeLine{00058\ \ \ \ \ uint8\_t\ getTransparency()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_transparency;\ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00062\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00063\ \ \ \ \ uint8\_t\ \_red;}
+\DoxyCodeLine{00064\ \ \ \ \ uint8\_t\ \_green;}
+\DoxyCodeLine{00065\ \ \ \ \ uint8\_t\ \_blue;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ uint8\_t\ \_transparency;}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !COLOR\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

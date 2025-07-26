@@ -1,0 +1,47 @@
+\doxysection{Graphic\+Mode.\+hpp}
+\hypertarget{GraphicMode_8hpp_source}{}\label{GraphicMode_8hpp_source}\index{src/SFML/GraphicMode.hpp@{src/SFML/GraphicMode.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Raytracer}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Graphic\ Mode}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SFML/Window.hpp>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ GRAPHICMODE\_HPP\_}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#define\ GRAPHICMODE\_HPP\_}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGraphicMode}{GraphicMode}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGraphicMode}{GraphicMode}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGraphicMode}{\string~GraphicMode}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ std::shared\_ptr<sf::RenderWindow>\ getWindow();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::shared\_ptr<sf::Image>\ getImage();}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ getRenderingComplete()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setWindow(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setRenderingComplete(\textcolor{keywordtype}{bool}\ renderingComplete);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ updateTexture();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ display();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGraphicMode}{GraphicMode}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classGraphicMode}{GraphicMode}}\ \&other);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::shared\_ptr<sf::RenderWindow>\ \_window;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::shared\_ptr<sf::Image>\ \_image;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ sf::Texture\ \_texture;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::string\ \_title;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_width;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_height;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_renderingComplete;}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !GRAPHICMODE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

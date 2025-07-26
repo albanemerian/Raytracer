@@ -1,0 +1,56 @@
+\doxysection{Primitive\+Factory.\+hpp}
+\hypertarget{PrimitiveFactory_8hpp_source}{}\label{PrimitiveFactory_8hpp_source}\index{src/factory/PrimitiveFactory.hpp@{src/factory/PrimitiveFactory.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ PrimitiveFactory}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PRIMITIVEFACTORY\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PRIMITIVEFACTORY\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}IFactory.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../../common/APrimitives.hpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../../lib/DLLoader.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}../../common/Exception/FactoryException.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}../materialLoader/MaterialLoader.hpp"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPrimitiveFactory}{PrimitiveFactory}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classIFactory}{IFactory}}<IPrimitives>\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classPrimitiveFactory}{PrimitiveFactory}}(std::shared\_ptr<MaterialLoader>\ materialLoader);}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classPrimitiveFactory}{\string~PrimitiveFactory}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ std::shared\_ptr<IPrimitives>\ create(\textcolor{keyword}{const}\ std::string\&\ type,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>\ config,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>>\&\ graphSceneList)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ registerCreator(\textcolor{keyword}{const}\ std::string\&\ type,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::function<std::shared\_ptr<IPrimitives>(}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ ValueType>>>\&)>\ creator)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ loadPlugin(\textcolor{keyword}{const}\ std::string\&\ path)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ loadAllPlugins(\textcolor{keyword}{const}\ std::string\&\ directory\ =\ \textcolor{stringliteral}{"{}plugins/"{}});}
+\DoxyCodeLine{00039\ \ \ \ \ ObjectType\ getTypeFromPlugin(\textcolor{keyword}{const}\ std::string\&\ path,\ \mbox{\hyperlink{classDLLoader}{DLLoader<void*>}}\ loader);}
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ getNameFromPlugin(\textcolor{keyword}{const}\ std::string\&\ path,\ \mbox{\hyperlink{classDLLoader}{DLLoader<void*>}}\ loader);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ std::map<std::string,\ std::function<std::shared\_ptr<IPrimitives>(}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>>\&)>>\ \_creators;}
+\DoxyCodeLine{00046\ \ \ \ \ std::vector<DLLoader<void*>>\ \_dlLoaders;}
+\DoxyCodeLine{00047\ \ \ \ \ std::shared\_ptr<MaterialLoader>\ \_materialLoader;}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !PRIMITIVEFACTORY\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

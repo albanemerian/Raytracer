@@ -1,0 +1,2362 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2025.3.18)  7 MAY 2025 14:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**refman
+(./refman.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Rollback for package 'array' requested -> date 2016-10-06.
+         Best approximation is the release introduced on 2016-10-06.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array-2016-10-06.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen141
+\extrarowheight=\dimen142
+\NC@list=\toks16
+\extratabsurround=\skip50
+\backup@length=\skip51
+))
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+package info suppressed
+)
+(./doxygen.sty
+Package: doxygen 
+ (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 2021/01/29 v2.0g defines alltt environment
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count194
+\calc@Bcount=\count195
+\calc@Adimen=\dimen143
+\calc@Bdimen=\dimen144
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count196
+\calc@Cskip=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count197
+\float@exts=\toks17
+\float@box=\box51
+\@float@everytoks=\toks18
+\@floatcapt=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks19
+\verbatim@line=\toks20
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks21
+\minrowclearance=\skip55
+\rownum=\count198
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(./longtable_doxygen.sty
+Package: longtable_doxygen 2014/10/28 v4.11 Multi-page Table package (DPC) - fr
+ozen version for doxygen
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count199
+\LTcapwidth=\dimen145
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@cols=\count266
+\LT@rows=\count267
+\c@LT@tables=\count268
+\c@LT@chunks=\count269
+\LT@p@ftn=\toks22
+) (./tabu_doxygen.sty
+Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
+rsion for doxygen
+
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box57
+\sift@deathcycles=\count270
+\@vwid@loff=\dimen146
+\@vwid@roff=\dimen147
+)
+\c@taburow=\count271
+\tabu@nbcols=\count272
+\tabu@cnt=\count273
+\tabu@Xcol=\count274
+\tabu@alloc=\count275
+\tabu@nested=\count276
+\tabu@target=\dimen148
+\tabu@spreadtarget=\dimen149
+\tabu@naturalX=\dimen150
+\tabucolX=\dimen151
+\tabu@Xsum=\dimen152
+\extrarowdepth=\dimen153
+\abovetabulinesep=\dimen154
+\belowtabulinesep=\dimen155
+\tabustrutrule=\dimen156
+\tabu@thebody=\toks23
+\tabu@footnotes=\toks24
+\tabu@box=\box58
+\tabu@arstrutbox=\box59
+\tabu@hleads=\box60
+\tabu@vleads=\box61
+\tabu@cellskip=\skip60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+\FV@CodeLineNo=\count277
+\FV@InFile=\read3
+\FV@TabBox=\box62
+\c@FancyVerbLine=\count278
+\FV@StepNumber=\count279
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen157
+\TX@old@table=\dimen158
+\TX@old@col=\dimen159
+\TX@target=\dimen160
+\TX@delta=\dimen161
+\TX@cols=\count280
+\TX@ftn=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count281
+\mult@box=\box63
+\multicol@leftmargin=\dimen162
+\c@unbalance=\count282
+\c@collectmore=\count283
+\doublecol@number=\count284
+\multicoltolerance=\count285
+\multicolpretolerance=\count286
+\full@width=\dimen163
+\page@free=\dimen164
+\premulticols=\dimen165
+\postmulticols=\dimen166
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box64
+\last@line=\box65
+\maxbalancingoverflow=\dimen167
+\mult@rightbox=\box66
+\mult@grightbox=\box67
+\mult@firstbox=\box68
+\mult@gfirstbox=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\c@minrows=\count287
+\c@columnbadness=\count288
+\c@finalcolumnbadness=\count289
+\last@try=\dimen168
+\multicolovershoot=\dimen169
+\multicolundershoot=\dimen170
+\mult@nat@firstbox=\box106
+\colbreak@box=\box107
+\mc@col@check@num=\count290
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip63
+\multirow@cntb=\count291
+\multirow@dima=\skip64
+\bigstrutjot=\dimen171
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip65
+\h@ngfstopwd=\skip66
+\h@ngquotewd=\skip67
+\h@ngdquotewd=\skip68
+\h@ngquerywd=\skip69
+\h@ngexclwd=\skip70
+\h@ngcolonwd=\skip71
+\h@ngscolonwd=\skip72
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count292
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box108
+)
+\tc@llx=\dimen174
+\tc@lly=\dimen175
+\tc@urx=\dimen176
+\tc@ury=\dimen177
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen178
+\adjbox@Height=\dimen179
+\adjbox@Depth=\dimen180
+\adjbox@Totalheight=\dimen181
+\adjbox@pwidth=\dimen182
+\adjbox@pheight=\dimen183
+\adjbox@pdepth=\dimen184
+\adjbox@ptotalheight=\dimen185
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count293
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks29
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count295
+\loi_nestcnt=\count296
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count297
+\@boxshift=\skip73
+\stack@tmplength=\skip74
+\temp@stkl=\skip75
+\@stackedboxwidth=\skip76
+\@addedbox=\box109
+\@anchorbox=\box110
+\@insetbox=\box111
+\se@backgroundbox=\box112
+\stackedbox=\box113
+\@centerbox=\box114
+\c@ROWcellindex@=\count298
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip77
+\enit@outerparindent=\dimen186
+\enit@toks=\toks30
+\enit@inbox=\box115
+\enit@count@id=\count299
+\enitdp@description=\count300
+)
+(/usr/share/texlive/texmf-dist/tex/generic/alphalph/alphalph.sty
+Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box116
+\UL@hyphenbox=\box117
+\UL@skip=\skip78
+\UL@hook=\toks31
+\UL@height=\dimen187
+\UL@pe=\count301
+\UL@pixel=\dimen188
+\ULC@box=\box118
+Package: ulem 2019/11/18
+\ULdepth=\dimen189
+)
+\xrefbox=\box119
+\xreflength=\skip79
+\CodeWidthChar=\skip80
+\CodeHeightChar=\skip81
+\DoxyCodeWidth=\skip82
+\c@DoxyEnumeratei=\count302
+\c@DoxyEnumerateii=\count303
+\c@DoxyEnumerateiii=\count304
+\c@DoxyEnumerateiv=\count305
+\c@DoxyEnumeratev=\count306
+\c@DoxyEnumeratevi=\count307
+\c@DoxyEnumeratevii=\count308
+\c@DoxyEnumerateviii=\count309
+\c@DoxyEnumerateix=\count310
+\c@DoxyEnumeratex=\count311
+\c@DoxyEnumeratexi=\count312
+\c@DoxyEnumeratexii=\count313
+\enitdp@DoxyEnumerate=\count314
+\enitdp@DoxyItemize=\count315
+\c@subsubsubsection=\count316
+\c@subsubsubsubsection=\count317
+\c@subsubsubsubsubsection=\count318
+\c@subsubsubsubsubsubsection=\count319
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks32
+\inpenc@posthook=\toks33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count320
+\Gm@cntv=\count321
+\c@Gm@tempcnt=\count322
+\Gm@bindingoffset=\dimen190
+\Gm@wd@mp=\dimen191
+\Gm@odd@mp=\dimen192
+\Gm@even@mp=\dimen193
+\Gm@layoutwidth=\dimen194
+\Gm@layoutheight=\dimen195
+\Gm@layouthoffset=\dimen196
+\Gm@layoutvoffset=\dimen197
+\Gm@dimlist=\toks34
+)
+(/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count323
+\cp@tempcnt=\count324
+LaTeX Info: Redefining \checkoddpage on input line 59.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip83
+\f@nch@O@elh=\skip84
+\f@nch@O@erh=\skip85
+\f@nch@O@olh=\skip86
+\f@nch@O@orh=\skip87
+\f@nch@O@elf=\skip88
+\f@nch@O@erf=\skip89
+\f@nch@O@olf=\skip90
+\f@nch@O@orf=\skip91
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip92
+\bibsep=\skip93
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count325
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip94
+\cftbeforetoctitleskip=\skip95
+\cftaftertoctitleskip=\skip96
+\cftbeforepartskip=\skip97
+\cftpartnumwidth=\skip98
+\cftpartindent=\skip99
+\cftbeforechapskip=\skip100
+\cftchapindent=\skip101
+\cftchapnumwidth=\skip102
+\cftbeforesecskip=\skip103
+\cftsecindent=\skip104
+\cftsecnumwidth=\skip105
+\cftbeforesubsecskip=\skip106
+\cftsubsecindent=\skip107
+\cftsubsecnumwidth=\skip108
+\cftbeforesubsubsecskip=\skip109
+\cftsubsubsecindent=\skip110
+\cftsubsubsecnumwidth=\skip111
+\cftbeforeparaskip=\skip112
+\cftparaindent=\skip113
+\cftparanumwidth=\skip114
+\cftbeforesubparaskip=\skip115
+\cftsubparaindent=\skip116
+\cftsubparanumwidth=\skip117
+\cftbeforeloftitleskip=\skip118
+\cftafterloftitleskip=\skip119
+\cftbeforefigskip=\skip120
+\cftfigindent=\skip121
+\cftfignumwidth=\skip122
+\c@lofdepth=\count326
+\c@lotdepth=\count327
+\cftbeforelottitleskip=\skip123
+\cftafterlottitleskip=\skip124
+\cftbeforetabskip=\skip125
+\cfttabindent=\skip126
+\cfttabnumwidth=\skip127
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+
+Writing index file refman.idx
+(/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count328
+)
+\@linkdim=\dimen198
+\Hy@linkcounter=\count329
+\Hy@pagecounter=\count330
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count331
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing ON on input line 4195.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4425.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2021/02/04 v1.41 Bibliographical back referencing
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+))
+\c@Hy@tempcnt=\count332
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen199
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count333
+\Field@Width=\dimen256
+\Fld@charsize=\dimen257
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing ON on input line 6055.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count334
+\c@Item=\count335
+\c@Hfootnote=\count336
+)
+Package hyperref Info: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+\Fld@listcount=\count337
+\c@bookmark@seq@number=\count338
+\Hy@SectionHShift=\skip128
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 161.
+Package hyperref Info: Option `unicode' set `true' on input line 161.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen258
+\captionmargin=\dimen259
+\caption@leftmargin=\dimen260
+\caption@rightmargin=\dimen261
+\caption@width=\dimen262
+\caption@indent=\dimen263
+\caption@parindent=\dimen264
+\caption@hangindent=\dimen265
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count339
+\c@continuedfloat=\count340
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen266
+\caption@adjustwidth@linewidth=\dimen267
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+(./etoc_doxygen.sty
+Package: etoc_doxygen 2023/07/01 v1.2b Completely customisable TOCs (JFB)
+\Etoc@toctoks=\toks35
+\c@etoc@tocid=\count341
+\etoc@framed@titlebox=\box120
+\etoc@framed@contentsbox=\box121
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 18
+3.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 183.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count342
+\l__pdf_internal_box=\box122
+)
+No file refman.aux.
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count343
+\scratchdimen=\dimen268
+\scratchbox=\box123
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen269
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks37
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package backref Info: ** backref set up for natbib ** on input line 183.
+Package hyperref Info: Link coloring ON on input line 183.
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+No file refman.toc.
+Package hyperref Info: Option `pageanchor' set `false' on input line 191.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 191.
+
+Package hyperref Info: Option `unicode' set `true' on input line 191.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 196.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 198.
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/base/8r.enc}] [2
+
+]
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+Package hyperref Info: Option `pageanchor' set `true' on input line 207.
+ (./md_README.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 1.
+
+! LaTeX Error: Unicode character 🎯 (U+1F3AF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5  🎯
+          \doxylink{classRaytracer}{Raytracer} Project
+? r
+OK, entering \nonstopmode...
+
+! LaTeX Error: Unicode character 🚀 (U+1F680)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 🚀
+         Features
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ✅ (U+2705)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ✅
+         Core Requirements \begin{DoxyVerb}Scene Configuration via external ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 11.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
+.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+! LaTeX Error: Unicode character 🛠 (U+1F6E0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19  🛠
+           Architecture \begin{DoxyVerb}Clean modular structure allowing run...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🖥 (U+1F5A5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22  🖥
+           Libraries \begin{DoxyVerb}Only authorized:
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 28.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 28
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 31.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 42.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 43.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 43.
+ [1
+
+
+]
+
+! LaTeX Error: Unicode character ✨ (U+2728)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 ...- :sparkles: (✨): Introduce new features
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ♻ (U+267B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...:recycle: (♻️): Refactor / update code
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...:recycle: (♻️): Refactor / update code
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🐛 (U+1F41B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52     - :bug: (🐛): Fix a bug
+                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 💩 (U+1F4A9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 ...��) : Remove Coding style or temporary fix
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🚨 (U+1F6A8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...ting_light: (🚨) : Fix Compiling Warning
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🔥 (U+1F525)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55     - :fire: (🔥): Remove code or files
+                                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ✅ (U+2705)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...ck_mark: (✅): Add, update, or pass tests
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🙈 (U+1F648)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...il: (🙈): Add or update .gitignore files
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 👷 (U+1F477)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...ker: (👷): Add or update CI build system
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🏗 (U+1F3D7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...on: (🏗️) : Make Architectural changes
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...on: (🏗️) : Make Architectural changes
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📝 (U+1F4DD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...memo: (📝) : Add or update documentation
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🎉 (U+1F389)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \item \+:tada\+: (🎉
+                           )\+: This Gitmoji must be used for each PR created!
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 💄 (U+1F484)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \item \+:lipstick\+: (💄
+                               )\+: This Gitmoji must be used for each PR me...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ⏪ (U+23EA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \item \+:rewind\+: (⏪
+                            ️)\+: This Gitmoji must be used for each rever...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \item \+:rewind\+: (⏪️
+                               )\+: This Gitmoji must be used for each rever...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[2]) [3] [4
+
+]
+Chapter 2.
+(./hierarchy.tex
+
+LaTeX Warning: Reference `classCamera' on page 5 undefined on input line 3.
+
+
+LaTeX Warning: Reference `classColor' on page 5 undefined on input line 4.
+
+
+LaTeX Warning: Reference `classConfigNode' on page 5 undefined on input line 5.
+
+
+
+LaTeX Warning: Reference `classConfigParser' on page 5 undefined on input line 
+6.
+
+
+LaTeX Warning: Reference `classError' on page 5 undefined on input line 8.
+
+
+LaTeX Warning: Reference `classIException' on page 5 undefined on input line 9.
+
+
+
+LaTeX Warning: Reference `classAException' on page 5 undefined on input line 11
+.
+
+
+LaTeX Warning: Reference `classColorException' on page 5 undefined on input lin
+e 13.
+
+
+LaTeX Warning: Reference `classCommandException' on page 5 undefined on input l
+ine 14.
+
+
+LaTeX Warning: Reference `classFactoryException' on page 5 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `classFileException' on page 5 undefined on input line
+ 16.
+
+
+LaTeX Warning: Reference `classMaterialLoaderException' on page 5 undefined on 
+input line 17.
+
+
+LaTeX Warning: Reference `classMathExeption' on page 5 undefined on input line 
+18.
+
+
+LaTeX Warning: Reference `classSceneException' on page 5 undefined on input lin
+e 19.
+
+
+LaTeX Warning: Reference `classFactoryManager' on page 5 undefined on input lin
+e 23.
+
+
+LaTeX Warning: Reference `classGraphicMode' on page 5 undefined on input line 2
+4.
+
+
+LaTeX Warning: Reference `classIFactory' on page 5 undefined on input line 25.
+
+
+LaTeX Warning: Reference `classIFactory' on page 5 undefined on input line 26.
+
+
+LaTeX Warning: Reference `classCameraFactory' on page 5 undefined on input line
+ 28.
+
+
+LaTeX Warning: Reference `classIFactory' on page 5 undefined on input line 30.
+
+
+LaTeX Warning: Reference `classPrimitiveFactory' on page 5 undefined on input l
+ine 32.
+
+
+LaTeX Warning: Reference `classILoader' on page 5 undefined on input line 34.
+
+
+LaTeX Warning: Reference `classDLLoader' on page 5 undefined on input line 36.
+
+
+LaTeX Warning: Reference `classImage' on page 5 undefined on input line 38.
+
+
+LaTeX Warning: Reference `structInfoPixelDisplay' on page 5 undefined on input 
+line 39.
+
+
+LaTeX Warning: Reference `classIPrimitives' on page 5 undefined on input line 4
+0.
+
+
+LaTeX Warning: Reference `classAPrimitives' on page 5 undefined on input line 4
+2.
+
+
+LaTeX Warning: Reference `classCone' on page 5 undefined on input line 44.
+
+
+LaTeX Warning: Reference `classCylinder' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Reference `classPlane' on page 5 undefined on input line 46.
+
+
+LaTeX Warning: Reference `classSphere' on page 5 undefined on input line 47.
+
+
+LaTeX Warning: Reference `structMaterial' on page 5 undefined on input line 50.
+
+
+
+LaTeX Warning: Reference `classMaterialLoader' on page 5 undefined on input lin
+e 51.
+
+
+LaTeX Warning: Reference `classObjectConstructor' on page 5 undefined on input 
+line 52.
+
+
+LaTeX Warning: Reference `classObjectErrorHandling' on page 5 undefined on inpu
+t line 53.
+
+
+LaTeX Warning: Reference `classParser' on page 5 undefined on input line 54.
+
+
+LaTeX Warning: Reference `structPixelInfo' on page 5 undefined on input line 55
+.
+
+
+LaTeX Warning: Reference `classMath_1_1Point3D' on page 5 undefined on input li
+ne 56.
+
+[5]
+
+LaTeX Warning: Reference `structPropertyConfig' on page 6 undefined on input li
+ne 57.
+
+
+LaTeX Warning: Reference `structPropertyInfo' on page 6 undefined on input line
+ 58.
+
+
+LaTeX Warning: Reference `classRay' on page 6 undefined on input line 59.
+
+
+LaTeX Warning: Reference `classRaytracer' on page 6 undefined on input line 60.
+
+
+
+LaTeX Warning: Reference `classRectangle3D' on page 6 undefined on input line 6
+1.
+
+
+LaTeX Warning: Reference `classMath_1_1Rot3D' on page 6 undefined on input line
+ 62.
+
+
+LaTeX Warning: Reference `classScene' on page 6 undefined on input line 63.
+
+
+LaTeX Warning: Reference `structShapeDefinition' on page 6 undefined on input l
+ine 64.
+
+
+LaTeX Warning: Reference `classUtils' on page 6 undefined on input line 65.
+
+
+LaTeX Warning: Reference `classValueConverter' on page 6 undefined on input lin
+e 66.
+
+
+LaTeX Warning: Reference `classVector2D' on page 6 undefined on input line 67.
+
+) [6]
+Chapter 3.
+(./annotated.tex
+
+LaTeX Warning: Reference `classAException' on page 7 undefined on input line 3.
+
+
+
+LaTeX Warning: Reference `classAPrimitives' on page 7 undefined on input line 4
+.
+
+
+LaTeX Warning: Reference `classCamera' on page 7 undefined on input line 5.
+
+
+LaTeX Warning: Reference `classCameraFactory' on page 7 undefined on input line
+ 6.
+
+
+LaTeX Warning: Reference `classColor' on page 7 undefined on input line 7.
+
+
+LaTeX Warning: Reference `classColorException' on page 7 undefined on input lin
+e 8.
+
+
+LaTeX Warning: Reference `classCommandException' on page 7 undefined on input l
+ine 9.
+
+
+LaTeX Warning: Reference `classCone' on page 7 undefined on input line 10.
+
+
+LaTeX Warning: Reference `classConfigNode' on page 7 undefined on input line 11
+.
+
+
+LaTeX Warning: Reference `classConfigParser' on page 7 undefined on input line 
+12.
+
+
+LaTeX Warning: Reference `classCylinder' on page 7 undefined on input line 13.
+
+
+LaTeX Warning: Reference `classDLLoader' on page 7 undefined on input line 14.
+
+
+LaTeX Warning: Reference `classError' on page 7 undefined on input line 15.
+
+
+LaTeX Warning: Reference `classFactoryException' on page 7 undefined on input l
+ine 16.
+
+
+LaTeX Warning: Reference `classFactoryManager' on page 7 undefined on input lin
+e 17.
+
+
+LaTeX Warning: Reference `classFileException' on page 7 undefined on input line
+ 18.
+
+
+LaTeX Warning: Reference `classGraphicMode' on page 7 undefined on input line 1
+9.
+
+
+LaTeX Warning: Reference `classIException' on page 7 undefined on input line 20
+.
+
+
+LaTeX Warning: Reference `classIFactory' on page 7 undefined on input line 21.
+
+
+LaTeX Warning: Reference `classILoader' on page 7 undefined on input line 22.
+
+
+LaTeX Warning: Reference `classImage' on page 7 undefined on input line 23.
+
+
+LaTeX Warning: Reference `structInfoPixelDisplay' on page 7 undefined on input 
+line 24.
+
+
+LaTeX Warning: Reference `classIPrimitives' on page 7 undefined on input line 2
+5.
+
+
+LaTeX Warning: Reference `structMaterial' on page 7 undefined on input line 26.
+
+
+
+LaTeX Warning: Reference `classMaterialLoader' on page 7 undefined on input lin
+e 27.
+
+
+LaTeX Warning: Reference `classMaterialLoaderException' on page 7 undefined on 
+input line 28.
+
+
+LaTeX Warning: Reference `classMathExeption' on page 7 undefined on input line 
+29.
+
+
+LaTeX Warning: Reference `classObjectConstructor' on page 7 undefined on input 
+line 30.
+
+
+LaTeX Warning: Reference `classObjectErrorHandling' on page 7 undefined on inpu
+t line 31.
+
+
+LaTeX Warning: Reference `classParser' on page 7 undefined on input line 32.
+
+
+LaTeX Warning: Reference `structPixelInfo' on page 7 undefined on input line 33
+.
+
+
+LaTeX Warning: Reference `classPlane' on page 7 undefined on input line 34.
+
+
+LaTeX Warning: Reference `classMath_1_1Point3D' on page 7 undefined on input li
+ne 35.
+
+
+LaTeX Warning: Reference `classPrimitiveFactory' on page 7 undefined on input l
+ine 36.
+
+
+LaTeX Warning: Reference `structPropertyConfig' on page 7 undefined on input li
+ne 37.
+
+
+LaTeX Warning: Reference `structPropertyInfo' on page 7 undefined on input line
+ 38.
+
+
+LaTeX Warning: Reference `classRay' on page 7 undefined on input line 39.
+
+
+LaTeX Warning: Reference `classRaytracer' on page 7 undefined on input line 40.
+
+
+
+LaTeX Warning: Reference `classRectangle3D' on page 7 undefined on input line 4
+1.
+
+[7
+
+]
+
+LaTeX Warning: Reference `classMath_1_1Rot3D' on page 8 undefined on input line
+ 42.
+
+
+LaTeX Warning: Reference `classScene' on page 8 undefined on input line 43.
+
+
+LaTeX Warning: Reference `classSceneException' on page 8 undefined on input lin
+e 44.
+
+
+LaTeX Warning: Reference `structShapeDefinition' on page 8 undefined on input l
+ine 45.
+
+
+LaTeX Warning: Reference `classSphere' on page 8 undefined on input line 46.
+
+
+LaTeX Warning: Reference `classUtils' on page 8 undefined on input line 47.
+
+
+LaTeX Warning: Reference `classValueConverter' on page 8 undefined on input lin
+e 48.
+
+
+LaTeX Warning: Reference `classVector2D' on page 8 undefined on input line 49.
+
+) [8]
+Chapter 4.
+(./files.tex
+
+LaTeX Warning: Reference `APrimitives_8hpp_source' on page 9 undefined on input
+ line 3.
+
+
+LaTeX Warning: Reference `Camera_8hpp_source' on page 9 undefined on input line
+ 4.
+
+
+LaTeX Warning: Reference `Color_8hpp_source' on page 9 undefined on input line 
+5.
+
+
+LaTeX Warning: Reference `Error_8hpp_source' on page 9 undefined on input line 
+6.
+
+
+LaTeX Warning: Reference `Image_8hpp_source' on page 9 undefined on input line 
+7.
+
+
+LaTeX Warning: Reference `IPrimitives_8hpp_source' on page 9 undefined on input
+ line 8.
+
+
+LaTeX Warning: Reference `Material_8hpp_source' on page 9 undefined on input li
+ne 9.
+
+
+LaTeX Warning: Reference `PixelInfo_8hpp_source' on page 9 undefined on input l
+ine 10.
+
+
+LaTeX Warning: Reference `Point3D_8hpp_source' on page 9 undefined on input lin
+e 11.
+
+
+LaTeX Warning: Reference `Ray_8hpp_source' on page 9 undefined on input line 12
+.
+
+
+LaTeX Warning: Reference `Rectangle3D_8hpp_source' on page 9 undefined on input
+ line 13.
+
+
+LaTeX Warning: Reference `Rot3D_8hpp_source' on page 9 undefined on input line 
+14.
+
+
+LaTeX Warning: Reference `Scene_8hpp_source' on page 9 undefined on input line 
+15.
+
+
+LaTeX Warning: Reference `ValueType_8hpp_source' on page 9 undefined on input l
+ine 16.
+
+
+LaTeX Warning: Reference `Vector2D_8hpp_source' on page 9 undefined on input li
+ne 17.
+
+
+LaTeX Warning: Reference `Vector3D_8hpp_source' on page 9 undefined on input li
+ne 18.
+
+
+LaTeX Warning: Reference `AException_8hpp_source' on page 9 undefined on input 
+line 19.
+
+
+LaTeX Warning: Reference `ColorException_8hpp_source' on page 9 undefined on in
+put line 20.
+
+
+LaTeX Warning: Reference `CommandException_8hpp_source' on page 9 undefined on 
+input line 21.
+
+
+LaTeX Warning: Reference `FactoryException_8hpp_source' on page 9 undefined on 
+input line 22.
+
+
+LaTeX Warning: Reference `FileException_8hpp_source' on page 9 undefined on inp
+ut line 23.
+
+
+LaTeX Warning: Reference `IException_8hpp_source' on page 9 undefined on input 
+line 24.
+
+
+LaTeX Warning: Reference `materialLoaderException_8hpp_source' on page 9 undefi
+ned on input line 25.
+
+
+LaTeX Warning: Reference `MathExeption_8hpp_source' on page 9 undefined on inpu
+t line 26.
+
+
+LaTeX Warning: Reference `SceneException_8hpp_source' on page 9 undefined on in
+put line 27.
+
+
+LaTeX Warning: Reference `DLLoader_8hpp_source' on page 9 undefined on input li
+ne 28.
+
+
+LaTeX Warning: Reference `ILoader_8hpp_source' on page 9 undefined on input lin
+e 29.
+
+
+LaTeX Warning: Reference `Raytracer_8hpp_source' on page 9 undefined on input l
+ine 30.
+
+
+LaTeX Warning: Reference `CameraFactory_8hpp_source' on page 9 undefined on inp
+ut line 31.
+
+
+LaTeX Warning: Reference `FactoryManager_8hpp_source' on page 9 undefined on in
+put line 32.
+
+
+LaTeX Warning: Reference `IFactory_8hpp_source' on page 9 undefined on input li
+ne 33.
+
+
+LaTeX Warning: Reference `PrimitiveFactory_8hpp_source' on page 9 undefined on 
+input line 34.
+
+
+LaTeX Warning: Reference `MaterialLoader_8hpp_source' on page 9 undefined on in
+put line 35.
+
+
+LaTeX Warning: Reference `ConfigNode_8hpp_source' on page 9 undefined on input 
+line 36.
+
+
+LaTeX Warning: Reference `ConfigParser_8hpp_source' on page 9 undefined on inpu
+t line 37.
+
+
+LaTeX Warning: Reference `ObjectConstructor_8hpp_source' on page 9 undefined on
+ input line 38.
+
+
+LaTeX Warning: Reference `ObjectErrorHandling_8hpp_source' on page 9 undefined 
+on input line 39.
+
+
+LaTeX Warning: Reference `Parser_8hpp_source' on page 9 undefined on input line
+ 40.
+
+
+LaTeX Warning: Reference `PropertyTypes_8hpp_source' on page 9 undefined on inp
+ut line 41.
+
+[9
+
+]
+
+LaTeX Warning: Reference `ValueConverter_8hpp_source' on page 10 undefined on i
+nput line 42.
+
+
+LaTeX Warning: Reference `Cone_8hpp_source' on page 10 undefined on input line 
+43.
+
+
+LaTeX Warning: Reference `Cylinder_8hpp_source' on page 10 undefined on input l
+ine 44.
+
+
+LaTeX Warning: Reference `Plane_8hpp_source' on page 10 undefined on input line
+ 45.
+
+
+LaTeX Warning: Reference `Sphere_8hpp_source' on page 10 undefined on input lin
+e 46.
+
+
+LaTeX Warning: Reference `GraphicMode_8hpp_source' on page 10 undefined on inpu
+t line 47.
+
+
+LaTeX Warning: Reference `Utils_8hpp_source' on page 10 undefined on input line
+ 48.
+
+) [10]
+Chapter 5.
+(./classAException.tex <./classAException__inherit__graph.pdf>
+<classAException__inherit__graph.pdf, id=270, 883.3pt x 513.92pt>
+File: classAException__inherit__graph.pdf Graphic file (type pdf)
+<use classAException__inherit__graph.pdf>
+Package pdftex.def Info: classAException__inherit__graph.pdf  used on input lin
+e 10.
+(pdftex.def)             Requested size: 350.0pt x 203.63527pt.
+ <./classAException__coll__graph.pdf>
+<classAException__coll__graph.pdf, id=285, 201.75375pt x 431.6125pt>
+File: classAException__coll__graph.pdf Graphic file (type pdf)
+<use classAException__coll__graph.pdf>
+Package pdftex.def Info: classAException__coll__graph.pdf  used on input line 2
+0.
+(pdftex.def)             Requested size: 201.0pt x 430.00447pt.
+ [11
+
+] [12]) (./classAPrimitives.tex <./classAPrimitives__inherit__graph.pdf>
+<classAPrimitives__inherit__graph.pdf, id=324, 435.6275pt x 796.9775pt>
+File: classAPrimitives__inherit__graph.pdf Graphic file (type pdf)
+<use classAPrimitives__inherit__graph.pdf>
+Package pdftex.def Info: classAPrimitives__inherit__graph.pdf  used on input li
+ne 10.
+(pdftex.def)             Requested size: 300.64311pt x 550.0pt.
+ [13] <./classAPrimitives__coll__graph.pdf>
+<classAPrimitives__coll__graph.pdf, id=348, 460.72125pt x 571.13374pt>
+File: classAPrimitives__coll__graph.pdf Graphic file (type pdf)
+<use classAPrimitives__coll__graph.pdf>
+Package pdftex.def Info: classAPrimitives__coll__graph.pdf  used on input line 
+20.
+(pdftex.def)             Requested size: 350.0pt x 433.87444pt.
+ [14] [15]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 107.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 167.
+ [16])
+(./classCamera.tex <./classCamera__coll__graph.pdf>
+<classCamera__coll__graph.pdf, id=450, 244.915pt x 761.84625pt>
+File: classCamera__coll__graph.pdf Graphic file (type pdf)
+<use classCamera__coll__graph.pdf>
+Package pdftex.def Info: classCamera__coll__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 176.817pt x 550.0pt.
+ [17] [18])
+(./classCameraFactory.tex <./classCameraFactory__inherit__graph.pdf>
+<classCameraFactory__inherit__graph.pdf, id=495, 193.72375pt x 363.3575pt>
+File: classCameraFactory__inherit__graph.pdf Graphic file (type pdf)
+<use classCameraFactory__inherit__graph.pdf>
+Package pdftex.def Info: classCameraFactory__inherit__graph.pdf  used on input 
+line 10.
+(pdftex.def)             Requested size: 193.0pt x 362.00375pt.
+ [19] <./classCameraFactory__coll__graph.pdf>
+<classCameraFactory__coll__graph.pdf, id=527, 193.72375pt x 363.3575pt>
+File: classCameraFactory__coll__graph.pdf Graphic file (type pdf)
+<use classCameraFactory__coll__graph.pdf>
+Package pdftex.def Info: classCameraFactory__coll__graph.pdf  used on input lin
+e 20.
+(pdftex.def)             Requested size: 193.0pt x 362.00375pt.
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+|  \T1/pcr/m/n/8 const std[]::vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::sh
+ared[]_[]ptr$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::map$\OML/cmm/m/it/8 <$ \T1
+/pcr/m/n/8 Value[]Type[]_[]t, Value[]Type $\OML/cmm/m/it/8 >$ $>$ $>$ \T1/pcr/m
+/n/8 &
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+|  \T1/pcr/m/n/8 std[]::function$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::shared
+[]_[]ptr$\OML/cmm/m/it/8 <$ [] $>$\T1/pcr/m/n/8 (std[]::shared[]_[]ptr$\OML/cmm
+/m/it/8 <$ \T1/pcr/m/n/8 std[]::map$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Value[]Typ
+e[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\T1/pcr/m/n/8 _[]t, Value[]Type $\OML/cmm/m/it/8 >$ $>$\T1/pcr/m/n/8 , const st
+d[]::vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::shared[]_[]ptr$\OML/cmm/m/i
+t/8 <$ \T1/pcr/m/n/8 std[]::map$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Value[]Type[]_
+[]t, Value[]Type $\OML/cmm/m/it/8 >$ $>$
+ []
+
+) (./classColor.tex <./classColor__coll__graph.pdf>
+<classColor__coll__graph.pdf, id=571, 176.66pt x 295.1025pt>
+File: classColor__coll__graph.pdf Graphic file (type pdf)
+<use classColor__coll__graph.pdf>
+Package pdftex.def Info: classColor__coll__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 176.0pt x 294.00305pt.
+ [22])
+(./classColorException.tex <./classColorException__inherit__graph.pdf>
+<classColorException__inherit__graph.pdf, id=586, 201.75375pt x 513.92pt>
+File: classColorException__inherit__graph.pdf Graphic file (type pdf)
+<use classColorException__inherit__graph.pdf>
+Package pdftex.def Info: classColorException__inherit__graph.pdf  used on input
+ line 10.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [23] <./classColorException__coll__graph.pdf>
+<classColorException__coll__graph.pdf, id=614, 201.75375pt x 513.92pt>
+File: classColorException__coll__graph.pdf Graphic file (type pdf)
+<use classColorException__coll__graph.pdf>
+Package pdftex.def Info: classColorException__coll__graph.pdf  used on input li
+ne 20.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [24] [25]) (./classCommandException.tex <./classCommandException__inherit__gra
+ph.pdf>
+<classCommandException__inherit__graph.pdf, id=641, 201.75375pt x 513.92pt>
+File: classCommandException__inherit__graph.pdf Graphic file (type pdf)
+<use classCommandException__inherit__graph.pdf>
+Package pdftex.def Info: classCommandException__inherit__graph.pdf  used on inp
+ut line 10.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ <./classCommandException__coll__graph.pdf>
+<classCommandException__coll__graph.pdf, id=647, 201.75375pt x 513.92pt>
+File: classCommandException__coll__graph.pdf Graphic file (type pdf)
+<use classCommandException__coll__graph.pdf>
+Package pdftex.def Info: classCommandException__coll__graph.pdf  used on input 
+line 20.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [26] [27]) (./classCone.tex <./classCone__inherit__graph.pdf>
+<classCone__inherit__graph.pdf, id=674, 170.6375pt x 796.9775pt>
+File: classCone__inherit__graph.pdf Graphic file (type pdf)
+<use classCone__inherit__graph.pdf>
+Package pdftex.def Info: classCone__inherit__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 117.76343pt x 550.0pt.
+ <./classCone__coll__graph.pdf>
+<classCone__coll__graph.pdf, id=688, 460.72125pt x 794.97pt>
+File: classCone__coll__graph.pdf Graphic file (type pdf)
+<use classCone__coll__graph.pdf>
+Package pdftex.def Info: classCone__coll__graph.pdf  used on input line 20.
+(pdftex.def)             Requested size: 318.75566pt x 550.0pt.
+ [28] [29] [30]) (./classConfigNode.tex <./classConfigNode__coll__graph.pdf>
+<classConfigNode__coll__graph.pdf, id=758, 161.60374pt x 224.84pt>
+File: classConfigNode__coll__graph.pdf Graphic file (type pdf)
+<use classConfigNode__coll__graph.pdf>
+Package pdftex.def Info: classConfigNode__coll__graph.pdf  used on input line 1
+0.
+(pdftex.def)             Requested size: 161.0pt x 224.01262pt.
+) (./classConfigParser.tex <./classConfigParser__coll__graph.pdf>
+<classConfigParser__coll__graph.pdf, id=772, 179.67125pt x 224.84pt>
+File: classConfigParser__coll__graph.pdf Graphic file (type pdf)
+<use classConfigParser__coll__graph.pdf>
+Package pdftex.def Info: classConfigParser__coll__graph.pdf  used on input line
+ 10.
+(pdftex.def)             Requested size: 179.0pt x 224.01605pt.
+ [31]) (./classCylinder.tex <./classCylinder__inherit__graph.pdf>
+<classCylinder__inherit__graph.pdf, id=809, 170.6375pt x 796.9775pt>
+File: classCylinder__inherit__graph.pdf Graphic file (type pdf)
+<use classCylinder__inherit__graph.pdf>
+Package pdftex.def Info: classCylinder__inherit__graph.pdf  used on input line 
+10.
+(pdftex.def)             Requested size: 117.76343pt x 550.0pt.
+ [32] <./classCylinder__coll__graph.pdf>
+<classCylinder__coll__graph.pdf, id=840, 460.72125pt x 794.97pt>
+File: classCylinder__coll__graph.pdf Graphic file (type pdf)
+<use classCylinder__coll__graph.pdf>
+Package pdftex.def Info: classCylinder__coll__graph.pdf  used on input line 20.
+
+(pdftex.def)             Requested size: 318.75566pt x 550.0pt.
+ [33] [34] [35]) (./classDLLoader.tex <./classDLLoader__inherit__graph.pdf>
+<classDLLoader__inherit__graph.pdf, id=911, 156.585pt x 349.305pt>
+File: classDLLoader__inherit__graph.pdf Graphic file (type pdf)
+<use classDLLoader__inherit__graph.pdf>
+Package pdftex.def Info: classDLLoader__inherit__graph.pdf  used on input line 
+10.
+(pdftex.def)             Requested size: 156.0pt x 348.01428pt.
+ <./classDLLoader__coll__graph.pdf>
+<classDLLoader__coll__graph.pdf, id=924, 156.585pt x 349.305pt>
+File: classDLLoader__coll__graph.pdf Graphic file (type pdf)
+<use classDLLoader__coll__graph.pdf>
+Package pdftex.def Info: classDLLoader__coll__graph.pdf  used on input line 20.
+
+(pdftex.def)             Requested size: 156.0pt x 348.01428pt.
+ [36] [37])
+(./classError.tex <./classError__inherit__graph.pdf>
+<classError__inherit__graph.pdf, id=978, 199.74625pt x 321.2pt>
+File: classError__inherit__graph.pdf Graphic file (type pdf)
+<use classError__inherit__graph.pdf>
+Package pdftex.def Info: classError__inherit__graph.pdf  used on input line 10.
+
+(pdftex.def)             Requested size: 199.0pt x 320.01804pt.
+ [38] <./classError__coll__graph.pdf>
+<classError__coll__graph.pdf, id=999, 199.74625pt x 321.2pt>
+File: classError__coll__graph.pdf Graphic file (type pdf)
+<use classError__coll__graph.pdf>
+Package pdftex.def Info: classError__coll__graph.pdf  used on input line 20.
+(pdftex.def)             Requested size: 199.0pt x 320.01804pt.
+ [39]) (./classFactoryException.tex <./classFactoryException__inherit__graph.pd
+f>
+<classFactoryException__inherit__graph.pdf, id=1019, 201.75375pt x 513.92pt>
+File: classFactoryException__inherit__graph.pdf Graphic file (type pdf)
+<use classFactoryException__inherit__graph.pdf>
+Package pdftex.def Info: classFactoryException__inherit__graph.pdf  used on inp
+ut line 10.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [40] <./classFactoryException__coll__graph.pdf>
+<classFactoryException__coll__graph.pdf, id=1043, 201.75375pt x 513.92pt>
+File: classFactoryException__coll__graph.pdf Graphic file (type pdf)
+<use classFactoryException__coll__graph.pdf>
+Package pdftex.def Info: classFactoryException__coll__graph.pdf  used on input 
+line 20.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [41] [42])
+(./classFactoryManager.tex <./classFactoryManager__coll__graph.pdf>
+<classFactoryManager__coll__graph.pdf, id=1071, 215.80624pt x 281.05pt>
+File: classFactoryManager__coll__graph.pdf Graphic file (type pdf)
+<use classFactoryManager__coll__graph.pdf>
+Package pdftex.def Info: classFactoryManager__coll__graph.pdf  used on input li
+ne 10.
+(pdftex.def)             Requested size: 215.0pt x 280.0072pt.
+)
+(./classFileException.tex <./classFileException__inherit__graph.pdf>
+<classFileException__inherit__graph.pdf, id=1093, 201.75375pt x 513.92pt>
+File: classFileException__inherit__graph.pdf Graphic file (type pdf)
+<use classFileException__inherit__graph.pdf>
+Package pdftex.def Info: classFileException__inherit__graph.pdf  used on input 
+line 10.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [43] <./classFileException__coll__graph.pdf>
+<classFileException__coll__graph.pdf, id=1119, 201.75375pt x 513.92pt>
+File: classFileException__coll__graph.pdf Graphic file (type pdf)
+<use classFileException__coll__graph.pdf>
+Package pdftex.def Info: classFileException__coll__graph.pdf  used on input lin
+e 20.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [44] [45]) (./classGraphicMode.tex <./classGraphicMode__coll__graph.pdf>
+<classGraphicMode__coll__graph.pdf, id=1146, 203.76125pt x 337.26pt>
+File: classGraphicMode__coll__graph.pdf Graphic file (type pdf)
+<use classGraphicMode__coll__graph.pdf>
+Package pdftex.def Info: classGraphicMode__coll__graph.pdf  used on input line 
+10.
+(pdftex.def)             Requested size: 203.0pt x 336.0138pt.
+ [46]) (./classIException.tex <./classIException__inherit__graph.pdf>
+<classIException__inherit__graph.pdf, id=1171, 883.3pt x 513.92pt>
+File: classIException__inherit__graph.pdf Graphic file (type pdf)
+<use classIException__inherit__graph.pdf>
+Package pdftex.def Info: classIException__inherit__graph.pdf  used on input lin
+e 10.
+(pdftex.def)             Requested size: 350.0pt x 203.63527pt.
+ <./classIException__coll__graph.pdf>
+<classIException__coll__graph.pdf, id=1184, 201.75375pt x 264.99pt>
+File: classIException__coll__graph.pdf Graphic file (type pdf)
+<use classIException__coll__graph.pdf>
+Package pdftex.def Info: classIException__coll__graph.pdf  used on input line 2
+0.
+(pdftex.def)             Requested size: 201.0pt x 264.00275pt.
+ [47])
+(./classIFactory.tex <./classIFactory__coll__graph.pdf>
+<classIFactory__coll__graph.pdf, id=1206, 168.63pt x 168.63pt>
+File: classIFactory__coll__graph.pdf Graphic file (type pdf)
+<use classIFactory__coll__graph.pdf>
+Package pdftex.def Info: classIFactory__coll__graph.pdf  used on input line 10.
+
+(pdftex.def)             Requested size: 168.0pt x 168.00432pt.
+ [48])
+(./classILoader.tex <./classILoader__inherit__graph.pdf>
+<classILoader__inherit__graph.pdf, id=1232, 156.585pt x 349.305pt>
+File: classILoader__inherit__graph.pdf Graphic file (type pdf)
+<use classILoader__inherit__graph.pdf>
+Package pdftex.def Info: classILoader__inherit__graph.pdf  used on input line 1
+0.
+(pdftex.def)             Requested size: 156.0pt x 348.01428pt.
+ <./classILoader__coll__graph.pdf>
+<classILoader__coll__graph.pdf, id=1245, 151.56625pt x 196.735pt>
+File: classILoader__coll__graph.pdf Graphic file (type pdf)
+<use classILoader__coll__graph.pdf>
+Package pdftex.def Info: classILoader__coll__graph.pdf  used on input line 20.
+(pdftex.def)             Requested size: 151.0pt x 196.00201pt.
+ [49]) (./classImage.tex <./classImage__coll__graph.pdf>
+<classImage__coll__graph.pdf, id=1262, 184.69pt x 281.05pt>
+File: classImage__coll__graph.pdf Graphic file (type pdf)
+<use classImage__coll__graph.pdf>
+Package pdftex.def Info: classImage__coll__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 184.0pt x 280.0029pt.
+ [50])
+(./structInfoPixelDisplay.tex <./structInfoPixelDisplay__coll__graph.pdf>
+<structInfoPixelDisplay__coll__graph.pdf, id=1284, 176.66pt x 402.50375pt>
+File: structInfoPixelDisplay__coll__graph.pdf Graphic file (type pdf)
+<use structInfoPixelDisplay__coll__graph.pdf>
+Package pdftex.def Info: structInfoPixelDisplay__coll__graph.pdf  used on input
+ line 10.
+(pdftex.def)             Requested size: 176.0pt x 401.00418pt.
+
+[51]) (./classIPrimitives.tex <./classIPrimitives__inherit__graph.pdf>
+<classIPrimitives__inherit__graph.pdf, id=1312, 435.6275pt x 796.9775pt>
+File: classIPrimitives__inherit__graph.pdf Graphic file (type pdf)
+<use classIPrimitives__inherit__graph.pdf>
+Package pdftex.def Info: classIPrimitives__inherit__graph.pdf  used on input li
+ne 10.
+(pdftex.def)             Requested size: 300.64311pt x 550.0pt.
+ [52] <./classIPrimitives__coll__graph.pdf>
+<classIPrimitives__coll__graph.pdf, id=1336, 155.58125pt x 266.9975pt>
+File: classIPrimitives__coll__graph.pdf Graphic file (type pdf)
+<use classIPrimitives__coll__graph.pdf>
+Package pdftex.def Info: classIPrimitives__coll__graph.pdf  used on input line 
+20.
+(pdftex.def)             Requested size: 155.0pt x 266.00275pt.
+ [53]) (./structMaterial.tex <./structMaterial__coll__graph.pdf>
+<structMaterial__coll__graph.pdf, id=1358, 202.7575pt x 567.11874pt>
+File: structMaterial__coll__graph.pdf Graphic file (type pdf)
+<use structMaterial__coll__graph.pdf>
+Package pdftex.def Info: structMaterial__coll__graph.pdf  used on input line 10
+.
+(pdftex.def)             Requested size: 196.65598pt x 550.0pt.
+ [54] [55]) (./classMaterialLoader.tex <./classMaterialLoader__coll__graph.pdf>
+<classMaterialLoader__coll__graph.pdf, id=1402, 429.605pt x 1000.73875pt>
+File: classMaterialLoader__coll__graph.pdf Graphic file (type pdf)
+<use classMaterialLoader__coll__graph.pdf>
+Package pdftex.def Info: classMaterialLoader__coll__graph.pdf  used on input li
+ne 10.
+(pdftex.def)             Requested size: 236.1196pt x 550.0pt.
+ [56] [57]) (./classMaterialLoaderException.tex <./classMaterialLoaderException
+__inherit__graph.pdf>
+<classMaterialLoaderException__inherit__graph.pdf, id=1451, 210.7875pt x 513.92
+pt>
+File: classMaterialLoaderException__inherit__graph.pdf Graphic file (type pdf)
+<use classMaterialLoaderException__inherit__graph.pdf>
+Package pdftex.def Info: classMaterialLoaderException__inherit__graph.pdf  used
+ on input line 10.
+(pdftex.def)             Requested size: 210.0pt x 512.01317pt.
+ [58] <./classMaterialLoaderException__coll__graph.pdf>
+<classMaterialLoaderException__coll__graph.pdf, id=1482, 210.7875pt x 513.92pt>
+
+File: classMaterialLoaderException__coll__graph.pdf Graphic file (type pdf)
+<use classMaterialLoaderException__coll__graph.pdf>
+Package pdftex.def Info: classMaterialLoaderException__coll__graph.pdf  used on
+ input line 20.
+(pdftex.def)             Requested size: 210.0pt x 512.01317pt.
+ [59] [60]) (./classMathExeption.tex <./classMathExeption__inherit__graph.pdf>
+<classMathExeption__inherit__graph.pdf, id=1518, 201.75375pt x 513.92pt>
+File: classMathExeption__inherit__graph.pdf Graphic file (type pdf)
+<use classMathExeption__inherit__graph.pdf>
+Package pdftex.def Info: classMathExeption__inherit__graph.pdf  used on input l
+ine 10.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ <./classMathExeption__coll__graph.pdf>
+<classMathExeption__coll__graph.pdf, id=1524, 201.75375pt x 513.92pt>
+File: classMathExeption__coll__graph.pdf Graphic file (type pdf)
+<use classMathExeption__coll__graph.pdf>
+Package pdftex.def Info: classMathExeption__coll__graph.pdf  used on input line
+ 20.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [61] [62])
+(./classObjectConstructor.tex <./classObjectConstructor__coll__graph.pdf>
+<classObjectConstructor__coll__graph.pdf, id=1551, 227.85126pt x 739.76375pt>
+File: classObjectConstructor__coll__graph.pdf Graphic file (type pdf)
+<use classObjectConstructor__coll__graph.pdf>
+Package pdftex.def Info: classObjectConstructor__coll__graph.pdf  used on input
+ line 10.
+(pdftex.def)             Requested size: 169.40346pt x 550.0pt.
+
+[63]) (./classObjectErrorHandling.tex <./classObjectErrorHandling__coll__graph.
+pdf>
+<classObjectErrorHandling__coll__graph.pdf, id=1581, 227.85126pt x 435.6275pt>
+File: classObjectErrorHandling__coll__graph.pdf Graphic file (type pdf)
+<use classObjectErrorHandling__coll__graph.pdf>
+Package pdftex.def Info: classObjectErrorHandling__coll__graph.pdf  used on inp
+ut line 10.
+(pdftex.def)             Requested size: 227.0pt x 434.01117pt.
+ [64] [65]
+Underfull \hbox (badness 6842) in paragraph at lines 62--64
+[]\T1/phv/m/n/10 bool \T1/phv/b/n/10 check[]Simple[]Value[]Validity \T1/phv/m/n
+/10 (const [] &node, const std[]::string &pa-ram-e-ter, const
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 65--67
+[]\T1/phv/m/n/10 bool \T1/phv/b/n/10 check[]Vector2[]DValue[]Validity \T1/phv/m
+/n/10 (const [] &node, const std[]::string &pa-ram-e-ter, const
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 68--70
+[]\T1/phv/m/n/10 bool \T1/phv/b/n/10 check[]Vector3[]DValue[]Validity \T1/phv/m
+/n/10 (const [] &node, const std[]::string &pa-ram-e-ter, const
+ []
+
+) (./classParser.tex <./classParser__coll__graph.pdf>
+<classParser__coll__graph.pdf, id=1654, 429.605pt x 986.68625pt>
+File: classParser__coll__graph.pdf Graphic file (type pdf)
+<use classParser__coll__graph.pdf>
+Package pdftex.def Info: classParser__coll__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 239.48242pt x 550.0pt.
+ [66] [67])
+(./structPixelInfo.tex <./structPixelInfo__coll__graph.pdf>
+<structPixelInfo__coll__graph.pdf, id=1704, 177.66376pt x 430.60875pt>
+File: structPixelInfo__coll__graph.pdf Graphic file (type pdf)
+<use structPixelInfo__coll__graph.pdf>
+Package pdftex.def Info: structPixelInfo__coll__graph.pdf  used on input line 1
+0.
+(pdftex.def)             Requested size: 177.0pt x 429.01103pt.
+ [68])
+(./classPlane.tex <./classPlane__inherit__graph.pdf>
+<classPlane__inherit__graph.pdf, id=1728, 161.60374pt x 726.715pt>
+File: classPlane__inherit__graph.pdf Graphic file (type pdf)
+<use classPlane__inherit__graph.pdf>
+Package pdftex.def Info: classPlane__inherit__graph.pdf  used on input line 10.
+
+(pdftex.def)             Requested size: 122.30968pt x 550.0pt.
+ [69] <./classPlane__coll__graph.pdf>
+<classPlane__coll__graph.pdf, id=1748, 460.72125pt x 724.7075pt>
+File: classPlane__coll__graph.pdf Graphic file (type pdf)
+<use classPlane__coll__graph.pdf>
+Package pdftex.def Info: classPlane__coll__graph.pdf  used on input line 20.
+(pdftex.def)             Requested size: 349.65968pt x 550.0pt.
+ [70] [71]) (./classMath_1_1Point3D.tex <./classMath_1_1Point3D__coll__graph.pd
+f>
+<classMath_1_1Point3D__coll__graph.pdf, id=1801, 155.58125pt x 295.1025pt>
+File: classMath_1_1Point3D__coll__graph.pdf Graphic file (type pdf)
+<use classMath_1_1Point3D__coll__graph.pdf>
+Package pdftex.def Info: classMath_1_1Point3D__coll__graph.pdf  used on input l
+ine 10.
+(pdftex.def)             Requested size: 155.0pt x 294.00305pt.
+ [72] [73]) (./classPrimitiveFactory.tex <./classPrimitiveFactory__inherit__gra
+ph.pdf>
+<classPrimitiveFactory__inherit__graph.pdf, id=1847, 193.72375pt x 377.41pt>
+File: classPrimitiveFactory__inherit__graph.pdf Graphic file (type pdf)
+<use classPrimitiveFactory__inherit__graph.pdf>
+Package pdftex.def Info: classPrimitiveFactory__inherit__graph.pdf  used on inp
+ut line 10.
+(pdftex.def)             Requested size: 193.0pt x 376.00392pt.
+ <./classPrimitiveFactory__coll__graph.pdf>
+<classPrimitiveFactory__coll__graph.pdf, id=1854, 193.72375pt x 377.41pt>
+File: classPrimitiveFactory__coll__graph.pdf Graphic file (type pdf)
+<use classPrimitiveFactory__coll__graph.pdf>
+Package pdftex.def Info: classPrimitiveFactory__coll__graph.pdf  used on input 
+line 20.
+(pdftex.def)             Requested size: 193.0pt x 376.00392pt.
+ [74]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+|  \T1/pcr/m/n/8 const std[]::vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::sh
+ared[]_[]ptr$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::map$\OML/cmm/m/it/8 <$ \T1
+/pcr/m/n/8 Value[]Type[]_[]t, Value[]Type $\OML/cmm/m/it/8 >$ $>$ $>$ \T1/pcr/m
+/n/8 &
+ []
+
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+|  \T1/pcr/m/n/8 std[]::function$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::shared
+[]_[]ptr$\OML/cmm/m/it/8 <$ [] $>$\T1/pcr/m/n/8 (std[]::shared[]_[]ptr$\OML/cmm
+/m/it/8 <$ \T1/pcr/m/n/8 std[]::map$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Value[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+\T1/pcr/m/n/8 Type[]_[]t, Value[]Type $\OML/cmm/m/it/8 >$ $>$\T1/pcr/m/n/8 , co
+nst std[]::vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std[]::shared[]_[]ptr$\OML/c
+mm/m/it/8 <$ \T1/pcr/m/n/8 std[]::map$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Value[]T
+ype[]_[]t, Value[]Type
+ []
+
+) (./structPropertyConfig.tex <./structPropertyConfig__coll__graph.pdf>
+<structPropertyConfig__coll__graph.pdf, id=1913, 156.585pt x 168.63pt>
+File: structPropertyConfig__coll__graph.pdf Graphic file (type pdf)
+<use structPropertyConfig__coll__graph.pdf>
+Package pdftex.def Info: structPropertyConfig__coll__graph.pdf  used on input l
+ine 10.
+(pdftex.def)             Requested size: 156.0pt x 168.00688pt.
+
+[76]) (./structPropertyInfo.tex <./structPropertyInfo__coll__graph.pdf>
+<structPropertyInfo__coll__graph.pdf, id=1937, 151.56625pt x 168.63pt>
+File: structPropertyInfo__coll__graph.pdf Graphic file (type pdf)
+<use structPropertyInfo__coll__graph.pdf>
+Package pdftex.def Info: structPropertyInfo__coll__graph.pdf  used on input lin
+e 10.
+(pdftex.def)             Requested size: 151.0pt x 168.00174pt.
+)
+(./classRay.tex <./classRay__coll__graph.pdf>
+<classRay__coll__graph.pdf, id=1943, 271.0125pt x 557.08125pt>
+File: classRay__coll__graph.pdf Graphic file (type pdf)
+<use classRay__coll__graph.pdf>
+Package pdftex.def Info: classRay__coll__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 267.57538pt x 550.0pt.
+ [77] [78]) (./classRaytracer.tex <./classRaytracer__coll__graph.pdf>
+<classRaytracer__coll__graph.pdf, id=1987, 466.74374pt x 641.39626pt>
+File: classRaytracer__coll__graph.pdf Graphic file (type pdf)
+<use classRaytracer__coll__graph.pdf>
+Package pdftex.def Info: classRaytracer__coll__graph.pdf  used on input line 10
+.
+(pdftex.def)             Requested size: 350.0pt x 480.98729pt.
+ [79] [80]) (./classRectangle3D.tex <./classRectangle3D__coll__graph.pdf>
+<classRectangle3D__coll__graph.pdf, id=2051, 166.6225pt x 472.76625pt>
+File: classRectangle3D__coll__graph.pdf Graphic file (type pdf)
+<use classRectangle3D__coll__graph.pdf>
+Package pdftex.def Info: classRectangle3D__coll__graph.pdf  used on input line 
+10.
+(pdftex.def)             Requested size: 166.0pt x 471.03377pt.
+ [81] [82]) (./classMath_1_1Rot3D.tex <./classMath_1_1Rot3D__coll__graph.pdf>
+<classMath_1_1Rot3D__coll__graph.pdf, id=2109, 158.5925pt x 295.1025pt>
+File: classMath_1_1Rot3D__coll__graph.pdf Graphic file (type pdf)
+<use classMath_1_1Rot3D__coll__graph.pdf>
+Package pdftex.def Info: classMath_1_1Rot3D__coll__graph.pdf  used on input lin
+e 10.
+(pdftex.def)             Requested size: 158.0pt x 294.02556pt.
+ [83]) (./classScene.tex <./classScene__coll__graph.pdf>
+<classScene__coll__graph.pdf, id=2150, 170.6375pt x 252.945pt>
+File: classScene__coll__graph.pdf Graphic file (type pdf)
+<use classScene__coll__graph.pdf>
+Package pdftex.def Info: classScene__coll__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 170.0pt x 252.0142pt.
+ [84]) (./classSceneException.tex <./classSceneException__inherit__graph.pdf>
+<classSceneException__inherit__graph.pdf, id=2191, 201.75375pt x 513.92pt>
+File: classSceneException__inherit__graph.pdf Graphic file (type pdf)
+<use classSceneException__inherit__graph.pdf>
+Package pdftex.def Info: classSceneException__inherit__graph.pdf  used on input
+ line 10.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ <./classSceneException__coll__graph.pdf>
+<classSceneException__coll__graph.pdf, id=2197, 201.75375pt x 513.92pt>
+File: classSceneException__coll__graph.pdf Graphic file (type pdf)
+<use classSceneException__coll__graph.pdf>
+Package pdftex.def Info: classSceneException__coll__graph.pdf  used on input li
+ne 20.
+(pdftex.def)             Requested size: 201.0pt x 512.00533pt.
+ [85] [86])
+(./structShapeDefinition.tex <./structShapeDefinition__coll__graph.pdf>
+<structShapeDefinition__coll__graph.pdf, id=2227, 159.59625pt x 168.63pt>
+File: structShapeDefinition__coll__graph.pdf Graphic file (type pdf)
+<use structShapeDefinition__coll__graph.pdf>
+Package pdftex.def Info: structShapeDefinition__coll__graph.pdf  used on input 
+line 10.
+(pdftex.def)             Requested size: 159.0pt x 168.00174pt.
+)
+(./classSphere.tex <./classSphere__inherit__graph.pdf>
+<classSphere__inherit__graph.pdf, id=2240, 161.60374pt x 726.715pt>
+File: classSphere__inherit__graph.pdf Graphic file (type pdf)
+<use classSphere__inherit__graph.pdf>
+Package pdftex.def Info: classSphere__inherit__graph.pdf  used on input line 10
+.
+(pdftex.def)             Requested size: 122.30968pt x 550.0pt.
+ [87] <./classSphere__coll__graph.pdf>
+<classSphere__coll__graph.pdf, id=2258, 460.72125pt x 724.7075pt>
+File: classSphere__coll__graph.pdf Graphic file (type pdf)
+<use classSphere__coll__graph.pdf>
+Package pdftex.def Info: classSphere__coll__graph.pdf  used on input line 20.
+(pdftex.def)             Requested size: 349.65968pt x 550.0pt.
+ [88] [89]) (./classUtils.tex <./classUtils__coll__graph.pdf>
+<classUtils__coll__graph.pdf, id=2311, 130.4875pt x 154.5775pt>
+File: classUtils__coll__graph.pdf Graphic file (type pdf)
+<use classUtils__coll__graph.pdf>
+Package pdftex.def Info: classUtils__coll__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 130.0pt x 154.00159pt.
+
+[90]) (./classValueConverter.tex <./classValueConverter__coll__graph.pdf>
+<classValueConverter__coll__graph.pdf, id=2337, 236.885pt x 154.5775pt>
+File: classValueConverter__coll__graph.pdf Graphic file (type pdf)
+<use classValueConverter__coll__graph.pdf>
+Package pdftex.def Info: classValueConverter__coll__graph.pdf  used on input li
+ne 10.
+(pdftex.def)             Requested size: 236.0pt x 154.00394pt.
+
+[91]) (./classVector2D.tex <./classVector2D__coll__graph.pdf>
+<classVector2D__coll__graph.pdf, id=2363, 150.5625pt x 224.84pt>
+File: classVector2D__coll__graph.pdf Graphic file (type pdf)
+<use classVector2D__coll__graph.pdf>
+Package pdftex.def Info: classVector2D__coll__graph.pdf  used on input line 10.
+
+(pdftex.def)             Requested size: 150.0pt x 224.01949pt.
+) [92]
+Chapter 6.
+(./APrimitives_8hpp_source.tex [93
+
+]) (./Camera_8hpp_source.tex)
+(./Color_8hpp_source.tex [94]) (./Error_8hpp_source.tex [95])
+(./AException_8hpp_source.tex) (./ColorException_8hpp_source.tex [96])
+(./CommandException_8hpp_source.tex) (./FactoryException_8hpp_source.tex)
+(./FileException_8hpp_source.tex [97]) (./IException_8hpp_source.tex)
+(./materialLoaderException_8hpp_source.tex) (./MathExeption_8hpp_source.tex
+[98]) (./SceneException_8hpp_source.tex) (./Image_8hpp_source.tex)
+(./IPrimitives_8hpp_source.tex [99]) (./Material_8hpp_source.tex [100])
+(./PixelInfo_8hpp_source.tex) (./Point3D_8hpp_source.tex [101])
+(./Ray_8hpp_source.tex [102]) (./Rectangle3D_8hpp_source.tex)
+(./Rot3D_8hpp_source.tex [103]) (./Scene_8hpp_source.tex)
+(./ValueType_8hpp_source.tex [104]) (./Vector2D_8hpp_source.tex)
+(./Vector3D_8hpp_source.tex [105]) (./DLLoader_8hpp_source.tex [106])
+(./ILoader_8hpp_source.tex) (./CameraFactory_8hpp_source.tex [107])
+(./FactoryManager_8hpp_source.tex) (./IFactory_8hpp_source.tex [108])
+(./PrimitiveFactory_8hpp_source.tex) (./MaterialLoader_8hpp_source.tex [109])
+(./ConfigNode_8hpp_source.tex [110]) (./ConfigParser_8hpp_source.tex)
+(./ObjectConstructor_8hpp_source.tex [111])
+(./ObjectErrorHandling_8hpp_source.tex [112]) (./Parser_8hpp_source.tex)
+(./PropertyTypes_8hpp_source.tex [113]) (./ValueConverter_8hpp_source.tex)
+(./Cone_8hpp_source.tex [114]) (./Cylinder_8hpp_source.tex)
+(./Plane_8hpp_source.tex [115]) (./Sphere_8hpp_source.tex)
+(./Raytracer_8hpp_source.tex [116]) (./GraphicMode_8hpp_source.tex [117])
+(./Utils_8hpp_source.tex) [118]
+No file refman.ind.
+(./refman.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `refman.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `refman.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  3472F5922A3EC29DB1866C76C3A81BDA;28252.
+ ) 
+Here is how much of TeX's memory you used:
+ 20452 strings out of 476041
+ 377388 string characters out of 5793164
+ 1879388 words of memory out of 6000000
+ 39422 multiletter control sequences out of 15000+600000
+ 554894 words of font info for 96 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 101i,16n,117p,610b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
+rro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/nimbus15/zhv-Reg.pfb>
+Output written on refman.pdf (120 pages, 572507 bytes).
+PDF statistics:
+ 3096 PDF objects out of 3580 (max. 8388607)
+ 2711 compressed objects within 28 object streams
+ 973 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
+

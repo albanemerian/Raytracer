@@ -1,0 +1,75 @@
+\doxysection{Object\+Constructor Class Reference}
+\hypertarget{classObjectConstructor}{}\label{classObjectConstructor}\index{ObjectConstructor@{ObjectConstructor}}
+
+
+Collaboration diagram for Object\+Constructor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classObjectConstructor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classObjectConstructor_a661c5cbce3df2cd257f7f6a3104ff764}\label{classObjectConstructor_a661c5cbce3df2cd257f7f6a3104ff764} 
+void {\bfseries create\+Object} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node)
+\item 
+\Hypertarget{classObjectConstructor_a32f1b2d5e96161759cb646923eeaeef6}\label{classObjectConstructor_a32f1b2d5e96161759cb646923eeaeef6} 
+void {\bfseries create\+Objects} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node)
+\item 
+\Hypertarget{classObjectConstructor_ad53d242d693b7802712d06b81eb5bf22}\label{classObjectConstructor_ad53d242d693b7802712d06b81eb5bf22} 
+bool {\bfseries verify\+Object\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name)
+\item 
+\Hypertarget{classObjectConstructor_a0bbb19b1d9e342181d00e1c7a7913e03}\label{classObjectConstructor_a0bbb19b1d9e342181d00e1c7a7913e03} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \& {\bfseries get\+Objects} () const
+\item 
+\Hypertarget{classObjectConstructor_aa416d3d093d40071ca2a0e54af08b62c}\label{classObjectConstructor_aa416d3d093d40071ca2a0e54af08b62c} 
+void {\bfseries print\+Object\+Map} () const
+\item 
+\Hypertarget{classObjectConstructor_a474691602d36f951ae02852e4ec5f04a}\label{classObjectConstructor_a474691602d36f951ae02852e4ec5f04a} 
+bool {\bfseries create\+Materials} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classObjectConstructor_adf262b085da35c169d546c1691dcc020}\label{classObjectConstructor_adf262b085da35c169d546c1691dcc020} 
+void {\bfseries fill\+Object} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ object)
+\item 
+\Hypertarget{classObjectConstructor_ac73dfa36222bf4ff2247fbebbdcb6a8c}\label{classObjectConstructor_ac73dfa36222bf4ff2247fbebbdcb6a8c} 
+void {\bfseries handle\+Simple\+Value} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ object, const Value\+Type\+\_\+t \&key, const Value\+Type \&value, Value\+Data\+Type data\+Type)
+\item 
+\Hypertarget{classObjectConstructor_a01032e9f714f1c1044d690c18852d206}\label{classObjectConstructor_a01032e9f714f1c1044d690c18852d206} 
+void {\bfseries handle\+Vector2\+DValue} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ object, const Value\+Type\+\_\+t \&key, const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::vector$<$ std\+::string $>$ \&components, Value\+Data\+Type data\+Type)
+\item 
+\Hypertarget{classObjectConstructor_ab5978db1ee241e6f7d38c46fa030e8a0}\label{classObjectConstructor_ab5978db1ee241e6f7d38c46fa030e8a0} 
+void {\bfseries handle\+Vector3\+DValue} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ object, const Value\+Type\+\_\+t \&key, const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::vector$<$ std\+::string $>$ \&components, Value\+Data\+Type data\+Type)
+\item 
+\Hypertarget{classObjectConstructor_a12298087536ac1d3ee3996c567dcaba9}\label{classObjectConstructor_a12298087536ac1d3ee3996c567dcaba9} 
+Value\+Type {\bfseries convert\+Value} (const Value\+Type \&value, Value\+Data\+Type data\+Type)
+\item 
+\Hypertarget{classObjectConstructor_afdf4ede6399c2636343cfb812188cd0f}\label{classObjectConstructor_afdf4ede6399c2636343cfb812188cd0f} 
+void {\bfseries init\+Shape\+Definitions} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classObjectConstructor_afd0b72ca646878952a684626c6c95f9b}\label{classObjectConstructor_afd0b72ca646878952a684626c6c95f9b} 
+\mbox{\hyperlink{classObjectErrorHandling}{Object\+Error\+Handling}} {\bfseries \+\_\+error\+Handler}
+\item 
+\Hypertarget{classObjectConstructor_a08e25adfdc84c4a05acc328b38b55a06}\label{classObjectConstructor_a08e25adfdc84c4a05acc328b38b55a06} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{structPropertyConfig}{Property\+Config}} $>$ {\bfseries \+\_\+property\+Type\+Map}
+\item 
+\Hypertarget{classObjectConstructor_aef755cb51b996e1c4bfba74eafd6ab6a}\label{classObjectConstructor_aef755cb51b996e1c4bfba74eafd6ab6a} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ {\bfseries \+\_\+objects}
+\item 
+\Hypertarget{classObjectConstructor_a8ba9e5ebe08da7af0f7aa996d1939a72}\label{classObjectConstructor_a8ba9e5ebe08da7af0f7aa996d1939a72} 
+std\+::vector$<$ \mbox{\hyperlink{structShapeDefinition}{Shape\+Definition}} $>$ {\bfseries \+\_\+shape\+Definitions}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/parser/Object\+Constructor.\+hpp\item 
+src/parser/Object\+Constructor.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,214 @@
+/*
+** EPITECH PROJECT, 2025
+** B-OOP-400-NAN-4-1-raytracer-albane.merian
+** File description:
+** RaytracerGraphic
+*/
+
+#include "Raytracer.hpp"
+#include "mediator/RayMediator.hpp"
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+
+
+void Raytracer::startPreveiwMode(int width, int height,
+    std::shared_ptr<int> pixelCount, int totalPixels) {
+    (void)pixelCount;
+    (void)totalPixels;
+
+    RayMediator mediator;
+    std::mutex imageMutex;
+    std::condition_variable cv;
+    bool highQualityReady = false;
+    std::shared_ptr<Image> previewImage = std::make_shared<Image>(256, 144, 255);
+    std::shared_ptr<Image> highQualityImage = std::make_shared<Image>(width, height, 255);
+
+    if (setGraphicMode()) {
+        std::cout << "Graphic mode activated" << std::endl;
+        this->_display->setWindow(width, height);
+        std::cout << " After set window " << std::endl;
+
+        // Save original settings
+        int origWidth = this->_width;
+        int origHeight = this->_height;
+
+        // --- Render preview image in main thread ---
+        {
+            std::lock_guard<std::mutex> lock(imageMutex);
+            this->_scene.getCamera()->setResolution(256, 144);
+            this->_scene.setAntiAliasing(1);
+            this->image = previewImage;
+            this->_width = 256;
+            this->_height = 144;
+        }
+        int previewPixels = 256 * 144;
+        std::shared_ptr<int> previewCount = std::make_shared<int>(0);
+        while (*previewCount < previewPixels) {
+            this->renderGraphicMode(256, 144, previewCount);
+            {
+                std::lock_guard<std::mutex> lock(imageMutex);
+                this->_display->updateTexture();
+            }
+            this->_display->display();
+        }
+
+        // Restore original width/height for later use
+        this->_width = origWidth;
+        this->_height = origHeight;
+
+        // --- Restore original settings for high-quality render ---
+        // {
+        //     std::lock_guard<std::mutex> lock(imageMutex);
+        //     this->_scene.getCamera()->setResolution(origWidth, origHeight);
+        //     this->_scene.setAntiAliasing(origAA);
+        //     this->image = highQualityImage;
+        // }
+        // std::shared_ptr<int> hqCount = std::make_shared<int>(0);
+
+        // // --- Start high-quality render in a thread ---
+        // mediator.addTask([&, this]() {
+        //     while (*hqCount < origWidth * origHeight) {
+        //         this->renderGraphicMode(origWidth, origHeight, hqCount);
+        //     }
+        //     {
+        //         std::lock_guard<std::mutex> lock(imageMutex);
+        //         this->image = highQualityImage;
+        //         highQualityReady = true;
+        //     }
+        //     cv.notify_all();
+        // });
+        // mediator.executeTasks();
+
+        // --- Main display loop ---
+        while (this->_display->isOpen()) {
+            {
+                std::lock_guard<std::mutex> lock(imageMutex);
+                this->_display->updateTexture();
+            }
+            this->_display->display();
+            if (highQualityReady) {
+                // Optionally break or continue to allow user interaction
+            }
+        }
+        _display->closeWindow();
+        mediator.waitForCompletion();
+        return;
+    }
+    // Save original settings
+    // int origWidth = width;
+    // int origHeight = height;
+    // int origAA = this->_scene.cameraAntiAliasing();
+
+    // Thread 1: Low-quality preview
+    mediator.addTask([&, this]() {
+        // Set scene to 144p and AA=1
+        {
+            std::lock_guard<std::mutex> lock(imageMutex);
+            this->_scene.getCamera()->setResolution(256, 144);
+            this->_scene.setAntiAliasing(1);
+            this->image = previewImage;
+        }
+        int previewPixels = 256 * 144;
+        std::shared_ptr<int> previewCount = std::make_shared<int>(0);
+        while (*previewCount < previewPixels) {
+            this->renderGraphicMode(256, 144, previewCount);
+            {
+                std::lock_guard<std::mutex> lock(imageMutex);
+                this->_display->updateTexture();
+            }
+        }
+        // Wait for high quality to be ready
+        std::unique_lock<std::mutex> lk(imageMutex);
+        cv.wait(lk, [&]{ return highQualityReady; });
+    });
+
+    // Thread 2: High-quality render
+    // mediator.addTask([&, this]() {
+    //     // Restore original settings
+    //     {
+    //         std::lock_guard<std::mutex> lock(imageMutex);
+    //         this->_scene.getCamera()->setResolution(origWidth, origHeight);
+    //         this->_scene.setAntiAliasing(origAA);
+    //         this->image = highQualityImage;
+    //     }
+    //     std::shared_ptr<int> hqCount = std::make_shared<int>(0);
+    //     while (*hqCount < origWidth * origHeight) {
+    //         this->renderGraphicMode(origWidth, origHeight, hqCount);
+    //     }
+    //     // Signal preview thread to replace image
+    //     {
+    //         std::lock_guard<std::mutex> lock(imageMutex);
+    //         this->image = highQualityImage;
+    //         highQualityReady = true;
+    //     }
+    //     cv.notify_all();
+    // });
+
+    mediator.executeTasks();
+}
+
+
+void Raytracer::renderGraphicMode(int width, int height,
+    std::shared_ptr<int> pixelCount) {
+    int batchSize = 10;
+    int startY = (*pixelCount) / width;
+    int endY = std::min(startY + batchSize, height);
+
+    for (int y = startY; y < endY; ++y) {
+        for (int x = 0; x < width; ++x) {
+            Math::Vector3D totalIncomingLight;
+            uint32_t state = static_cast<uint32_t>(x * _width + y);
+            totalIncomingLight += computePixelWithAntiAliasing(x, y, state);
+            this->image->setPixel(x, y, totalIncomingLight);
+            this->_display->drawPixelColor(x, y, totalIncomingLight.getX(),
+                totalIncomingLight.getY(), totalIncomingLight.getZ()); // segfaults here
+            (*pixelCount)++;
+        }
+    }
+}
+
+
+void Raytracer::displayGraphicMode(std::shared_ptr<int> pixelCount,
+    int totalPixels) {
+    int width = this->_scene.camereaWidth();
+    int height = this->_scene.camereaHeight();
+
+    while (this->_display->isOpen()) {
+        if (this->_display->getRenderingComplete()) {
+            if (this->_display->getButtonPressed().compare("preview") == 0) {
+                this->image->writeToFilePPM(this->_outputfile);
+            }
+            this->_display->display();
+            continue;
+        }
+
+        this->renderGraphicMode(width, height, pixelCount);
+        this->_display->updateTexture();
+        this->_display->display();
+
+        if ((*pixelCount) >= totalPixels) {
+            this->_display->setRenderingComplete(true);
+        }
+    }
+}
+
+
+
+void Raytracer::renderPreviewImage() {
+    int previewWidth = 256;
+    int previewHeight = 144;
+    previewImage.create(previewWidth, previewHeight, sf::Color(230, 230, 230));
+    for (int y = 0; y < previewHeight; ++y) {
+        for (int x = 0; x < previewWidth; ++x) {
+            uint32_t state = static_cast<uint32_t>(x * previewWidth + y);
+            Color color = traceRaySingleSample(
+                static_cast<double>(x) / previewWidth,
+                static_cast<double>(y) / previewHeight,
+                state
+            );
+            previewImage.setPixel(x, y, sf::Color(color.getRed(), color.getGreen(), color.getBlue()));
+        }
+    }
+    previewRendered = true;
+}

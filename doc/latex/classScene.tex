@@ -1,0 +1,51 @@
+\doxysection{Scene Class Reference}
+\hypertarget{classScene}{}\label{classScene}\index{Scene@{Scene}}
+
+
+Collaboration diagram for Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classScene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classScene_ab3e9b4d54455fb6c7e5c6750f8352994}\label{classScene_ab3e9b4d54455fb6c7e5c6750f8352994} 
+{\bfseries Scene} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ $>$)
+\item 
+\Hypertarget{classScene_ac9190776c7f63cd88ad61aef9b766e9f}\label{classScene_ac9190776c7f63cd88ad61aef9b766e9f} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ {\bfseries get\+Camera} () const
+\item 
+\Hypertarget{classScene_ab98432cab07b8dcb5247d4931cfee488}\label{classScene_ab98432cab07b8dcb5247d4931cfee488} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ $>$ {\bfseries get\+Premitives} () const
+\item 
+\Hypertarget{classScene_a132619d64125acb1b51ff708a07e088d}\label{classScene_a132619d64125acb1b51ff708a07e088d} 
+int {\bfseries camerea\+Width} () const
+\item 
+\Hypertarget{classScene_a3b2eafbbb9ae22774d75fae127b04f04}\label{classScene_a3b2eafbbb9ae22774d75fae127b04f04} 
+int {\bfseries camerea\+Height} () const
+\item 
+\Hypertarget{classScene_a3152d197adae0137e3013ba8b35b29b5}\label{classScene_a3152d197adae0137e3013ba8b35b29b5} 
+void {\bfseries set\+Camera} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)
+\item 
+\Hypertarget{classScene_a614c8b2b98a971e5f69585b75a16a08f}\label{classScene_a614c8b2b98a971e5f69585b75a16a08f} 
+void {\bfseries set\+Premitives} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ $>$ \&primitives)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classScene_a10a92111a62f1bc57a3699cb99e48b29}\label{classScene_a10a92111a62f1bc57a3699cb99e48b29} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ {\bfseries \+\_\+camera}
+\item 
+\Hypertarget{classScene_a4636f796a7dc4ed6b557d94cfe9aa460}\label{classScene_a4636f796a7dc4ed6b557d94cfe9aa460} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIPrimitives}{IPrimitives}} $>$ $>$ {\bfseries \+\_\+primitives}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+common/Scene.\+hpp\item 
+common/Scene.\+cpp\end{DoxyCompactItemize}

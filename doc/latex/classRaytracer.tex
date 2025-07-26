@@ -1,0 +1,134 @@
+\doxysection{Raytracer Class Reference}
+\hypertarget{classRaytracer}{}\label{classRaytracer}\index{Raytracer@{Raytracer}}
+
+
+Collaboration diagram for Raytracer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRaytracer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRaytracer_a3a7732fd3ac39ac855dec8ce5aae0069}\label{classRaytracer_a3a7732fd3ac39ac855dec8ce5aae0069} 
+std\+::string {\bfseries get\+Scene\+File} () const
+\item 
+\Hypertarget{classRaytracer_af44001b9f2c0e20748451968cc3fe636}\label{classRaytracer_af44001b9f2c0e20748451968cc3fe636} 
+std\+::string {\bfseries get\+Output\+File} () const
+\item 
+\Hypertarget{classRaytracer_aba428415657f90ba209eae4fba4e22e1}\label{classRaytracer_aba428415657f90ba209eae4fba4e22e1} 
+std\+::string {\bfseries get\+Output\+Format} () const
+\item 
+\Hypertarget{classRaytracer_afdf8d583571f06c53b048b95bf3649e9}\label{classRaytracer_afdf8d583571f06c53b048b95bf3649e9} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classImage}{Image}} $>$ {\bfseries get\+Image} () const
+\item 
+\Hypertarget{classRaytracer_aa731d5e6cb721a55ccc5da98c499d8c6}\label{classRaytracer_aa731d5e6cb721a55ccc5da98c499d8c6} 
+bool {\bfseries get\+Graphic\+Mode} () const
+\item 
+\Hypertarget{classRaytracer_ab7b1e8a91189ceda8cfb74314ecbbca3}\label{classRaytracer_ab7b1e8a91189ceda8cfb74314ecbbca3} 
+bool {\bfseries is\+Debug} () const
+\item 
+\Hypertarget{classRaytracer_a272a3306609c155655e560bd165af145}\label{classRaytracer_a272a3306609c155655e560bd165af145} 
+\mbox{\hyperlink{classScene}{Scene}} {\bfseries get\+Scene} () const
+\item 
+\Hypertarget{classRaytracer_ad3a0a784c1392a6466b92541ae9596e5}\label{classRaytracer_ad3a0a784c1392a6466b92541ae9596e5} 
+void {\bfseries set\+Scene\+File} (std\+::string scene\+File)
+\item 
+\Hypertarget{classRaytracer_a6d14567575b2aca786fb9eb21df40e50}\label{classRaytracer_a6d14567575b2aca786fb9eb21df40e50} 
+void {\bfseries set\+Output\+File} (std\+::string output\+File)
+\item 
+\Hypertarget{classRaytracer_a8b7e9f93e57b124d02add67455e0bfd8}\label{classRaytracer_a8b7e9f93e57b124d02add67455e0bfd8} 
+void {\bfseries set\+Output\+Format} (std\+::string output\+Format)
+\item 
+\Hypertarget{classRaytracer_a19b9736f2ffee613a44b5e507f7f6706}\label{classRaytracer_a19b9736f2ffee613a44b5e507f7f6706} 
+void {\bfseries set\+Image} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classImage}{Image}} $>$ \mbox{\hyperlink{classImage}{Image}})
+\item 
+\Hypertarget{classRaytracer_aca467d824e3072469ead9f25a23461da}\label{classRaytracer_aca467d824e3072469ead9f25a23461da} 
+void {\bfseries set\+Scene} (\mbox{\hyperlink{classScene}{Scene}} scene)
+\item 
+\Hypertarget{classRaytracer_aaa335f730ed7717931bf8d7c3aaafdaf}\label{classRaytracer_aaa335f730ed7717931bf8d7c3aaafdaf} 
+void {\bfseries write\+To\+File\+PPM} (std\+::string file\+Name)
+\item 
+\Hypertarget{classRaytracer_a8a5fde254f6dba947b5d01ac0a20556f}\label{classRaytracer_a8a5fde254f6dba947b5d01ac0a20556f} 
+void {\bfseries parse\+Cmd} (int ac, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}av)
+\item 
+\Hypertarget{classRaytracer_a18c57efdfe24e5e4f0af3d5d0b053c24}\label{classRaytracer_a18c57efdfe24e5e4f0af3d5d0b053c24} 
+void {\bfseries Load\+Allformlibs} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&objects\+Config)
+\item 
+\Hypertarget{classRaytracer_ab9310d601335e0f1ce7c93f33449ae21}\label{classRaytracer_ab9310d601335e0f1ce7c93f33449ae21} 
+void {\bfseries Init\+Params} ()
+\item 
+\Hypertarget{classRaytracer_aba900f58b80d2e62834341f8e6c54036}\label{classRaytracer_aba900f58b80d2e62834341f8e6c54036} 
+void {\bfseries set\+Scene} ()
+\item 
+\Hypertarget{classRaytracer_a65547f11c494aa41bb7fadee6c451c43}\label{classRaytracer_a65547f11c494aa41bb7fadee6c451c43} 
+void {\bfseries Start\+Image} ()
+\item 
+\Hypertarget{classRaytracer_a32e8699dc030dc473c6dbc2726ac2dfd}\label{classRaytracer_a32e8699dc030dc473c6dbc2726ac2dfd} 
+void {\bfseries print\+Loading\+Bar} (std\+::shared\+\_\+ptr$<$ int $>$ pixel\+Count, int total\+Pixels, int bar\+Width)
+\item 
+\Hypertarget{classRaytracer_a2d0b21baca99bf4010fbeacff6f87ddc}\label{classRaytracer_a2d0b21baca99bf4010fbeacff6f87ddc} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries blend\+Colors} (const \mbox{\hyperlink{classColor}{Color}} \&foreground, const \mbox{\hyperlink{classColor}{Color}} \&background, float transparency)
+\item 
+\Hypertarget{classRaytracer_aff47fa630e3a79a7b79a9ceaa5deb4ea}\label{classRaytracer_aff47fa630e3a79a7b79a9ceaa5deb4ea} 
+std\+::vector$<$ \mbox{\hyperlink{structInfoPixelDisplay}{Info\+Pixel\+Display}} $>$ {\bfseries calculate\+Pixel} (const \mbox{\hyperlink{classRay}{Ray}} \&ray)
+\item 
+\Hypertarget{classRaytracer_a3f7b84e62249f343cd96d9c74118ac7f}\label{classRaytracer_a3f7b84e62249f343cd96d9c74118ac7f} 
+void {\bfseries loop\+Thru\+Type} ()
+\item 
+\Hypertarget{classRaytracer_ae62a6043cec22df03209e40fe17898d1}\label{classRaytracer_ae62a6043cec22df03209e40fe17898d1} 
+void {\bfseries initialize\+Scene} ()
+\item 
+\Hypertarget{classRaytracer_a71edae8e6b24fcadf392213d20478e2c}\label{classRaytracer_a71edae8e6b24fcadf392213d20478e2c} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries compute\+Pixel\+Color} (double u, double v, const \mbox{\hyperlink{classColor}{Color}} \&background\+Color)
+\item 
+\Hypertarget{classRaytracer_a94ca5f9b7944fc3390ff22a68d8b840e}\label{classRaytracer_a94ca5f9b7944fc3390ff22a68d8b840e} 
+void {\bfseries render\+Graphic\+Mode} (const \mbox{\hyperlink{classColor}{Color}} \&background\+Color, std\+::shared\+\_\+ptr$<$ int $>$ pixel\+Count, int total\+Pixels, int bar\+Width)
+\item 
+\Hypertarget{classRaytracer_ae9a76f6c63b59843405739695a5e871a}\label{classRaytracer_ae9a76f6c63b59843405739695a5e871a} 
+void {\bfseries render\+Console\+Mode} (const \mbox{\hyperlink{classColor}{Color}} \&background\+Color, std\+::shared\+\_\+ptr$<$ int $>$ pixel\+Count, int total\+Pixels, int bar\+Width)
+\item 
+\Hypertarget{classRaytracer_a25de4068fb831d856e3954621b09c358}\label{classRaytracer_a25de4068fb831d856e3954621b09c358} 
+void {\bfseries finalize\+Rendering} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRaytracer_aab3d5e21babd71bfc0f5126c28e34d21}\label{classRaytracer_aab3d5e21babd71bfc0f5126c28e34d21} 
+bool {\bfseries graphic\+Mode}
+\item 
+\Hypertarget{classRaytracer_a219b6f694e8011b0d4384fa6ee94b5e9}\label{classRaytracer_a219b6f694e8011b0d4384fa6ee94b5e9} 
+bool {\bfseries debug\+Mode}
+\item 
+\Hypertarget{classRaytracer_a9ede7df26103de7437a30d3fdb5eb271}\label{classRaytracer_a9ede7df26103de7437a30d3fdb5eb271} 
+std\+::string {\bfseries \+\_\+scenefile}
+\item 
+\Hypertarget{classRaytracer_a5c0cb4ca72ec3af93f9134f71decd21c}\label{classRaytracer_a5c0cb4ca72ec3af93f9134f71decd21c} 
+std\+::string {\bfseries \+\_\+outputfile}
+\item 
+\Hypertarget{classRaytracer_ab5f314d267d462fdc34c4f1e15439e6f}\label{classRaytracer_ab5f314d267d462fdc34c4f1e15439e6f} 
+std\+::string {\bfseries \+\_\+outputformat}
+\item 
+\Hypertarget{classRaytracer_a1d4409a382bdeccd2c76c0e44a9fbb91}\label{classRaytracer_a1d4409a382bdeccd2c76c0e44a9fbb91} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classImage}{Image}} $>$ {\bfseries image}
+\item 
+\Hypertarget{classRaytracer_a29fe6dec3cdfa47528966a419a13e429}\label{classRaytracer_a29fe6dec3cdfa47528966a419a13e429} 
+\mbox{\hyperlink{classScene}{Scene}} {\bfseries \+\_\+scene}
+\item 
+\Hypertarget{classRaytracer_a5b190da7f60c681630ec380dbc215ebe}\label{classRaytracer_a5b190da7f60c681630ec380dbc215ebe} 
+\mbox{\hyperlink{classFactoryManager}{Factory\+Manager}} {\bfseries \+\_\+factory\+Manager}
+\item 
+\Hypertarget{classRaytracer_abbbd659c226166137508a05b402b9223}\label{classRaytracer_abbbd659c226166137508a05b402b9223} 
+\mbox{\hyperlink{classGraphicMode}{Graphic\+Mode}} {\bfseries \+\_\+display}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Raytracer.\+hpp\item 
+src/image/Convert\+Image.\+cpp\item 
+src/Raytracer.\+cpp\item 
+src/Raytracer\+Image.\+cpp\end{DoxyCompactItemize}

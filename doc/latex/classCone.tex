@@ -1,0 +1,142 @@
+\doxysection{Cone Class Reference}
+\hypertarget{classCone}{}\label{classCone}\index{Cone@{Cone}}
+
+
+Inheritance diagram for Cone\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCone__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cone\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCone__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCone_a238a0fddb57026a0a71d70eff9cc1deb}\label{classCone_a238a0fddb57026a0a71d70eff9cc1deb} 
+{\bfseries Cone} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+\Hypertarget{classCone_a42b02916cb9a00304e58fd432603e1b7}\label{classCone_a42b02916cb9a00304e58fd432603e1b7} 
+void {\bfseries set\+Base\+Radius} (float radius)
+\item 
+\Hypertarget{classCone_a59ba5ced18710c69f1543fc7281fc22d}\label{classCone_a59ba5ced18710c69f1543fc7281fc22d} 
+void {\bfseries set\+Height} (float height)
+\item 
+\mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \mbox{\hyperlink{classCone_aabdfe6f06b79b225fdc22e11e49097cc}{distance}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) override
+\item 
+\Hypertarget{classCone_a779079e33d2958721bc487f80670976d}\label{classCone_a779079e33d2958721bc487f80670976d} 
+float {\bfseries get\+Base\+Radius} () const
+\item 
+Type \mbox{\hyperlink{classCone_a736384f37991291e42e8878b08e034bf}{get\+Type}} () const override
+\item 
+\Hypertarget{classCone_accf1dca0ecfeb32d2ef07b8fbd942679}\label{classCone_accf1dca0ecfeb32d2ef07b8fbd942679} 
+float {\bfseries get\+Height} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classAPrimitives}{APrimitives}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries APrimitives} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \mbox{\hyperlink{classAPrimitives_ae741ac29ad3ad15d89f26900e864976c}{get\+Position}} () const override
+\item 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \mbox{\hyperlink{classAPrimitives_adb8ff939728efd81af8a7295e4a3b120}{get\+Rotation}} () const override
+\item 
+float \mbox{\hyperlink{classAPrimitives_a4af8315d35c0e211d29ce615621d8890}{get\+Scale}} () const override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ \mbox{\hyperlink{classAPrimitives_a91020f85ad901ed79e2cd34cb704b1fd}{get\+Material}} () const override
+\item 
+void \mbox{\hyperlink{classAPrimitives_af10d4f52829815009f87838fab8c94fd}{set\+Position}} (const \mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \&new\+Position) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a22dd6a5e8922fd3b5441db8073e499ee}{set\+Rotation}} (const \mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \&new\+Rotation) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a98a8db0edce6de02468e6654c89bce76}{set\+Scale}} (const float new\+Scale) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_aa28bac324a14b070923b003a19b73a0c}{set\+Material}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ new\+Material) override
+\item 
+void {\bfseries get\+Pos} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Rot} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Col} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Scales} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Graph} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+void {\bfseries apply\+Material} (\mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \&pixel\+Info)
+\item 
+void {\bfseries get\+Graph\+Scale} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+void {\bfseries get\+Pos\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+void {\bfseries get\+Rot\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCone_a058546eb4bad302851c9039a46605511}\label{classCone_a058546eb4bad302851c9039a46605511} 
+float {\bfseries \+\_\+base\+Radius}
+\item 
+\Hypertarget{classCone_a8e41b16be59a46fd4d67b6ba3d4c0108}\label{classCone_a8e41b16be59a46fd4d67b6ba3d4c0108} 
+float {\bfseries \+\_\+height}
+\item 
+\Hypertarget{classCone_aaed91e19ccc25e6ef6d0164f1a104908}\label{classCone_aaed91e19ccc25e6ef6d0164f1a104908} 
+double {\bfseries \+\_\+distance}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classAPrimitives}{APrimitives}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} {\bfseries position}
+\item 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} {\bfseries \+\_\+rotation}
+\item 
+float {\bfseries scale}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ {\bfseries material}
+\item 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries \+\_\+color}
+\item 
+Math\+::\+Vector3D {\bfseries \+\_\+scales}
+\item 
+std\+::string {\bfseries \+\_\+graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCone_aabdfe6f06b79b225fdc22e11e49097cc}\label{classCone_aabdfe6f06b79b225fdc22e11e49097cc} 
+\index{Cone@{Cone}!distance@{distance}}
+\index{distance@{distance}!Cone@{Cone}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} Cone\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAPrimitives}{APrimitives}}.
+
+\Hypertarget{classCone_a736384f37991291e42e8878b08e034bf}\label{classCone_a736384f37991291e42e8878b08e034bf} 
+\index{Cone@{Cone}!getType@{getType}}
+\index{getType@{getType}!Cone@{Cone}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily Type Cone\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAPrimitives}{APrimitives}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/primitives/Cone.\+hpp\item 
+src/primitives/Cone.\+cpp\end{DoxyCompactItemize}

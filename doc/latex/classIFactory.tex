@@ -1,0 +1,29 @@
+\doxysection{IFactory\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classIFactory}{}\label{classIFactory}\index{IFactory$<$ T $>$@{IFactory$<$ T $>$}}
+
+
+Collaboration diagram for IFactory\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classIFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIFactory_a8d54ebb989eb76c764ab8b6d0369c735}\label{classIFactory_a8d54ebb989eb76c764ab8b6d0369c735} 
+virtual std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries create} (const std\+::string \&type, std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ config, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)=0
+\item 
+\Hypertarget{classIFactory_a0f4797db56672dd110611f5e763bc673}\label{classIFactory_a0f4797db56672dd110611f5e763bc673} 
+virtual void {\bfseries register\+Creator} (const std\+::string \&type, std\+::function$<$ std\+::shared\+\_\+ptr$<$ T $>$(std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&)$>$ creator)=0
+\item 
+\Hypertarget{classIFactory_aea4b1f6e1b330b558008df941c7da76e}\label{classIFactory_aea4b1f6e1b330b558008df941c7da76e} 
+virtual bool {\bfseries load\+Plugin} (const std\+::string \&path)=0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/factory/IFactory.\+hpp\end{DoxyCompactItemize}

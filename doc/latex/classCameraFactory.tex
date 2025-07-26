@@ -1,0 +1,88 @@
+\doxysection{Camera\+Factory Class Reference}
+\hypertarget{classCameraFactory}{}\label{classCameraFactory}\index{CameraFactory@{CameraFactory}}
+
+
+Inheritance diagram for Camera\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classCameraFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Camera\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classCameraFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \mbox{\hyperlink{classCameraFactory_a93c815e28899f44a833cb5d91cdc7588}{create}} (const std\+::string \&type, std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ config, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List) override
+\item 
+void \mbox{\hyperlink{classCameraFactory_ae478e41b5dd9d905bf7ae59509de3056}{register\+Creator}} (const std\+::string \&type, std\+::function$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$(std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&)$>$ creator) override
+\item 
+bool \mbox{\hyperlink{classCameraFactory_ac5f31b1b7642258da104538a2bc2335f}{load\+Plugin}} (const std\+::string \&path) override
+\item 
+\Hypertarget{classCameraFactory_a7362218828e6461486d4d55ea9524f8f}\label{classCameraFactory_a7362218828e6461486d4d55ea9524f8f} 
+void {\bfseries load\+All\+Plugins} (const std\+::string \&directory="{}plugins/"{})
+\item 
+\Hypertarget{classCameraFactory_a92a68429c50fc1ecd099fbc626f5fb8f}\label{classCameraFactory_a92a68429c50fc1ecd099fbc626f5fb8f} 
+Object\+Type {\bfseries get\+Type\+From\+Plugin} (const std\+::string \&path, \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ void \texorpdfstring{$\ast$}{*} $>$ loader)
+\item 
+\Hypertarget{classCameraFactory_a2cab6e20fbcfaf1aba5f1c7bbe884fdf}\label{classCameraFactory_a2cab6e20fbcfaf1aba5f1c7bbe884fdf} 
+std\+::string {\bfseries get\+Name\+From\+Plugin} (const std\+::string \&path, \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ void \texorpdfstring{$\ast$}{*} $>$ loader)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCameraFactory_ac17079c88d86fac35ca410a3594f1ae9}\label{classCameraFactory_ac17079c88d86fac35ca410a3594f1ae9} 
+std\+::map$<$ std\+::string, std\+::function$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$(std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&)$>$ {\bfseries \+\_\+creators} )
+\item 
+\Hypertarget{classCameraFactory_aae3b565f5d4fa5c6c1acfa6374e89f3b}\label{classCameraFactory_aae3b565f5d4fa5c6c1acfa6374e89f3b} 
+std\+::vector$<$ \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ void \texorpdfstring{$\ast$}{*} $>$ $>$ {\bfseries \+\_\+dl\+Loaders}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCameraFactory_a93c815e28899f44a833cb5d91cdc7588}\label{classCameraFactory_a93c815e28899f44a833cb5d91cdc7588} 
+\index{CameraFactory@{CameraFactory}!create@{create}}
+\index{create@{create}!CameraFactory@{CameraFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ Camera\+Factory\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$}]{config,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&}]{graph\+Scene\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIFactory}{IFactory$<$ Camera $>$}}.
+
+\Hypertarget{classCameraFactory_ac5f31b1b7642258da104538a2bc2335f}\label{classCameraFactory_ac5f31b1b7642258da104538a2bc2335f} 
+\index{CameraFactory@{CameraFactory}!loadPlugin@{loadPlugin}}
+\index{loadPlugin@{loadPlugin}!CameraFactory@{CameraFactory}}
+\doxysubsubsection{\texorpdfstring{loadPlugin()}{loadPlugin()}}
+{\footnotesize\ttfamily bool Camera\+Factory\+::load\+Plugin (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIFactory}{IFactory$<$ Camera $>$}}.
+
+\Hypertarget{classCameraFactory_ae478e41b5dd9d905bf7ae59509de3056}\label{classCameraFactory_ae478e41b5dd9d905bf7ae59509de3056} 
+\index{CameraFactory@{CameraFactory}!registerCreator@{registerCreator}}
+\index{registerCreator@{registerCreator}!CameraFactory@{CameraFactory}}
+\doxysubsubsection{\texorpdfstring{registerCreator()}{registerCreator()}}
+{\footnotesize\ttfamily void Camera\+Factory\+::register\+Creator (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{std\+::function$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$(std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&)$>$}]{creator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIFactory}{IFactory$<$ Camera $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/factory/Camera\+Factory.\+hpp\item 
+src/factory/Camera\+Factory.\+cpp\end{DoxyCompactItemize}

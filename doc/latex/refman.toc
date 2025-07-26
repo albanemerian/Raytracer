@@ -1,0 +1,153 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Project Detail}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Compilation \discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Coding Style \discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Documentation \discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{2}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Docusorus \discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{2}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Doxygen \discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{2}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Commit norm \discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{2}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Pull Request}{2}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Git-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cli \discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{7}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{9}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}AException Class Reference}{11}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Member Function Documentation}{13}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}getFormattedMessage()}{13}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}getMessage()}{13}{subsubsection.5.1.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.1.3}getType()}{13}{subsubsection.5.1.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.1.4}what()}{13}{subsubsection.5.1.1.4}%
+\contentsline {section}{\numberline {5.2}APrimitives Class Reference}{14}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Member Function Documentation}{16}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.1}distance()}{16}{subsubsection.5.2.1.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.2}getMaterial()}{16}{subsubsection.5.2.1.2}%
+\contentsline {subsubsection}{\numberline {5.2.1.3}getPosition()}{16}{subsubsection.5.2.1.3}%
+\contentsline {subsubsection}{\numberline {5.2.1.4}getRotation()}{16}{subsubsection.5.2.1.4}%
+\contentsline {subsubsection}{\numberline {5.2.1.5}getScale()}{17}{subsubsection.5.2.1.5}%
+\contentsline {subsubsection}{\numberline {5.2.1.6}getType()}{17}{subsubsection.5.2.1.6}%
+\contentsline {subsubsection}{\numberline {5.2.1.7}setMaterial()}{17}{subsubsection.5.2.1.7}%
+\contentsline {subsubsection}{\numberline {5.2.1.8}setPosition()}{17}{subsubsection.5.2.1.8}%
+\contentsline {subsubsection}{\numberline {5.2.1.9}setRotation()}{17}{subsubsection.5.2.1.9}%
+\contentsline {subsubsection}{\numberline {5.2.1.10}setScale()}{17}{subsubsection.5.2.1.10}%
+\contentsline {section}{\numberline {5.3}Camera Class Reference}{18}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{20}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Member Function Documentation}{22}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}create()}{22}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.2}loadPlugin()}{22}{subsubsection.5.4.1.2}%
+\contentsline {subsubsection}{\numberline {5.4.1.3}registerCreator()}{22}{subsubsection.5.4.1.3}%
+\contentsline {section}{\numberline {5.5}Color Class Reference}{23}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Color\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{24}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{26}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Cone Class Reference}{28}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Member Function Documentation}{30}{subsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}distance()}{30}{subsubsection.5.8.1.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.2}getType()}{31}{subsubsection.5.8.1.2}%
+\contentsline {section}{\numberline {5.9}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Node Class Reference}{31}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parser Class Reference}{32}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Cylinder Class Reference}{33}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Member Function Documentation}{35}{subsection.5.11.1}%
+\contentsline {subsubsection}{\numberline {5.11.1.1}distance()}{35}{subsubsection.5.11.1.1}%
+\contentsline {subsubsection}{\numberline {5.11.1.2}getType()}{36}{subsubsection.5.11.1.2}%
+\contentsline {section}{\numberline {5.12}DLLoader$<$ T $>$ Class Template Reference}{36}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Member Function Documentation}{37}{subsection.5.12.1}%
+\contentsline {subsubsection}{\numberline {5.12.1.1}Close()}{37}{subsubsection.5.12.1.1}%
+\contentsline {subsubsection}{\numberline {5.12.1.2}Error()}{38}{subsubsection.5.12.1.2}%
+\contentsline {subsubsection}{\numberline {5.12.1.3}getHandler()}{38}{subsubsection.5.12.1.3}%
+\contentsline {subsubsection}{\numberline {5.12.1.4}Open()}{38}{subsubsection.5.12.1.4}%
+\contentsline {subsubsection}{\numberline {5.12.1.5}Symbol()}{38}{subsubsection.5.12.1.5}%
+\contentsline {section}{\numberline {5.13}Error Class Reference}{39}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Factory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{41}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Factory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{43}{section.5.15}%
+\contentsline {section}{\numberline {5.16}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{44}{section.5.16}%
+\contentsline {section}{\numberline {5.17}Graphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mode Class Reference}{46}{section.5.17}%
+\contentsline {section}{\numberline {5.18}IException Class Reference}{47}{section.5.18}%
+\contentsline {section}{\numberline {5.19}IFactory$<$ T $>$ Class Template Reference}{48}{section.5.19}%
+\contentsline {section}{\numberline {5.20}ILoader Class Reference}{49}{section.5.20}%
+\contentsline {section}{\numberline {5.21}Image Class Reference}{51}{section.5.21}%
+\contentsline {section}{\numberline {5.22}Info\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pixel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display Struct Reference}{52}{section.5.22}%
+\contentsline {section}{\numberline {5.23}IPrimitives Class Reference}{53}{section.5.23}%
+\contentsline {section}{\numberline {5.24}Material Struct Reference}{55}{section.5.24}%
+\contentsline {section}{\numberline {5.25}Material\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loader Class Reference}{57}{section.5.25}%
+\contentsline {section}{\numberline {5.26}Material\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loader\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{59}{section.5.26}%
+\contentsline {section}{\numberline {5.27}Math\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exeption Class Reference}{61}{section.5.27}%
+\contentsline {section}{\numberline {5.28}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Constructor Class Reference}{63}{section.5.28}%
+\contentsline {section}{\numberline {5.29}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Error\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handling Class Reference}{65}{section.5.29}%
+\contentsline {section}{\numberline {5.30}Parser Class Reference}{67}{section.5.30}%
+\contentsline {section}{\numberline {5.31}Pixel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{69}{section.5.31}%
+\contentsline {section}{\numberline {5.32}Plane Class Reference}{70}{section.5.32}%
+\contentsline {subsection}{\numberline {5.32.1}Member Function Documentation}{72}{subsection.5.32.1}%
+\contentsline {subsubsection}{\numberline {5.32.1.1}distance()}{72}{subsubsection.5.32.1.1}%
+\contentsline {subsubsection}{\numberline {5.32.1.2}getType()}{73}{subsubsection.5.32.1.2}%
+\contentsline {section}{\numberline {5.33}Math\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Point3D Class Reference}{73}{section.5.33}%
+\contentsline {section}{\numberline {5.34}Primitive\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{74}{section.5.34}%
+\contentsline {subsection}{\numberline {5.34.1}Member Function Documentation}{76}{subsection.5.34.1}%
+\contentsline {subsubsection}{\numberline {5.34.1.1}create()}{76}{subsubsection.5.34.1.1}%
+\contentsline {subsubsection}{\numberline {5.34.1.2}loadPlugin()}{76}{subsubsection.5.34.1.2}%
+\contentsline {subsubsection}{\numberline {5.34.1.3}registerCreator()}{76}{subsubsection.5.34.1.3}%
+\contentsline {section}{\numberline {5.35}Property\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Struct Reference}{76}{section.5.35}%
+\contentsline {section}{\numberline {5.36}Property\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{77}{section.5.36}%
+\contentsline {section}{\numberline {5.37}Ray Class Reference}{78}{section.5.37}%
+\contentsline {section}{\numberline {5.38}Raytracer Class Reference}{80}{section.5.38}%
+\contentsline {section}{\numberline {5.39}Rectangle3D Class Reference}{82}{section.5.39}%
+\contentsline {section}{\numberline {5.40}Math\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Rot3D Class Reference}{83}{section.5.40}%
+\contentsline {section}{\numberline {5.41}Scene Class Reference}{84}{section.5.41}%
+\contentsline {section}{\numberline {5.42}Scene\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{85}{section.5.42}%
+\contentsline {section}{\numberline {5.43}Shape\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Definition Struct Reference}{87}{section.5.43}%
+\contentsline {section}{\numberline {5.44}Sphere Class Reference}{88}{section.5.44}%
+\contentsline {subsection}{\numberline {5.44.1}Member Function Documentation}{90}{subsection.5.44.1}%
+\contentsline {subsubsection}{\numberline {5.44.1.1}distance()}{90}{subsubsection.5.44.1.1}%
+\contentsline {subsubsection}{\numberline {5.44.1.2}getType()}{91}{subsubsection.5.44.1.2}%
+\contentsline {section}{\numberline {5.45}Utils Class Reference}{91}{section.5.45}%
+\contentsline {section}{\numberline {5.46}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter Class Reference}{91}{section.5.46}%
+\contentsline {section}{\numberline {5.47}Vector2D Class Reference}{92}{section.5.47}%
+\contentsline {chapter}{\numberline {6}File Documentation}{93}{chapter.6}%
+\contentsline {section}{\numberline {6.1}APrimitives.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{93}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Camera.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{94}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Color.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{94}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Error.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{95}{section.6.4}%
+\contentsline {section}{\numberline {6.5}AException.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{96}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Color\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{96}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{97}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Factory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{97}{section.6.8}%
+\contentsline {section}{\numberline {6.9}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{97}{section.6.9}%
+\contentsline {section}{\numberline {6.10}IException.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{98}{section.6.10}%
+\contentsline {section}{\numberline {6.11}material\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loader\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{98}{section.6.11}%
+\contentsline {section}{\numberline {6.12}Math\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exeption.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{98}{section.6.12}%
+\contentsline {section}{\numberline {6.13}Scene\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{99}{section.6.13}%
+\contentsline {section}{\numberline {6.14}Image.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{99}{section.6.14}%
+\contentsline {section}{\numberline {6.15}IPrimitives.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{100}{section.6.15}%
+\contentsline {section}{\numberline {6.16}Material.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{100}{section.6.16}%
+\contentsline {section}{\numberline {6.17}Pixel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{101}{section.6.17}%
+\contentsline {section}{\numberline {6.18}Point3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{101}{section.6.18}%
+\contentsline {section}{\numberline {6.19}Ray.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{102}{section.6.19}%
+\contentsline {section}{\numberline {6.20}Rectangle3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{103}{section.6.20}%
+\contentsline {section}{\numberline {6.21}Rot3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{103}{section.6.21}%
+\contentsline {section}{\numberline {6.22}Scene.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{104}{section.6.22}%
+\contentsline {section}{\numberline {6.23}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{104}{section.6.23}%
+\contentsline {section}{\numberline {6.24}Vector2\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{105}{section.6.24}%
+\contentsline {section}{\numberline {6.25}Vector3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{105}{section.6.25}%
+\contentsline {section}{\numberline {6.26}DLLoader.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{106}{section.6.26}%
+\contentsline {section}{\numberline {6.27}ILoader.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{107}{section.6.27}%
+\contentsline {section}{\numberline {6.28}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{107}{section.6.28}%
+\contentsline {section}{\numberline {6.29}Factory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{108}{section.6.29}%
+\contentsline {section}{\numberline {6.30}IFactory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{109}{section.6.30}%
+\contentsline {section}{\numberline {6.31}Primitive\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{109}{section.6.31}%
+\contentsline {section}{\numberline {6.32}Material\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loader.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{110}{section.6.32}%
+\contentsline {section}{\numberline {6.33}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Node.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{110}{section.6.33}%
+\contentsline {section}{\numberline {6.34}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{111}{section.6.34}%
+\contentsline {section}{\numberline {6.35}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Constructor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{111}{section.6.35}%
+\contentsline {section}{\numberline {6.36}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Error\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handling.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{112}{section.6.36}%
+\contentsline {section}{\numberline {6.37}Parser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{113}{section.6.37}%
+\contentsline {section}{\numberline {6.38}Property\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{114}{section.6.38}%
+\contentsline {section}{\numberline {6.39}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{114}{section.6.39}%
+\contentsline {section}{\numberline {6.40}Cone.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{114}{section.6.40}%
+\contentsline {section}{\numberline {6.41}Cylinder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{115}{section.6.41}%
+\contentsline {section}{\numberline {6.42}Plane.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{116}{section.6.42}%
+\contentsline {section}{\numberline {6.43}Sphere.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{116}{section.6.43}%
+\contentsline {section}{\numberline {6.44}Raytracer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{116}{section.6.44}%
+\contentsline {section}{\numberline {6.45}Graphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mode.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{118}{section.6.45}%
+\contentsline {section}{\numberline {6.46}Utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{118}{section.6.46}%

@@ -1,0 +1,61 @@
+\doxysection{Camera.\+hpp}
+\hypertarget{Camera_8hpp_source}{}\label{Camera_8hpp_source}\index{common/Camera.hpp@{common/Camera.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ICamera}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Point3D.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Rectangle3D.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Ray.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ ICAMERA\_HPP\_}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ ICAMERA\_HPP\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCamera}{Camera}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera}{Camera}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera}{Camera}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCamera}{Camera}}\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera}{Camera}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classRectangle3D}{Rectangle3D}}\&\ screen);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera}{\string~Camera}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ \_origin;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRectangle3D}{Rectangle3D}}\ \_screen;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera}{Camera}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCamera}{Camera}}\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRay}{Ray}}\ ray(\textcolor{keywordtype}{double}\ u,\ \textcolor{keywordtype}{double}\ v)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ getRotation()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_origin;\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRectangle3D}{Rectangle3D}}\ getScreen()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_screen;\ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ Math::Vector3D\ getPosition()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_position;\ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getWidth()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ width;\ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getHeight()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ height;\ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ getFieldOfView()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ fieldOfView;\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Setter\ */}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setRotation(\mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ rotation)\ \{\ \_rotation\ =\ rotation;\ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(Math::Vector3D\ position)\ \{\ \_position\ =\ position;\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setResolution(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \{\ width\ =\ x;\ height\ =\ y;\ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setHeight(\textcolor{keywordtype}{int}\ h)\ \{\ height\ =\ h;\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setFieldOfView(\textcolor{keywordtype}{float}\ fov)\ \{\ fieldOfView\ =\ fov;\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ fieldOfView;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ Math::Vector3D\ \_rotation;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ Math::Vector3D\ \_position;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !ICAMERA\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

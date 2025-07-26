@@ -1,0 +1,13 @@
+<map id="Sphere" name="Sphere">
+<area shape="rect" id="Node000001" title=" " alt="" coords="202,706,282,861"/>
+<area shape="rect" id="Node000002" href="$classAPrimitives.html" title=" " alt="" coords="188,353,296,657"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,672,245,706,239,706,239,672"/>
+<area shape="rect" id="Node000003" href="$classIPrimitives.html" title=" " alt="" coords="5,24,105,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,280,119,289,190,416,186,419,114,292,109,282"/>
+<area shape="rect" id="Node000004" href="$classMath_1_1Point3D.html" title=" " alt="" coords="129,5,229,291"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="207,290,215,336,210,337,202,291"/>
+<area shape="rect" id="Node000005" href="$classMath_1_1Rot3D.html" title=" " alt="" coords="254,5,358,291"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="283,291,275,337,270,336,278,290"/>
+<area shape="rect" id="Node000006" href="$classColor.html" title=" " alt="" coords="382,5,510,291"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="384,270,372,292,307,403,302,400,368,289,380,268"/>
+</map>

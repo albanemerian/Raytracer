@@ -1,0 +1,49 @@
+\doxysection{Error.\+hpp}
+\hypertarget{Error_8hpp_source}{}\label{Error_8hpp_source}\index{common/Error.hpp@{common/Error.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Error}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ ERROR\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ ERROR\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classError}{Error}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00016\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classError}{Error}}(\textcolor{keyword}{const}\ std::string\ \&msg,\ \textcolor{keyword}{const}\ std::string\ \&file,\ \textcolor{keywordtype}{int}\ line)}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ :\ \_message(msg),\ \_file(file),\ \_line(line)\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ ErrorFaillureException();}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classError}{\string~Error}}()\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *what()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override}\ \{\ \textcolor{keywordflow}{return}\ \_message.c\_str();\ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *where()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{\ \textcolor{keywordflow}{return}\ \_file.c\_str();\ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ line()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{\ \textcolor{keywordflow}{return}\ \_line;\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ ErrorFaillureException()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ "{}}\ <<\ what()\ <<\ \textcolor{stringliteral}{"{}\ in\ file:\ "{}}\ <<\ where()}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ at\ line:\ "{}}\ <<\ line()\ <<\ std::endl;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ exit(84);}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ exitCode(\textcolor{keywordtype}{int}\ code)\ \{\ exit(code);\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ std::string\ \_message;}
+\DoxyCodeLine{00039\ \ \ \ \ std::string\ \_file;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \_line;}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !ERROR\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

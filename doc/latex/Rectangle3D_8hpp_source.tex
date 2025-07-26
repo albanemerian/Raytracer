@@ -1,0 +1,38 @@
+\doxysection{Rectangle3\+D.\+hpp}
+\hypertarget{Rectangle3D_8hpp_source}{}\label{Rectangle3D_8hpp_source}\index{common/Rectangle3D.hpp@{common/Rectangle3D.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Raytracer}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Header}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Point3D.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Rot3D.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ RECTANGLE3D\_HPP\_}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#define\ RECTANGLE3D\_HPP\_}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRectangle3D}{Rectangle3D}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRectangle3D}{Rectangle3D}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\&\ origin,\ \textcolor{keyword}{const}\ Math::Vector3D\&\ bottom\_side,\ \textcolor{keyword}{const}\ Math::Vector3D\&\ left\_side);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRectangle3D}{Rectangle3D}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ \&point,\ \textcolor{keyword}{const}\ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Math::Rot3D}}\ \&rotation,\ \textcolor{keywordtype}{double}\ width\ =\ 1,\ \textcolor{keywordtype}{double}\ height\ =\ 1);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRectangle3D}{\string~Rectangle3D}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ \_origin;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ Math::Vector3D\ \_bottom\_side;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ Math::Vector3D\ \_left\_side;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getWidth()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getHeight()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ pointAt(\textcolor{keywordtype}{double}\ u,\ \textcolor{keywordtype}{double}\ v)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !RECTANGLE3D\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

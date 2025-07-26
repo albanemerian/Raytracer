@@ -1,0 +1,59 @@
+\doxysection{Point3\+D.\+hpp}
+\hypertarget{Point3D_8hpp_source}{}\label{Point3D_8hpp_source}\index{common/Point3D.hpp@{common/Point3D.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Point3D}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ POINT3D\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ POINT3D\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }Math\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{\string~Point3D}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ getX()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ getY()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ getZ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \textcolor{comment}{/*\ Setter\ */}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setX(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setY(\textcolor{keywordtype}{double}\ y);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setZ(\textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \textcolor{comment}{/*\ Methods\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ normalize()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ operator+(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ operator-\/(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ operator+(\textcolor{keyword}{const}\ Vector3D\ \&vector)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ operator-\/(\textcolor{keyword}{const}\ Vector3D\ \&vector)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ dot(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ dot(\textcolor{keyword}{const}\ Vector3D\ \&vector)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}(\textcolor{keyword}{const}\ Vector3D\ \&vector);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \textcolor{comment}{/*\ Operators\ */}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ \&operator+=(\textcolor{keyword}{const}\ Vector3D\ \&vector);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Point3D}}\ \&operator-\/=(\textcolor{keyword}{const}\ Vector3D\ \&vector);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ x;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ y;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ z;}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \}\ \ \textcolor{comment}{//\ namespace\ Math}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !POINT3D\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

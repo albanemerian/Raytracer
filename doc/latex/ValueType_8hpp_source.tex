@@ -1,0 +1,69 @@
+\doxysection{Value\+Type.\+hpp}
+\hypertarget{ValueType_8hpp_source}{}\label{ValueType_8hpp_source}\index{common/ValueType.hpp@{common/ValueType.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ValueType}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <variant>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}IPrimitives.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Vector2D.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifndef\ VALUETYPE\_HPP\_}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ VALUETYPE\_HPP\_}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{enum}\ ObjectType\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ TYPE\_CAMERA,}
+\DoxyCodeLine{00022\ \ \ \ \ TYPE\_LIGHT,}
+\DoxyCodeLine{00023\ \ \ \ \ TYPE\_PRIMITIVE,}
+\DoxyCodeLine{00024\ \ \ \ \ TYPE\_IMPORTED\_SCENE,}
+\DoxyCodeLine{00025\ \ \ \ \ TYPE\_GRAPH,}
+\DoxyCodeLine{00026\ \ \ \ \ TYPE\_MATERIAL,}
+\DoxyCodeLine{00027\ \ \ \ \ TYPE\_UNDEFINED}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{using\ }ValueType\ =\ std::variant<int,\ float,\ double,\ std::string,\ bool,\ Vector2D,\ Math::Vector3D,\ ObjectType>;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{enum}\ ValueFormat\ \{\ FORMAT\_SIMPLE,\ FORMAT\_VECTOR2D,\ FORMAT\_VECTOR3D\};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ ValueType\_s\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ NAME,}
+\DoxyCodeLine{00036\ \ \ \ \ TYPE,}
+\DoxyCodeLine{00037\ \ \ \ \ POSITION,}
+\DoxyCodeLine{00038\ \ \ \ \ ROTATION,}
+\DoxyCodeLine{00039\ \ \ \ \ SCALE,}
+\DoxyCodeLine{00040\ \ \ \ \ SCALES,}
+\DoxyCodeLine{00041\ \ \ \ \ COLOR,}
+\DoxyCodeLine{00042\ \ \ \ \ COLOR\_CHESS\_1,}
+\DoxyCodeLine{00043\ \ \ \ \ COLOR\_CHESS\_2,}
+\DoxyCodeLine{00044\ \ \ \ \ RADIUS,}
+\DoxyCodeLine{00045\ \ \ \ \ FIELD\_OF\_VIEW,}
+\DoxyCodeLine{00046\ \ \ \ \ RESOLUTION,}
+\DoxyCodeLine{00047\ \ \ \ \ AXIS,}
+\DoxyCodeLine{00048\ \ \ \ \ AMBIENT,}
+\DoxyCodeLine{00049\ \ \ \ \ DIFFUSE,}
+\DoxyCodeLine{00050\ \ \ \ \ DIRECTIONAL,}
+\DoxyCodeLine{00051\ \ \ \ \ HEIGHT,}
+\DoxyCodeLine{00052\ \ \ \ \ MATERIAL,}
+\DoxyCodeLine{00053\ \ \ \ \ GRAPH,}
+\DoxyCodeLine{00054\ \ \ \ \ PATH,}
+\DoxyCodeLine{00055\ \ \ \ \ SPECULAR,}
+\DoxyCodeLine{00056\ \ \ \ \ REFLECTION,}
+\DoxyCodeLine{00057\ \ \ \ \ TRANSPARENCY,}
+\DoxyCodeLine{00058\ \ \ \ \ REFRACTION\_INDEX,}
+\DoxyCodeLine{00059\ \}\ ValueType\_t;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !VALUETYPE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,98 @@
+\doxysection{Raytracer.\+hpp}
+\hypertarget{Raytracer_8hpp_source}{}\label{Raytracer_8hpp_source}\index{src/Raytracer.hpp@{src/Raytracer.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Raytracer}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}../common/APrimitives.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../common/ValueType.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}../common/Error.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}../common/Image.hpp"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}../common/Camera.hpp"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}../common/Scene.hpp"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}../lib/DLLoader.hpp"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}materialLoader/MaterialLoader.hpp"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}factory/FactoryManager.hpp"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}SFML/GraphicMode.hpp"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ RAYTRACER\_HPP\_}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ RAYTRACER\_HPP\_}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structInfoPixelDisplay}{InfoPixelDisplay}}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ distance;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ color;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ transparency;}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRaytracer}{Raytracer}}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRaytracer}{Raytracer}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classRaytracer}{\string~Raytracer}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ std::string\ getSceneFile()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ std::string\ getOutputFile()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ std::string\ getOutputFormat()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ std::shared\_ptr<Image>\ getImage()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ getGraphicMode()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isDebug()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classScene}{Scene}}\ getScene()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Setter\ */}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setSceneFile(std::string\ sceneFile);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setOutputFile(std::string\ outputFile);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setOutputFormat(std::string\ outputFormat);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setImage(std::shared\_ptr<Image>\ \mbox{\hyperlink{classImage}{Image}});}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setScene(\mbox{\hyperlink{classScene}{Scene}}\ scene);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Methods\ */}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ writeToFilePPM(std::string\ fileName);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parseCmd(\textcolor{keywordtype}{int}\ ac,\ \textcolor{keywordtype}{char}\ **av);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ LoadAllformlibs(\textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <ValueType\_t,\ ValueType>>>\&\ objectsConfig);}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Image\ Method\ */}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ InitParams();}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setScene();}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ StartImage();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ printLoadingBar(std::shared\_ptr<int>\ pixelCount,\ \textcolor{keywordtype}{int}\ totalPixels,\ \textcolor{keywordtype}{int}\ barWidth);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ blendColors(\textcolor{keyword}{const}\ \mbox{\hyperlink{classColor}{Color}}\&\ foreground,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classColor}{Color}}\&\ background,\ \textcolor{keywordtype}{float}\ transparency);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ std::vector<InfoPixelDisplay>\ calculatePixel(\textcolor{keyword}{const}\ \mbox{\hyperlink{classRay}{Ray}}\&\ ray);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ loopThruType();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ New\ image\ processing\ methods\ */}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ initializeScene();}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ computePixelColor(\textcolor{keywordtype}{double}\ u,\ \textcolor{keywordtype}{double}\ v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classColor}{Color}}\&\ backgroundColor);}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ renderGraphicMode(\textcolor{keyword}{const}\ \mbox{\hyperlink{classColor}{Color}}\&\ backgroundColor,\ std::shared\_ptr<int>\ pixelCount,\ \textcolor{keywordtype}{int}\ totalPixels,\ \textcolor{keywordtype}{int}\ barWidth);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ renderConsoleMode(\textcolor{keyword}{const}\ \mbox{\hyperlink{classColor}{Color}}\&\ backgroundColor,\ std::shared\_ptr<int>\ pixelCount,\ \textcolor{keywordtype}{int}\ totalPixels,\ \textcolor{keywordtype}{int}\ barWidth);}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ finalizeRendering();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00080\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ graphicMode;}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ debugMode;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ std::string\ \_scenefile;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ std::string\ \_outputfile;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ std::string\ \_outputformat;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ std::shared\_ptr<Image>\ image;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \mbox{\hyperlink{classScene}{Scene}}\ \_scene;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \mbox{\hyperlink{classFactoryManager}{FactoryManager}}\ \_factoryManager;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \mbox{\hyperlink{classGraphicMode}{GraphicMode}}\ \_display;}
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !RAYTRACER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

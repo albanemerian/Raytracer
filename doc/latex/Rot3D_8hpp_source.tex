@@ -1,0 +1,48 @@
+\doxysection{Rot3\+D.\+hpp}
+\hypertarget{Rot3D_8hpp_source}{}\label{Rot3D_8hpp_source}\index{common/Rot3D.hpp@{common/Rot3D.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Raytracer}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ ROT3D\_HPP}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ ROT3D\_HPP}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Vector3D.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }Math\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \{}
+\DoxyCodeLine{00015\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ x\_pitch;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ z\_yaw;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ y\_roll;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}(\textcolor{keywordtype}{double}\ x\_pitch\ =\ 0,\ \textcolor{keywordtype}{double}\ z\_yaw\ =\ 0,\ \textcolor{keywordtype}{double}\ y\_roll\ =\ 0);}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&other);}
+\DoxyCodeLine{00022\ \ \ \ \ Vector3D\ toVector()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ operator+(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&operator+=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&other);}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ operator-\/(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&operator-\/=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&other);}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ operator-\/()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ Vector3D\ toUnitVector()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ Vector3D\ rotate(\textcolor{keyword}{const}\ Vector3D\ \&vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ Vector3D\ inverseRotate(\textcolor{keyword}{const}\ Vector3D\ \&vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&other);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{double}\ dot(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Rot3D}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{double}\ getX()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ x\_pitch;\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ getY()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ y\_roll;\ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ getZ()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ z\_yaw;\ \}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ \}\ \ \textcolor{comment}{//\ namespace\ Math}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ROT3D\_HPP}}
+
+\end{DoxyCode}

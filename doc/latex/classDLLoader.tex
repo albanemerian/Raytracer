@@ -1,0 +1,104 @@
+\doxysection{DLLoader\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classDLLoader}{}\label{classDLLoader}\index{DLLoader$<$ T $>$@{DLLoader$<$ T $>$}}
+
+
+Inheritance diagram for DLLoader\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classDLLoader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for DLLoader\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classDLLoader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDLLoader_a471d8fcebcdfe75474f04d30884c47c5}{get\+Handler}} () const override
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDLLoader_a4da61ac403dd1e22c83904e43410c183}{Open}} (const char \texorpdfstring{$\ast$}{*}path, int flag) override
+\item 
+T \mbox{\hyperlink{classDLLoader_aa70a2c7392aa8ae04843eeae2bcf3272}{Symbol}} (const char \texorpdfstring{$\ast$}{*}symbol\+Name) override
+\item 
+int \mbox{\hyperlink{classDLLoader_a013d45f166c80c455cf286fa12b35ef5}{Close}} () override
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDLLoader_aad61229e18c948ec05c1b660f07b2f61}{Error}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classDLLoader_ab6988ed2b392c11f2295f4a4b1b70179}\label{classDLLoader_ab6988ed2b392c11f2295f4a4b1b70179} 
+void \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+handler} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDLLoader_a013d45f166c80c455cf286fa12b35ef5}\label{classDLLoader_a013d45f166c80c455cf286fa12b35ef5} 
+\index{DLLoader$<$ T $>$@{DLLoader$<$ T $>$}!Close@{Close}}
+\index{Close@{Close}!DLLoader$<$ T $>$@{DLLoader$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ T $>$\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classILoader}{ILoader}}.
+
+\Hypertarget{classDLLoader_aad61229e18c948ec05c1b660f07b2f61}\label{classDLLoader_aad61229e18c948ec05c1b660f07b2f61} 
+\index{DLLoader$<$ T $>$@{DLLoader$<$ T $>$}!Error@{Error}}
+\index{Error@{Error}!DLLoader$<$ T $>$@{DLLoader$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ T $>$\mbox{\hyperlink{classError}{\+::\+Error}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classILoader}{ILoader}}.
+
+\Hypertarget{classDLLoader_a471d8fcebcdfe75474f04d30884c47c5}\label{classDLLoader_a471d8fcebcdfe75474f04d30884c47c5} 
+\index{DLLoader$<$ T $>$@{DLLoader$<$ T $>$}!getHandler@{getHandler}}
+\index{getHandler@{getHandler}!DLLoader$<$ T $>$@{DLLoader$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getHandler()}{getHandler()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ T $>$\+::get\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classILoader}{ILoader}}.
+
+\Hypertarget{classDLLoader_a4da61ac403dd1e22c83904e43410c183}\label{classDLLoader_a4da61ac403dd1e22c83904e43410c183} 
+\index{DLLoader$<$ T $>$@{DLLoader$<$ T $>$}!Open@{Open}}
+\index{Open@{Open}!DLLoader$<$ T $>$@{DLLoader$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ T $>$\+::\+Open (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{path,  }\item[{int}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classILoader}{ILoader}}.
+
+\Hypertarget{classDLLoader_aa70a2c7392aa8ae04843eeae2bcf3272}\label{classDLLoader_aa70a2c7392aa8ae04843eeae2bcf3272} 
+\index{DLLoader$<$ T $>$@{DLLoader$<$ T $>$}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!DLLoader$<$ T $>$@{DLLoader$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Symbol()}{Symbol()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classDLLoader}{DLLoader}}$<$ T $>$\+::\+Symbol (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{symbol\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classILoader}{ILoader}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/DLLoader.\+hpp\end{DoxyCompactItemize}

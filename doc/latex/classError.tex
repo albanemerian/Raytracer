@@ -1,0 +1,60 @@
+\doxysection{Error Class Reference}
+\hypertarget{classError}{}\label{classError}\index{Error@{Error}}
+
+
+Inheritance diagram for Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classError__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classError__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classError_afc45201da2e7c857c894504c334d0b6c}\label{classError_afc45201da2e7c857c894504c334d0b6c} 
+{\bfseries Error} (const std\+::string \&msg, const std\+::string \&file, int line)
+\item 
+\Hypertarget{classError_a94f60633baf3f7cbd175c05a2d5bec86}\label{classError_a94f60633baf3f7cbd175c05a2d5bec86} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries what} () const noexcept override
+\item 
+\Hypertarget{classError_a58e1c3932737f3d1606dc21d61fe772c}\label{classError_a58e1c3932737f3d1606dc21d61fe772c} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries where} () const noexcept
+\item 
+\Hypertarget{classError_a44d73939c9a26cec916d4bb3075f2f07}\label{classError_a44d73939c9a26cec916d4bb3075f2f07} 
+int {\bfseries line} () const noexcept
+\item 
+\Hypertarget{classError_aad9926c8d0e0b184c86a50031d0c13fa}\label{classError_aad9926c8d0e0b184c86a50031d0c13fa} 
+void {\bfseries Error\+Faillure\+Exception} () const
+\item 
+\Hypertarget{classError_a4a041256e771d81900ecc55df60dcf15}\label{classError_a4a041256e771d81900ecc55df60dcf15} 
+void {\bfseries exit\+Code} (int code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classError_af2cfd799393ab472242a364701f0244e}\label{classError_af2cfd799393ab472242a364701f0244e} 
+std\+::string {\bfseries \+\_\+message}
+\item 
+\Hypertarget{classError_aecb661d327fe69703ffc2e37c47189b3}\label{classError_aecb661d327fe69703ffc2e37c47189b3} 
+std\+::string {\bfseries \+\_\+file}
+\item 
+\Hypertarget{classError_aca0b3c5cad12af4601f08e5bd0cbbbbd}\label{classError_aca0b3c5cad12af4601f08e5bd0cbbbbd} 
+int {\bfseries \+\_\+line}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+common/Error.\+hpp\end{DoxyCompactItemize}

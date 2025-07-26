@@ -1,0 +1,50 @@
+\doxysection{DLLoader.\+hpp}
+\hypertarget{DLLoader_8hpp_source}{}\label{DLLoader_8hpp_source}\index{lib/DLLoader.hpp@{lib/DLLoader.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ arcade}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ DLLoader}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ DLLOADER\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ DLLOADER\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <dlfcn.h>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}ILoader.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDLLoader}{DLLoader}}\ \ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classILoader}{ILoader}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *\_handler\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDLLoader}{\string~DLLoader}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *getHandler()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_handler;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *Open(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path,\ \textcolor{keywordtype}{int}\ flag)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \_handler\ =\ dlopen(path,\ flag);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_handler;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ T\ Symbol(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *symbolName)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{reinterpret\_cast<}T\textcolor{keyword}{>}(dlsym(\_handler,\ symbolName));}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ Close()\textcolor{keyword}{\ override}\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_handler\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ dlclose(\_handler);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{classError}{Error}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ dlerror();}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !DLLOADER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+\doxysection{Factory\+Manager.\+hpp}
+\hypertarget{FactoryManager_8hpp_source}{}\label{FactoryManager_8hpp_source}\index{src/factory/FactoryManager.hpp@{src/factory/FactoryManager.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ FactoryManager}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ FACTORYMANAGER\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ FACTORYMANAGER\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}PrimitiveFactory.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}CameraFactory.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}../../common/Exception/FactoryException.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../materialLoader/MaterialLoader.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFactoryManager}{FactoryManager}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classFactoryManager}{FactoryManager}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classFactoryManager}{\string~FactoryManager}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ std::shared\_ptr<PrimitiveFactory>\ getPrimitiveFactory()\ \{\ \textcolor{keywordflow}{return}\ \_primitiveFactory;\ \}}
+\DoxyCodeLine{00023\ \ \ \ \ std::shared\_ptr<CameraFactory>\ getCameraFactory()\ \{\ \textcolor{keywordflow}{return}\ \_cameraFactory;\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ initializeFactories();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ createObjectsFromConfig(\textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>>\&\ objectsConfig);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ std::vector<std::shared\_ptr<IPrimitives>>\ getPrimitives()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_primitives;\ \}}
+\DoxyCodeLine{00030\ \ \ \ \ std::shared\_ptr<Camera>\ getCamera()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_camera;\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ std::shared\_ptr<PrimitiveFactory>\ \_primitiveFactory;}
+\DoxyCodeLine{00034\ \ \ \ \ std::shared\_ptr<CameraFactory>\ \_cameraFactory;}
+\DoxyCodeLine{00035\ \ \ \ \ std::shared\_ptr<MaterialLoader>\ \_materialLoader;}
+\DoxyCodeLine{00036\ \ \ \ \ std::vector<std::shared\_ptr<IPrimitives>>\ \_primitives;}
+\DoxyCodeLine{00037\ \ \ \ \ std::shared\_ptr<Camera>\ \_camera;}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !FACTORYMANAGER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

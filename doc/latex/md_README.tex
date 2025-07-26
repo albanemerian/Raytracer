@@ -1,0 +1,104 @@
+\chapter{Project Detail}
+\hypertarget{md_README}{}\label{md_README}\index{Project Detail@{Project Detail}}
+\label{md_README_autotoc_md0}%
+\Hypertarget{md_README_autotoc_md0}%
+ 🎯 \doxylink{classRaytracer}{Raytracer} Project
+
+This project is a modular and extensible raytracer written in C++, designed to render 3D scenes described in external configuration files. The goal is to lay the foundation for a full-\/featured rendering engine, supporting interface interaction, modularity, and advanced design practices.
+
+🚀 Features
+
+✅ Core Requirements \begin{DoxyVerb}Scene Configuration via external file (recommended: libconfig++)
+Image Display during and after generation
+Exit Handling during or after rendering
+Basic Scene Preview using a fast renderer
+Live Scene Reloading on file change
+Uses interfaces for lights and primitives to support extensibility
+Implements at least 2 design patterns (e.g., Factory, Builder, Decorator)
+\end{DoxyVerb}
+ 🛠 Architecture \begin{DoxyVerb}Clean modular structure allowing runtime extensibility
+Optional plugin system (./plugins/) for primitives, lights, and renderers
+\end{DoxyVerb}
+ 🖥 Libraries \begin{DoxyVerb}Only authorized:
+
+    libconfig++ for scene parsing
+    SFML for image display
+    Standard C++ library
+\end{DoxyVerb}
+\hypertarget{md_README_autotoc_md1}{}\doxysection{\texorpdfstring{Compilation \+:}{Compilation \+:}}\label{md_README_autotoc_md1}
+
+\begin{DoxyItemize}
+\item make / make re
+\item make clean / make fclean
+\item make coding
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md2}{}\doxysection{\texorpdfstring{Coding Style \+:}{Coding Style \+:}}\label{md_README_autotoc_md2}
+\begin{DoxyVerb}The Cpp code needs to ablige to a specified coding styke,
+to check if the code is complient with the norm execut
+the make coding command or the ./styleChecker.sh.
+To understand the errors and how to fix them please
+refers to the coding-cpp.txt.
+\end{DoxyVerb}
+\hypertarget{md_README_autotoc_md3}{}\doxysection{\texorpdfstring{Documentation \+:}{Documentation \+:}}\label{md_README_autotoc_md3}
+\hypertarget{md_README_autotoc_md4}{}\doxysubsection{\texorpdfstring{Docusorus \+:}{Docusorus \+:}}\label{md_README_autotoc_md4}
+To start the docusarus documentation \+: cd documentation/my-\/website npx docusaurus start\hypertarget{md_README_autotoc_md5}{}\doxysubsection{\texorpdfstring{Doxygen \+:}{Doxygen \+:}}\label{md_README_autotoc_md5}
+The basic documentation fo the project is generated using the doxygen, to run the doxygen executable, please make sure you installed the pdf-\/latex librairie. To generate the PDF \+: ./generate\+Doc.sh\hypertarget{md_README_autotoc_md6}{}\doxysection{\texorpdfstring{Commit norm \+:}{Commit norm \+:}}\label{md_README_autotoc_md6}
+$<$\+Gitmoji$>$ \+: \mbox{[}Element / Module\mbox{]} \+: \mbox{[}MESSAGE\mbox{]}
+
+Gitmoji = The emoji approriate for the current modification. \mbox{[}Element / Module\mbox{]} = The elemenet you applied the modification. \mbox{[}MESSAGE\mbox{]} = A detail message of what you did.
+
+Gitmojies\+: \begin{DoxyVerb}Code feature :
+    - :sparkles: (✨): Introduce new features
+    - :recycle: (♻️): Refactor / update code
+    - :bug: (🐛): Fix a bug
+    - :poop: (💩) : Remove Coding style or temporary fix
+    - :rotating_light: (🚨) : Fix Compiling Warning
+    - :fire: (🔥): Remove code or files
+
+Test feature :
+    - :white_check_mark: (✅): Add, update, or pass tests
+
+Architecture :
+    - :see_no_evil: (🙈): Add or update .gitignore files
+    - :construction_worker: (👷): Add or update CI build system
+    - :building_construction: (🏗️) : Make Architectural changes
+    - :memo: (📝) : Add or update documentation
+
+...
+\end{DoxyVerb}
+ \hypertarget{md_README_autotoc_md7}{}\doxysubsection{\texorpdfstring{Pull Request}{Pull Request}}\label{md_README_autotoc_md7}
+
+\begin{DoxyItemize}
+\item \+:tada\+: (🎉)\+: This Gitmoji must be used for each PR created!
+\item \+:lipstick\+: (💄)\+: This Gitmoji must be used for each PR merged!
+\item \+:rewind\+: (⏪️)\+: This Gitmoji must be used for each revert done!
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md8}{}\doxysection{\texorpdfstring{Git-\/\+Cli \+:}{Git-\/\+Cli \+:}}\label{md_README_autotoc_md8}
+
+\begin{DoxyItemize}
+\item Changer message de commit, avant qu\textquotesingle{}il soit push \+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ commit\ -\/-\/amend\ -\/m\ "{}New\ commit\ message"{}}
+
+\end{DoxyCode}
+
+\item Changer le message de commit, si il a deja été push \+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ commit\ -\/-\/amend\ -\/m\ "{}New\ commit\ message"{}}
+\DoxyCodeLine{git\ push\ -\/-\/force}
+
+\end{DoxyCode}
+
+\item Un-\/add un ficher add par erreur qui est pas encore push\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ restore\ -\/-\/staged\ <file>}
+
+\end{DoxyCode}
+
+\item Un-\/add un fichier qui a été commit \+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ reset\ -\/-\/soft\ HEAD\string~1}
+\DoxyCodeLine{git\ restore\ -\/-\/staged\ fichier-\/a-\/retirer.txt}
+\DoxyCodeLine{git\ commit\ -\/m\ "{}Nouveau\ message\ de\ commit\ (sans\ le\ fichier)"{}}
+
+\end{DoxyCode}
+ 
+\end{DoxyItemize}

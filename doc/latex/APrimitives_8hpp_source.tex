@@ -1,0 +1,80 @@
+\doxysection{APrimitives.\+hpp}
+\hypertarget{APrimitives_8hpp_source}{}\label{APrimitives_8hpp_source}\index{common/APrimitives.hpp@{common/APrimitives.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ APrimitives}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}IPrimitives.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}ValueType.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Material.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#ifndef\ APRIMITIVES\_HPP\_}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ APRIMITIVES\_HPP\_}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAPrimitives}{APrimitives}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classIPrimitives}{IPrimitives}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAPrimitives}{APrimitives}}()\ :\ position(0,\ 0,\ 0),\ scale(1),\ material(\textcolor{keyword}{nullptr}),}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \_color(-\/1,\ -\/1,\ -\/1),\ \_scales(1,\ 1,\ 1),\ \_graph(\textcolor{stringliteral}{"{}"{}})\ \{\}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAPrimitives}{APrimitives}}(std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>\ map,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>>}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \&graphSceneList);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classAPrimitives}{\string~APrimitives}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*Method\ */}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structPixelInfo}{PixelInfo}}\ distance(\textcolor{keyword}{const}\ \mbox{\hyperlink{classRay}{Ray}}\ \&ray)\ \textcolor{keyword}{override}\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ Type\ getType()\ \textcolor{keyword}{const\ override}\ =\ 0;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ getPosition()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ position;\ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Math::Rot3D}}\ getRotation()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \_rotation;\ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ getScale()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ scale;\ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ std::shared\_ptr<Material>\ getMaterial()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ material;\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Setter\ */}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ \&newPosition)\textcolor{keyword}{\ override\ }\{\ position\ =\ newPosition;\ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setRotation(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMath_1_1Rot3D}{Math::Rot3D}}\ \&newRotation)\textcolor{keyword}{\ override\ }\{\ \_rotation\ =\ newRotation;\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setScale(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ newScale)\textcolor{keyword}{\ override\ }\{\ scale\ =\ newScale;\ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setMaterial(std::shared\_ptr<Material>\ newMaterial)\textcolor{keyword}{\ override\ }\{\ material\ =\ newMaterial;\ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Sub\ Functions\ */}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getPos(std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ map);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getRot(std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ map);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getCol(std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ map);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getScales(std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ map);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getGraph(std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ map,\ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>>\ \&graphSceneList);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ applyMaterial(\mbox{\hyperlink{structPixelInfo}{PixelInfo}}\&\ pixelInfo);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Graph\ Method\ */}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getGraphScale(\textcolor{keyword}{const}\ std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>\ \&graph);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getPosGraph(\textcolor{keyword}{const}\ std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ \&graph);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ getRotGraph(\textcolor{keyword}{const}\ std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ \&graph);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Point3D}{Math::Point3D}}\ position;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMath_1_1Rot3D}{Math::Rot3D}}\ \_rotation;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ scale;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::shared\_ptr<Material>\ material;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classColor}{Color}}\ \_color;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ Math::Vector3D\ \_scales;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ std::string\ \_graph;}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !APRIMITIVES\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

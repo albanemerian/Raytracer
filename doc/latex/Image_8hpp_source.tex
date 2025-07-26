@@ -1,0 +1,48 @@
+\doxysection{Image.\+hpp}
+\hypertarget{Image_8hpp_source}{}\label{Image_8hpp_source}\index{common/Image.hpp@{common/Image.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Raytracer}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../common/Error.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Color.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ IMAGE\_HPP\_}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ IMAGE\_HPP\_}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classImage}{Image}}\ \{}
+\DoxyCodeLine{00019\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classImage}{Image}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{int}\ maxColorValue\ =\ 255);}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classImage}{\string~Image}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ getWidth()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ width;\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ getHeight()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ height;\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ getMaxColorValue()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ maxColorValue;\ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Color>\ \&getData()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ data;\ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ writeToFilePPM(\textcolor{keyword}{const}\ std::string\ \&fileName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ writeToFilePNG(\textcolor{keyword}{const}\ std::string\ \&fileName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ setPixel(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classColor}{Color}}\ \&color);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ maxColorValue;}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<Color>\ data;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !IMAGE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

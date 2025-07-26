@@ -1,0 +1,82 @@
+\doxysection{Object\+Error\+Handling.\+hpp}
+\hypertarget{ObjectErrorHandling_8hpp_source}{}\label{ObjectErrorHandling_8hpp_source}\index{src/parser/ObjectErrorHandling.hpp@{src/parser/ObjectErrorHandling.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ObjectErrorHandling}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ OBJECTERRORHANDLING\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ OBJECTERRORHANDLING\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <variant>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}ConfigNode.hpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}PropertyTypes.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}../../common/ValueType.hpp"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classObjectErrorHandling}{ObjectErrorHandling}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classObjectErrorHandling}{ObjectErrorHandling}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classObjectErrorHandling}{\string~ObjectErrorHandling}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkArrayValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkGroupValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkListValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkValueValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ verifyObjectValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setShapeDefinitions}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ (std::vector<ShapeDefinition>\ shapeDefinitions);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPropertyTypeMap(\textcolor{keyword}{const}\ std::map<std::string,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPropertyConfig}{PropertyConfig}}>\&\ propertyTypeMap);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::vector<ShapeDefinition>\ \_shapeDefinitions;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ std::map<std::string,\ PropertyConfig>\ \_propertyTypeMap;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::string\ getDataTypeName(ValueDataType\ type)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::shared\_ptr<const\ ShapeDefinition>\ getShapeDefinition}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keyword}{const}\ std::string\&\ objectName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isParameterValid(\textcolor{keyword}{const}\ std::string\&\ parameter,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isParameterMandatory(\textcolor{keyword}{const}\ std::string\&\ parameter,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isParameterOptional(\textcolor{keyword}{const}\ std::string\&\ parameter,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkParameterType(\textcolor{keyword}{const}\ std::string\&\ parameter,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isValueTypeValid(\textcolor{keyword}{const}\ ValueType\&\ value,}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ ValueDataType\ expectedType)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkSimpleValueValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&parameter,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPropertyConfig}{PropertyConfig}}\&\ config)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkVector2DValueValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&parameter,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPropertyConfig}{PropertyConfig}}\&\ config)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkVector3DValueValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&parameter,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPropertyConfig}{PropertyConfig}}\&\ config)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkMandatoryParameters(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkOptionalParameters(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkUnknownParameters(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ objectName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !OBJECTERRORHANDLING\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,69 @@
+\doxysection{Object\+Constructor.\+hpp}
+\hypertarget{ObjectConstructor_8hpp_source}{}\label{ObjectConstructor_8hpp_source}\index{src/parser/ObjectConstructor.hpp@{src/parser/ObjectConstructor.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ObjectFactory}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ OBJECTFACTORY\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ OBJECTFACTORY\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}ConfigNode.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}PropertyTypes.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}ObjectErrorHandling.hpp"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classObjectConstructor}{ObjectConstructor}}\ \{}
+\DoxyCodeLine{00021\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classObjectConstructor}{ObjectConstructor}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classObjectConstructor}{\string~ObjectConstructor}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ createObject(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ createObjects(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ verifyObjectValidity(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,\ \textcolor{keyword}{const}\ std::string\&\ objectName);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>>\&}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ getObjects()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ printObjectMap()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ createMaterials(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\ \&node);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fillObject(\textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>\ \textcolor{keywordtype}{object});}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleSimpleValue(std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ \textcolor{keywordtype}{object},}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ValueType\_t\&\ key,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ValueType\&\ value,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValueDataType\ dataType);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleVector2DValue(std::shared\_ptr<std::map<ValueType\_t,}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValueType>>\ \textcolor{keywordtype}{object},\ \textcolor{keyword}{const}\ ValueType\_t\&\ key,}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\&\ components,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValueDataType\ dataType);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleVector3DValue(std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>\ \textcolor{keywordtype}{object},}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ValueType\_t\&\ key,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classConfigNode}{ConfigNode}}\&\ node,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\&\ components,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValueDataType\ dataType);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ ValueType\ convertValue(\textcolor{keyword}{const}\ ValueType\&\ value,\ ValueDataType\ dataType);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ initShapeDefinitions();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classObjectErrorHandling}{ObjectErrorHandling}}\ \_errorHandler;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::map<std::string,\ PropertyConfig>\ \_propertyTypeMap;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>>\ \_objects;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::vector<ShapeDefinition>\ \_shapeDefinitions;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !OBJECTFACTORY\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

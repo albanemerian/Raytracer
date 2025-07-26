@@ -1,0 +1,208 @@
+\doxysection{APrimitives Class Reference}
+\hypertarget{classAPrimitives}{}\label{classAPrimitives}\index{APrimitives@{APrimitives}}
+
+
+Inheritance diagram for APrimitives\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAPrimitives__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APrimitives\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAPrimitives__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classAPrimitives_adc0f9487274b42581a0b44d3d666d498}\label{classAPrimitives_adc0f9487274b42581a0b44d3d666d498} 
+{\bfseries APrimitives} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+virtual \mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \mbox{\hyperlink{classAPrimitives_abb314ba67b744afd6a50deac17fdf00d}{distance}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) override=0
+\item 
+virtual Type \mbox{\hyperlink{classAPrimitives_ade4fdb787cc262046e0a0aef3bb652df}{get\+Type}} () const override=0
+\item 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \mbox{\hyperlink{classAPrimitives_ae741ac29ad3ad15d89f26900e864976c}{get\+Position}} () const override
+\item 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \mbox{\hyperlink{classAPrimitives_adb8ff939728efd81af8a7295e4a3b120}{get\+Rotation}} () const override
+\item 
+float \mbox{\hyperlink{classAPrimitives_a4af8315d35c0e211d29ce615621d8890}{get\+Scale}} () const override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ \mbox{\hyperlink{classAPrimitives_a91020f85ad901ed79e2cd34cb704b1fd}{get\+Material}} () const override
+\item 
+void \mbox{\hyperlink{classAPrimitives_af10d4f52829815009f87838fab8c94fd}{set\+Position}} (const \mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \&new\+Position) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a22dd6a5e8922fd3b5441db8073e499ee}{set\+Rotation}} (const \mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \&new\+Rotation) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a98a8db0edce6de02468e6654c89bce76}{set\+Scale}} (const float new\+Scale) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_aa28bac324a14b070923b003a19b73a0c}{set\+Material}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ new\+Material) override
+\item 
+\Hypertarget{classAPrimitives_a1101f7499fe8fadddb3c432d49239c65}\label{classAPrimitives_a1101f7499fe8fadddb3c432d49239c65} 
+void {\bfseries get\+Pos} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+\Hypertarget{classAPrimitives_aca4179efad514c7520f2229ce86adf28}\label{classAPrimitives_aca4179efad514c7520f2229ce86adf28} 
+void {\bfseries get\+Rot} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+\Hypertarget{classAPrimitives_aaf4348da6c5191132d23e982fab10caa}\label{classAPrimitives_aaf4348da6c5191132d23e982fab10caa} 
+void {\bfseries get\+Col} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+\Hypertarget{classAPrimitives_aa24c64a0adf4be7edf77e3ef304521e4}\label{classAPrimitives_aa24c64a0adf4be7edf77e3ef304521e4} 
+void {\bfseries get\+Scales} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+\Hypertarget{classAPrimitives_a4e547b639629f05ef66d49e01e7691b4}\label{classAPrimitives_a4e547b639629f05ef66d49e01e7691b4} 
+void {\bfseries get\+Graph} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+\Hypertarget{classAPrimitives_abaecf26e147839329c02e20861d9dc4c}\label{classAPrimitives_abaecf26e147839329c02e20861d9dc4c} 
+void {\bfseries apply\+Material} (\mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \&pixel\+Info)
+\item 
+\Hypertarget{classAPrimitives_ae2a166c0a708b10cfb71a9396a73602f}\label{classAPrimitives_ae2a166c0a708b10cfb71a9396a73602f} 
+void {\bfseries get\+Graph\+Scale} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+\Hypertarget{classAPrimitives_a2cdcb752fc542130909b2bf0860cca2a}\label{classAPrimitives_a2cdcb752fc542130909b2bf0860cca2a} 
+void {\bfseries get\+Pos\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+\Hypertarget{classAPrimitives_aabc18cbf971ff5efa86e2123ff8a34c5}\label{classAPrimitives_aabc18cbf971ff5efa86e2123ff8a34c5} 
+void {\bfseries get\+Rot\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classAPrimitives_abe3456e06ac4de91e0193e7e59e202ff}\label{classAPrimitives_abe3456e06ac4de91e0193e7e59e202ff} 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} {\bfseries position}
+\item 
+\Hypertarget{classAPrimitives_a4837a779042738c44c595615553f65e1}\label{classAPrimitives_a4837a779042738c44c595615553f65e1} 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} {\bfseries \+\_\+rotation}
+\item 
+\Hypertarget{classAPrimitives_a7e6270db7c52e230a25dd63ee92b7851}\label{classAPrimitives_a7e6270db7c52e230a25dd63ee92b7851} 
+float {\bfseries scale}
+\item 
+\Hypertarget{classAPrimitives_ae535b84b6b7855088929d1e0cefc3a39}\label{classAPrimitives_ae535b84b6b7855088929d1e0cefc3a39} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ {\bfseries material}
+\item 
+\Hypertarget{classAPrimitives_ad25ca5eb908b4b2920464933b489e2d6}\label{classAPrimitives_ad25ca5eb908b4b2920464933b489e2d6} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries \+\_\+color}
+\item 
+\Hypertarget{classAPrimitives_aa5f59db2ae099c04c0e893b2c3f414e5}\label{classAPrimitives_aa5f59db2ae099c04c0e893b2c3f414e5} 
+Math\+::\+Vector3D {\bfseries \+\_\+scales}
+\item 
+\Hypertarget{classAPrimitives_a9b714a18bb74e360f4686be2fb6e43d0}\label{classAPrimitives_a9b714a18bb74e360f4686be2fb6e43d0} 
+std\+::string {\bfseries \+\_\+graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAPrimitives_abb314ba67b744afd6a50deac17fdf00d}\label{classAPrimitives_abb314ba67b744afd6a50deac17fdf00d} 
+\index{APrimitives@{APrimitives}!distance@{distance}}
+\index{distance@{distance}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} APrimitives\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_a91020f85ad901ed79e2cd34cb704b1fd}\label{classAPrimitives_a91020f85ad901ed79e2cd34cb704b1fd} 
+\index{APrimitives@{APrimitives}!getMaterial@{getMaterial}}
+\index{getMaterial@{getMaterial}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ APrimitives\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_ae741ac29ad3ad15d89f26900e864976c}\label{classAPrimitives_ae741ac29ad3ad15d89f26900e864976c} 
+\index{APrimitives@{APrimitives}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} APrimitives\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_adb8ff939728efd81af8a7295e4a3b120}\label{classAPrimitives_adb8ff939728efd81af8a7295e4a3b120} 
+\index{APrimitives@{APrimitives}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} APrimitives\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_a4af8315d35c0e211d29ce615621d8890}\label{classAPrimitives_a4af8315d35c0e211d29ce615621d8890} 
+\index{APrimitives@{APrimitives}!getScale@{getScale}}
+\index{getScale@{getScale}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily float APrimitives\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_ade4fdb787cc262046e0a0aef3bb652df}\label{classAPrimitives_ade4fdb787cc262046e0a0aef3bb652df} 
+\index{APrimitives@{APrimitives}!getType@{getType}}
+\index{getType@{getType}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual Type APrimitives\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_aa28bac324a14b070923b003a19b73a0c}\label{classAPrimitives_aa28bac324a14b070923b003a19b73a0c} 
+\index{APrimitives@{APrimitives}!setMaterial@{setMaterial}}
+\index{setMaterial@{setMaterial}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{setMaterial()}{setMaterial()}}
+{\footnotesize\ttfamily void APrimitives\+::set\+Material (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$}]{new\+Material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_af10d4f52829815009f87838fab8c94fd}\label{classAPrimitives_af10d4f52829815009f87838fab8c94fd} 
+\index{APrimitives@{APrimitives}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void APrimitives\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \&}]{new\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_a22dd6a5e8922fd3b5441db8073e499ee}\label{classAPrimitives_a22dd6a5e8922fd3b5441db8073e499ee} 
+\index{APrimitives@{APrimitives}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
+{\footnotesize\ttfamily void APrimitives\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \&}]{new\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+\Hypertarget{classAPrimitives_a98a8db0edce6de02468e6654c89bce76}\label{classAPrimitives_a98a8db0edce6de02468e6654c89bce76} 
+\index{APrimitives@{APrimitives}!setScale@{setScale}}
+\index{setScale@{setScale}!APrimitives@{APrimitives}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void APrimitives\+::set\+Scale (\begin{DoxyParamCaption}\item[{const float}]{new\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIPrimitives}{IPrimitives}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+common/APrimitives.\+hpp\item 
+common/APrimitives.\+cpp\end{DoxyCompactItemize}

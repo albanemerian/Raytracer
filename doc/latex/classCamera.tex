@@ -1,0 +1,93 @@
+\doxysection{Camera Class Reference}
+\hypertarget{classCamera}{}\label{classCamera}\index{Camera@{Camera}}
+
+
+Collaboration diagram for Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCamera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCamera_a2bf7bf04909e108acd85d99e5240e56c}\label{classCamera_a2bf7bf04909e108acd85d99e5240e56c} 
+{\bfseries Camera} (const \mbox{\hyperlink{classCamera}{Camera}} \&)=default
+\item 
+\Hypertarget{classCamera_a59e5858240135524c265a848c7fd8160}\label{classCamera_a59e5858240135524c265a848c7fd8160} 
+{\bfseries Camera} (const \mbox{\hyperlink{classRectangle3D}{Rectangle3D}} \&screen)
+\item 
+\Hypertarget{classCamera_a2f64f571986a98c34b91464173fc4ae0}\label{classCamera_a2f64f571986a98c34b91464173fc4ae0} 
+\mbox{\hyperlink{classCamera}{Camera}} \& {\bfseries operator=} (const \mbox{\hyperlink{classCamera}{Camera}} \&)=default
+\item 
+\Hypertarget{classCamera_a1cec0e6a9c5339bd56e1f5954f72ee88}\label{classCamera_a1cec0e6a9c5339bd56e1f5954f72ee88} 
+\mbox{\hyperlink{classRay}{Ray}} {\bfseries ray} (double u, double v) const
+\item 
+\Hypertarget{classCamera_a003fda8a25e4f970b7a8fd207b5c8c10}\label{classCamera_a003fda8a25e4f970b7a8fd207b5c8c10} 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} {\bfseries get\+Rotation} () const
+\item 
+\Hypertarget{classCamera_aed77dd62a6053f1c70babaa784154bad}\label{classCamera_aed77dd62a6053f1c70babaa784154bad} 
+\mbox{\hyperlink{classRectangle3D}{Rectangle3D}} {\bfseries get\+Screen} () const
+\item 
+\Hypertarget{classCamera_a988b4c95f000c90be737b9770a3ce770}\label{classCamera_a988b4c95f000c90be737b9770a3ce770} 
+Math\+::\+Vector3D {\bfseries get\+Position} () const
+\item 
+\Hypertarget{classCamera_ae1ed75ac812ad9484a9cff67eb384709}\label{classCamera_ae1ed75ac812ad9484a9cff67eb384709} 
+int {\bfseries get\+Width} () const
+\item 
+\Hypertarget{classCamera_a9f7814df00fbe30066495336fbf9461f}\label{classCamera_a9f7814df00fbe30066495336fbf9461f} 
+int {\bfseries get\+Height} () const
+\item 
+\Hypertarget{classCamera_aaa42ba9be9e1599496b9cca178521259}\label{classCamera_aaa42ba9be9e1599496b9cca178521259} 
+float {\bfseries get\+Field\+Of\+View} () const
+\item 
+\Hypertarget{classCamera_a5d55910c446c39d02b6f2400166cd209}\label{classCamera_a5d55910c446c39d02b6f2400166cd209} 
+void {\bfseries set\+Rotation} (\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} rotation)
+\item 
+\Hypertarget{classCamera_a70b202495418da95c50d968daaced0a8}\label{classCamera_a70b202495418da95c50d968daaced0a8} 
+void {\bfseries set\+Position} (Math\+::\+Vector3D position)
+\item 
+\Hypertarget{classCamera_ae355b890e1d8fb9a53ab78b7f68431b1}\label{classCamera_ae355b890e1d8fb9a53ab78b7f68431b1} 
+void {\bfseries set\+Resolution} (int x, int y)
+\item 
+\Hypertarget{classCamera_a02c22060b10a34a06588268832a1ae64}\label{classCamera_a02c22060b10a34a06588268832a1ae64} 
+void {\bfseries set\+Height} (int h)
+\item 
+\Hypertarget{classCamera_a5821a6d46fbe1d2d010c9b3286841094}\label{classCamera_a5821a6d46fbe1d2d010c9b3286841094} 
+void {\bfseries set\+Field\+Of\+View} (float fov)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCamera_a29ac8b338ffc85663e244371a09b6244}\label{classCamera_a29ac8b338ffc85663e244371a09b6244} 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} {\bfseries \+\_\+origin}
+\item 
+\Hypertarget{classCamera_a042acedd251a2a08ff1afaf432d5baeb}\label{classCamera_a042acedd251a2a08ff1afaf432d5baeb} 
+\mbox{\hyperlink{classRectangle3D}{Rectangle3D}} {\bfseries \+\_\+screen}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCamera_a7f3890bf4c4bd76790569c1c42014e32}\label{classCamera_a7f3890bf4c4bd76790569c1c42014e32} 
+int {\bfseries width}
+\item 
+\Hypertarget{classCamera_a71d4b6a3a1bcd937a9f147a3e35a8fed}\label{classCamera_a71d4b6a3a1bcd937a9f147a3e35a8fed} 
+int {\bfseries height}
+\item 
+\Hypertarget{classCamera_aa19ffd22b1a94341151f1641adc673ad}\label{classCamera_aa19ffd22b1a94341151f1641adc673ad} 
+float {\bfseries field\+Of\+View}
+\item 
+\Hypertarget{classCamera_aa959031ab4e77a588bc296f7c1de74b5}\label{classCamera_aa959031ab4e77a588bc296f7c1de74b5} 
+Math\+::\+Vector3D {\bfseries \+\_\+rotation}
+\item 
+\Hypertarget{classCamera_aad4425bc2ea26134e84850f941216c52}\label{classCamera_aad4425bc2ea26134e84850f941216c52} 
+Math\+::\+Vector3D {\bfseries \+\_\+position}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+common/Camera.\+hpp\item 
+common/Camera.\+cpp\end{DoxyCompactItemize}

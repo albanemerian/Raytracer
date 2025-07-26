@@ -1,0 +1,40 @@
+\doxysection{Plane.\+hpp}
+\hypertarget{Plane_8hpp_source}{}\label{Plane_8hpp_source}\index{src/primitives/Plane.hpp@{src/primitives/Plane.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Plane}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../../common/ValueType.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../../common/Material.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../../common/APrimitives.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}../../common/Point3D.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}../../common/Rot3D.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../../common/Vector3D.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPlane}{Plane}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAPrimitives}{APrimitives}}\ \{}
+\DoxyCodeLine{00018\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classPlane}{Plane}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classPlane}{Plane}}(std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>\ map,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<std::map<ValueType\_t,\ ValueType>>>\ \&graphSceneList);}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classPlane}{\string~Plane}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{structPixelInfo}{PixelInfo}}\ distance(\textcolor{keyword}{const}\ \mbox{\hyperlink{classRay}{Ray}}\ \&ray)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{/*\ Getter\ */}}
+\DoxyCodeLine{00027\ \ \ \ \ Type\ getType()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ \_distance;}
+\DoxyCodeLine{00032\ \ \ \ \ std::string\ \_axe;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,93 @@
+\doxysection{Object\+Error\+Handling Class Reference}
+\hypertarget{classObjectErrorHandling}{}\label{classObjectErrorHandling}\index{ObjectErrorHandling@{ObjectErrorHandling}}
+
+
+Collaboration diagram for Object\+Error\+Handling\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classObjectErrorHandling__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classObjectErrorHandling_a71a46e2876a39f35c8e559f3d56c065e}\label{classObjectErrorHandling_a71a46e2876a39f35c8e559f3d56c065e} 
+bool {\bfseries check\+Array\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name)
+\item 
+\Hypertarget{classObjectErrorHandling_a455a1ddfe632770423ba2a5372a6fef2}\label{classObjectErrorHandling_a455a1ddfe632770423ba2a5372a6fef2} 
+bool {\bfseries check\+Group\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name)
+\item 
+\Hypertarget{classObjectErrorHandling_a38c08610bbd21199580a6e3e0d6a6489}\label{classObjectErrorHandling_a38c08610bbd21199580a6e3e0d6a6489} 
+bool {\bfseries check\+List\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name)
+\item 
+\Hypertarget{classObjectErrorHandling_a8671d9e26ac43a6bf8dd834a29d1239a}\label{classObjectErrorHandling_a8671d9e26ac43a6bf8dd834a29d1239a} 
+bool {\bfseries check\+Value\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name)
+\item 
+\Hypertarget{classObjectErrorHandling_aa52753244a0a5f395111541939d6de57}\label{classObjectErrorHandling_aa52753244a0a5f395111541939d6de57} 
+bool {\bfseries verify\+Object\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name)
+\item 
+\Hypertarget{classObjectErrorHandling_a1487149759aed61c180780074f73d3d7}\label{classObjectErrorHandling_a1487149759aed61c180780074f73d3d7} 
+void {\bfseries set\+Shape\+Definitions} (std\+::vector$<$ \mbox{\hyperlink{structShapeDefinition}{Shape\+Definition}} $>$ shape\+Definitions)
+\item 
+\Hypertarget{classObjectErrorHandling_a286fbb92582f464899623f2dd11dd98b}\label{classObjectErrorHandling_a286fbb92582f464899623f2dd11dd98b} 
+void {\bfseries set\+Property\+Type\+Map} (const std\+::map$<$ std\+::string, \mbox{\hyperlink{structPropertyConfig}{Property\+Config}} $>$ \&property\+Type\+Map)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classObjectErrorHandling_a17127b663007ace969c14aa5d0b176e9}\label{classObjectErrorHandling_a17127b663007ace969c14aa5d0b176e9} 
+std\+::string {\bfseries get\+Data\+Type\+Name} (Value\+Data\+Type type) const
+\item 
+\Hypertarget{classObjectErrorHandling_a2cd568216e28652ab1cc34d8ae4892ec}\label{classObjectErrorHandling_a2cd568216e28652ab1cc34d8ae4892ec} 
+std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{structShapeDefinition}{Shape\+Definition}} $>$ {\bfseries get\+Shape\+Definition} (const std\+::string \&object\+Name) const
+\item 
+\Hypertarget{classObjectErrorHandling_aacfdb03f1b8446b110fddff3f359c77d}\label{classObjectErrorHandling_aacfdb03f1b8446b110fddff3f359c77d} 
+bool {\bfseries is\+Parameter\+Valid} (const std\+::string \&parameter, const std\+::string \&object\+Name) const
+\item 
+\Hypertarget{classObjectErrorHandling_a6c63f59604736bae510aab3fe5e9635a}\label{classObjectErrorHandling_a6c63f59604736bae510aab3fe5e9635a} 
+bool {\bfseries is\+Parameter\+Mandatory} (const std\+::string \&parameter, const std\+::string \&object\+Name) const
+\item 
+\Hypertarget{classObjectErrorHandling_a26019e9636b8c89d2bd9a92a77ef606b}\label{classObjectErrorHandling_a26019e9636b8c89d2bd9a92a77ef606b} 
+bool {\bfseries is\+Parameter\+Optional} (const std\+::string \&parameter, const std\+::string \&object\+Name) const
+\item 
+\Hypertarget{classObjectErrorHandling_aa6872e5b61503ac12a3eb814846c42ec}\label{classObjectErrorHandling_aa6872e5b61503ac12a3eb814846c42ec} 
+bool {\bfseries check\+Parameter\+Type} (const std\+::string \&parameter, const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node) const
+\item 
+\Hypertarget{classObjectErrorHandling_a3b455a6edfe7a2becc5ecca3396d30cb}\label{classObjectErrorHandling_a3b455a6edfe7a2becc5ecca3396d30cb} 
+bool {\bfseries is\+Value\+Type\+Valid} (const Value\+Type \&value, Value\+Data\+Type expected\+Type) const
+\item 
+\Hypertarget{classObjectErrorHandling_a79d33193d6aa11ac6e069f5a4fa0a136}\label{classObjectErrorHandling_a79d33193d6aa11ac6e069f5a4fa0a136} 
+bool {\bfseries check\+Simple\+Value\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&parameter, const \mbox{\hyperlink{structPropertyConfig}{Property\+Config}} \&config) const
+\item 
+\Hypertarget{classObjectErrorHandling_ae247f0ad7190d99edb839edabdb410ca}\label{classObjectErrorHandling_ae247f0ad7190d99edb839edabdb410ca} 
+bool {\bfseries check\+Vector2\+DValue\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&parameter, const \mbox{\hyperlink{structPropertyConfig}{Property\+Config}} \&config) const
+\item 
+\Hypertarget{classObjectErrorHandling_a397e29972efa33119164fc075f8e458a}\label{classObjectErrorHandling_a397e29972efa33119164fc075f8e458a} 
+bool {\bfseries check\+Vector3\+DValue\+Validity} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&parameter, const \mbox{\hyperlink{structPropertyConfig}{Property\+Config}} \&config) const
+\item 
+\Hypertarget{classObjectErrorHandling_ab407f640746434f035177b144791ff2f}\label{classObjectErrorHandling_ab407f640746434f035177b144791ff2f} 
+bool {\bfseries check\+Mandatory\+Parameters} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name) const
+\item 
+\Hypertarget{classObjectErrorHandling_a4a1cfd8c1463d77df4c695550407c396}\label{classObjectErrorHandling_a4a1cfd8c1463d77df4c695550407c396} 
+bool {\bfseries check\+Optional\+Parameters} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name) const
+\item 
+\Hypertarget{classObjectErrorHandling_a9d1c14aae3889a4f59b5307614335aba}\label{classObjectErrorHandling_a9d1c14aae3889a4f59b5307614335aba} 
+bool {\bfseries check\+Unknown\+Parameters} (const \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&node, const std\+::string \&object\+Name) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classObjectErrorHandling_a3f5d44c736c4b7c407364c5a0cf9b203}\label{classObjectErrorHandling_a3f5d44c736c4b7c407364c5a0cf9b203} 
+std\+::vector$<$ \mbox{\hyperlink{structShapeDefinition}{Shape\+Definition}} $>$ {\bfseries \+\_\+shape\+Definitions}
+\item 
+\Hypertarget{classObjectErrorHandling_af7c57a1b6cb99a6a92ef45ecfa76e7dd}\label{classObjectErrorHandling_af7c57a1b6cb99a6a92ef45ecfa76e7dd} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{structPropertyConfig}{Property\+Config}} $>$ {\bfseries \+\_\+property\+Type\+Map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/parser/Object\+Error\+Handling.\+hpp\item 
+src/parser/Object\+Error\+Handling.\+cpp\end{DoxyCompactItemize}

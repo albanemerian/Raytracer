@@ -1,0 +1,127 @@
+\doxysection{Plane Class Reference}
+\hypertarget{classPlane}{}\label{classPlane}\index{Plane@{Plane}}
+
+
+Inheritance diagram for Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPlane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPlane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPlane_a9a5de4f5c565ea8948698b1170dde4e1}\label{classPlane_a9a5de4f5c565ea8948698b1170dde4e1} 
+{\bfseries Plane} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+\mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \mbox{\hyperlink{classPlane_a14555cb76fc594c4213157716603b3ac}{distance}} (const \mbox{\hyperlink{classRay}{Ray}} \&ray) override
+\item 
+Type \mbox{\hyperlink{classPlane_a8e7db1ba29360279d8e255ab52d7563f}{get\+Type}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classAPrimitives}{APrimitives}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries APrimitives} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \mbox{\hyperlink{classAPrimitives_ae741ac29ad3ad15d89f26900e864976c}{get\+Position}} () const override
+\item 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \mbox{\hyperlink{classAPrimitives_adb8ff939728efd81af8a7295e4a3b120}{get\+Rotation}} () const override
+\item 
+float \mbox{\hyperlink{classAPrimitives_a4af8315d35c0e211d29ce615621d8890}{get\+Scale}} () const override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ \mbox{\hyperlink{classAPrimitives_a91020f85ad901ed79e2cd34cb704b1fd}{get\+Material}} () const override
+\item 
+void \mbox{\hyperlink{classAPrimitives_af10d4f52829815009f87838fab8c94fd}{set\+Position}} (const \mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} \&new\+Position) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a22dd6a5e8922fd3b5441db8073e499ee}{set\+Rotation}} (const \mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} \&new\+Rotation) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_a98a8db0edce6de02468e6654c89bce76}{set\+Scale}} (const float new\+Scale) override
+\item 
+void \mbox{\hyperlink{classAPrimitives_aa28bac324a14b070923b003a19b73a0c}{set\+Material}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ new\+Material) override
+\item 
+void {\bfseries get\+Pos} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Rot} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Col} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Scales} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map)
+\item 
+void {\bfseries get\+Graph} (std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ map, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ $>$ \&graph\+Scene\+List)
+\item 
+void {\bfseries apply\+Material} (\mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} \&pixel\+Info)
+\item 
+void {\bfseries get\+Graph\+Scale} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+void {\bfseries get\+Pos\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\item 
+void {\bfseries get\+Rot\+Graph} (const std\+::shared\+\_\+ptr$<$ std\+::map$<$ Value\+Type\+\_\+t, Value\+Type $>$ $>$ \&graph)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPlane_a00eb2d4be6895673312bea32494c23b0}\label{classPlane_a00eb2d4be6895673312bea32494c23b0} 
+double {\bfseries \+\_\+distance}
+\item 
+\Hypertarget{classPlane_a24d1990a9b15730b0c6fe7d36fc58852}\label{classPlane_a24d1990a9b15730b0c6fe7d36fc58852} 
+std\+::string {\bfseries \+\_\+axe}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classAPrimitives}{APrimitives}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMath_1_1Point3D}{Math\+::\+Point3D}} {\bfseries position}
+\item 
+\mbox{\hyperlink{classMath_1_1Rot3D}{Math\+::\+Rot3D}} {\bfseries \+\_\+rotation}
+\item 
+float {\bfseries scale}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structMaterial}{Material}} $>$ {\bfseries material}
+\item 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries \+\_\+color}
+\item 
+Math\+::\+Vector3D {\bfseries \+\_\+scales}
+\item 
+std\+::string {\bfseries \+\_\+graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlane_a14555cb76fc594c4213157716603b3ac}\label{classPlane_a14555cb76fc594c4213157716603b3ac} 
+\index{Plane@{Plane}!distance@{distance}}
+\index{distance@{distance}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixelInfo}{Pixel\+Info}} Plane\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAPrimitives}{APrimitives}}.
+
+\Hypertarget{classPlane_a8e7db1ba29360279d8e255ab52d7563f}\label{classPlane_a8e7db1ba29360279d8e255ab52d7563f} 
+\index{Plane@{Plane}!getType@{getType}}
+\index{getType@{getType}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily Type Plane\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAPrimitives}{APrimitives}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/primitives/Plane.\+hpp\item 
+src/primitives/Plane.\+cpp\end{DoxyCompactItemize}

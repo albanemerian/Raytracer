@@ -1,0 +1,47 @@
+/*
+** EPITECH PROJECT, 2025
+** B-OOP-400-NAN-4-1-raytracer-albane.merian
+** File description:
+** InfiniteCone
+*/
+
+#ifndef INFINITECONE_HPP_
+#define INFINITECONE_HPP_
+
+#include <map>
+#include <optional>
+#include "../../common/APrimitives.hpp"
+#include "../../common/ValueType.hpp"
+
+class InfiniteCone : public APrimitives {
+    public:
+        InfiniteCone();
+        InfiniteCone(std::shared_ptr<std::map<ValueType_t, ValueType>> map,
+          const std::vector<std::shared_ptr<std::map<ValueType_t, ValueType>>> &graphSceneList);
+        ~InfiniteCone();
+        /* Setter */
+        void setBaseRadius(float radius);
+        void setAngle(float angle);
+
+        /* Method */
+        std::optional<double> distance(const Math::Ray &ray) const override;
+        PixelInfo distanceInfo(const Math::Ray &ray) override;
+        std::optional<Math::Point3D> getIntersection(const Math::Ray &ray) const override;
+        std::optional<Math::Vector3D> getNormal(const Math::Point3D &point) const override;
+
+        /* Getter */
+        float getBaseRadius() const;
+        float getAngle() const;
+        Type getType() const override;
+
+    private:
+        float _baseRadius;
+        float _angle;
+        double _distance;
+        Math::Vector3D transformToLocal(const Math::Ray &ray) const;
+        Math::Vector3D localDirectionVector(const Math::Ray &ray) const;
+        std::optional<double> intersectCone(const Math::Vector3D &localOrigin, const Math::Vector3D &localDirection) const;
+        bool isPointOnCone(const Math::Point3D &hitPoint) const;
+};
+
+#endif /* !INFINITECONE_HPP_ */

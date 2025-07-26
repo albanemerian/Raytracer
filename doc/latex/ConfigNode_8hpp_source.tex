@@ -1,0 +1,41 @@
+\doxysection{Config\+Node.\+hpp}
+\hypertarget{ConfigNode_8hpp_source}{}\label{ConfigNode_8hpp_source}\index{src/parser/ConfigNode.hpp@{src/parser/ConfigNode.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2025}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/NAN-\/4-\/1-\/raytracer-\/albane.merian}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ConfigNode}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ CONFIGNODE\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ CONFIGNODE\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <variant>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../../common/ValueType.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{enum}\ NodeType\ \{\ TypeUnknown,\ TypeGroup,\ TypeArray,\ TypeValue,\ TypeList\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classConfigNode}{ConfigNode}}\ \{}
+\DoxyCodeLine{00020\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classConfigNode}{ConfigNode}}()\ :\ isValue(\textcolor{keyword}{false}),\ type(TypeUnknown),\ \_name(\textcolor{stringliteral}{"{}"{}})\ \{\}}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classConfigNode}{\string~ConfigNode}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::map<std::string,\ ConfigNode>\ children;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ ValueType\ value;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isValue;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ NodeType\ type;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::string\ \_name;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasChild(\textcolor{keyword}{const}\ std::string\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00032\ \ \ \ \ T\ getValue(\textcolor{keyword}{const}\ T\ \&defaultValue\ =\ T())\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !CONFIGNODE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

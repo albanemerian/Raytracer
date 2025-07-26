@@ -1,0 +1,51 @@
+\doxysection{Config\+Parser Class Reference}
+\hypertarget{classConfigParser}{}\label{classConfigParser}\index{ConfigParser@{ConfigParser}}
+
+
+Collaboration diagram for Config\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classConfigParser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classConfigParser_a67456f54aef7a328e391b13be3f12e1b}\label{classConfigParser_a67456f54aef7a328e391b13be3f12e1b} 
+bool {\bfseries load\+Config} (const std\+::string \&filename, \mbox{\hyperlink{classConfigNode}{Config\+Node}} \&root\+Node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classConfigParser_a2ae0e781ef25a26982d3c06e8ae92a4e}\label{classConfigParser_a2ae0e781ef25a26982d3c06e8ae92a4e} 
+void {\bfseries build\+Config\+Tree} (const Setting \&setting, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classConfigParser_a6e63a41c1b1f4bc9521b985fad7764d8}\label{classConfigParser_a6e63a41c1b1f4bc9521b985fad7764d8} 
+void {\bfseries handle\+Group\+Type} (const Setting \&child, const std\+::string \&child\+Name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ node)
+\item 
+\Hypertarget{classConfigParser_aba61107b2f5c0f38310c4e672037d77e}\label{classConfigParser_aba61107b2f5c0f38310c4e672037d77e} 
+void {\bfseries handle\+Array\+Type} (const Setting \&child, const std\+::string \&child\+Name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ node)
+\item 
+\Hypertarget{classConfigParser_a3acaa36977bb61b42da6de5e6e7d23e7}\label{classConfigParser_a3acaa36977bb61b42da6de5e6e7d23e7} 
+void {\bfseries handle\+List\+Type} (const Setting \&child, const std\+::string \&child\+Name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ node)
+\item 
+\Hypertarget{classConfigParser_a7fcebb92af2461681bdd295e00b65aa3}\label{classConfigParser_a7fcebb92af2461681bdd295e00b65aa3} 
+void {\bfseries handle\+Value\+Type} (const Setting \&child, const std\+::string \&child\+Name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classConfigNode}{Config\+Node}} $>$ node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classConfigParser_a204f9c8dd3845029cbeed62ab76308d8}\label{classConfigParser_a204f9c8dd3845029cbeed62ab76308d8} 
+Config {\bfseries file}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/parser/Config\+Parser.\+hpp\item 
+src/parser/Config\+Parser.\+cpp\end{DoxyCompactItemize}

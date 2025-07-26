@@ -1,0 +1,60 @@
+\doxysection{Image Class Reference}
+\hypertarget{classImage}{}\label{classImage}\index{Image@{Image}}
+
+
+Collaboration diagram for Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classImage__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classImage_a255892db1589f2dd47830b98d899cb62}\label{classImage_a255892db1589f2dd47830b98d899cb62} 
+{\bfseries Image} (int width, int height, int max\+Color\+Value=255)
+\item 
+\Hypertarget{classImage_a36bcae4838228d574738249a87dc4464}\label{classImage_a36bcae4838228d574738249a87dc4464} 
+int {\bfseries get\+Width} () const
+\item 
+\Hypertarget{classImage_a1cd7587f88b6932b5269051d1ba08ff9}\label{classImage_a1cd7587f88b6932b5269051d1ba08ff9} 
+int {\bfseries get\+Height} () const
+\item 
+\Hypertarget{classImage_a77dead087aa7237c30c3fac421a304b0}\label{classImage_a77dead087aa7237c30c3fac421a304b0} 
+int {\bfseries get\+Max\+Color\+Value} () const
+\item 
+\Hypertarget{classImage_a367f1fbb22a774ead813ccaeba4fe230}\label{classImage_a367f1fbb22a774ead813ccaeba4fe230} 
+const std\+::vector$<$ \mbox{\hyperlink{classColor}{Color}} $>$ \& {\bfseries get\+Data} () const
+\item 
+\Hypertarget{classImage_a07b958b4910fad7a7e62d94ac54949e0}\label{classImage_a07b958b4910fad7a7e62d94ac54949e0} 
+void {\bfseries write\+To\+File\+PPM} (const std\+::string \&file\+Name) const
+\item 
+\Hypertarget{classImage_a0387a1374d3d11551c243cf304b472df}\label{classImage_a0387a1374d3d11551c243cf304b472df} 
+void {\bfseries write\+To\+File\+PNG} (const std\+::string \&file\+Name) const
+\item 
+\Hypertarget{classImage_a4dfb5099ed33a939193ab6b47f858464}\label{classImage_a4dfb5099ed33a939193ab6b47f858464} 
+void {\bfseries set\+Pixel} (int x, int y, const \mbox{\hyperlink{classColor}{Color}} \&color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classImage_ab8d12f635013c04159cd4d3d972bac88}\label{classImage_ab8d12f635013c04159cd4d3d972bac88} 
+int {\bfseries width}
+\item 
+\Hypertarget{classImage_a51df43db420c9c0b57536cb2dd36de5c}\label{classImage_a51df43db420c9c0b57536cb2dd36de5c} 
+int {\bfseries height}
+\item 
+\Hypertarget{classImage_a5890a8b76471b1b70e7502ff0b344747}\label{classImage_a5890a8b76471b1b70e7502ff0b344747} 
+int {\bfseries max\+Color\+Value}
+\item 
+\Hypertarget{classImage_a7adf176c46c013936ac75581597bb7f1}\label{classImage_a7adf176c46c013936ac75581597bb7f1} 
+std\+::vector$<$ \mbox{\hyperlink{classColor}{Color}} $>$ {\bfseries data}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+common/Image.\+hpp\item 
+common/Image.\+cpp\end{DoxyCompactItemize}
