@@ -125,3 +125,6 @@ Gitmojies:
     git commit -m "Nouveau message de commit (sans le fichier)"
     ```
 
+## Note 
+
+Grade : A médaille 
